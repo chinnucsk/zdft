@@ -1,0 +1,23 @@
+2013-04-11 19:39:12.751 [info] <0.7.0> Application lager started on node zdft@localhost
+2013-04-11 19:39:12.762 [info] <0.66.0> Starting Boss in development mode....
+
+2013-04-11 19:39:12.897 [info] <0.66.0> Starting master services on zdft@localhost
+
+2013-04-11 19:39:12.961 [info] <0.7.0> Application tinymq started on node zdft@localhost
+2013-04-11 19:39:13.042 [info] <0.66.0> SSL:[]
+
+2013-04-11 19:39:13.072 [info] <0.7.0> Application boss started on node zdft@localhost
+2013-04-11 19:39:13.194 [info] <0.150.0> Loading routes from "/home/jackie/Erlang/projects/zdft/priv/zdft.routes" ....
+2013-04-12 20:23:09.862 [info] <0.7.0> Application lager started on node zdft@localhost
+2013-04-12 20:23:09.944 [info] <0.66.0> Starting Boss in development mode....
+
+2013-04-12 20:23:10.132 [info] <0.66.0> Starting master services on zdft@localhost
+
+2013-04-12 20:23:10.272 [info] <0.7.0> Application tinymq started on node zdft@localhost
+2013-04-12 20:23:10.549 [info] <0.66.0> SSL:[]
+
+2013-04-12 20:23:10.647 [info] <0.7.0> Application boss started on node zdft@localhost
+2013-04-12 20:23:10.647 [info] <0.7.0> Application zdft started on node zdft@localhost
+2013-04-12 20:23:10.726 [info] <0.151.0> Loading routes from "/home/jackie/Erlang/projects/zdft/priv/zdft.routes" ....
+2013-04-12 20:23:56.596 [info] <0.7.0> Application ibrowse started on node zdft@localhost
+2013-04-12 21:57:42.793 [info] <0.151.0> Loading routes from "/home/jackie/Erlang/projects/zdft/priv/zdft.routes" ....
