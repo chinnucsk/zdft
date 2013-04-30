@@ -1,0 +1,243 @@
+2013-04-29 17:04:52.891 [error] <0.369.0> GET /zdft/index/ [zdft] 404 157ms
+2013-04-29 17:06:15.572 [error] <0.379.0> GET /zdft/index/ [zdft] 404 1ms
+2013-04-29 17:06:40.895 [error] <0.386.0> GET / [zdft] 404 1ms
+2013-04-29 17:07:48.110 [error] <0.393.0> GET /comet/stat/ [zdft] 404 787ms
+2013-04-29 17:14:16.811 [error] <0.425.0> GET /comet/stat/ [zdft] 404 1ms
+2013-04-29 17:19:31.124 [error] <0.378.0> GET /comet/stat/ [zdft] 404 4ms
+2013-04-29 19:13:26.572 [error] <0.348.0> gen_server zdft_ocr_websocket terminated with reason: bad argument in call to io:format(<0.63.0>, "Handler is: ~p_", zdft_ocr_websocket) in boss_service_worker:handle_cast/2 line 174
+2013-04-29 19:13:27.005 [error] <0.348.0> CRASH REPORT Process <0.348.0> with 0 neighbours exited with reason: bad argument in call to io:format(<0.63.0>, "Handler is: ~p_", zdft_ocr_websocket) in boss_service_worker:handle_cast/2 line 174 in gen_server:terminate/6 line 747
+2013-04-29 19:13:27.008 [error] <0.131.0> Supervisor boss_service_sup had child zdft_ocr_websocket started with boss_service_worker:start_link(zdft_ocr_websocket, <<"/websocket/ocr">>) at <0.348.0> exit with reason bad argument in call to io:format(<0.63.0>, "Handler is: ~p_", zdft_ocr_websocket) in boss_service_worker:handle_cast/2 line 174 in context child_terminated
+2013-04-29 19:17:56.928 [error] <0.484.0> ** Boss Service Handler zdft_ocr_websocket terminating in handle_incoming/4
+   for the reason error:undef
+ServiceUrl: "/websocket/ocr"
+WebSocketId: <0.492.0>
+SessionId  : <<"76dc691752b73bfd5bee03deb5bae61ff20577cc">>
+Message    : <<"Message to send">>
+State    : {state,{dict,1,16,16,8,80,48,{[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]},{{[],[],[],[],[],[[<0.492.0>|<<"76dc691752b73bfd5bee03deb5bae61ff20577cc">>]],[],[],[],[],[],[],[],[],[],[]}}}}
+** Stacktrace: [{jsx,parse,[<<"Message to send">>],[]},{zdft_ocr_websocket,handle_incoming,5,[{file,"/home/jackie/Erlang/projects/zdft/src/websocket/zdft_ocr_websocket.erl"},{line,57}]},{boss_service_worker,handle_cast,2,[{file,"src/boss/boss_service_worker.erl"},{line,175}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,607}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,239}]}]
+
+
+2013-04-29 19:17:56.935 [error] <0.484.0> gen_server zdft_ocr_websocket terminated with reason: bad return value: ok
+2013-04-29 19:17:56.996 [error] <0.484.0> CRASH REPORT Process <0.484.0> with 0 neighbours exited with reason: bad return value: ok in gen_server:terminate/6 line 747
+2013-04-29 19:17:57.019 [error] <0.131.0> Supervisor boss_service_sup had child zdft_ocr_websocket started with boss_service_worker:start_link(zdft_ocr_websocket, <<"/websocket/ocr">>) at <0.484.0> exit with reason bad return value: ok in context child_terminated
+2013-04-29 19:24:41.391 [error] <0.495.0> ** Boss Service Handler zdft_ocr_websocket terminating in handle_incoming/4
+   for the reason error:undef
+ServiceUrl: "/websocket/ocr"
+WebSocketId: <0.503.0>
+SessionId  : <<"76dc691752b73bfd5bee03deb5bae61ff20577cc">>
+Message    : <<"Message to send">>
+State    : {state,{dict,1,16,16,8,80,48,{[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]},{{[[<0.503.0>|<<"76dc691752b73bfd5bee03deb5bae61ff20577cc">>]],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]}}}}
+** Stacktrace: [{jsx,parse,[<<"Message to send">>],[]},{zdft_ocr_websocket,handle_incoming,5,[{file,"/home/jackie/Erlang/projects/zdft/src/websocket/zdft_ocr_websocket.erl"},{line,57}]},{boss_service_worker,handle_cast,2,[{file,"src/boss/boss_service_worker.erl"},{line,175}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,607}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,239}]}]
+
+
+2013-04-29 19:24:41.404 [error] <0.495.0> gen_server zdft_ocr_websocket terminated with reason: bad return value: ok
+2013-04-29 19:24:41.415 [error] <0.495.0> CRASH REPORT Process <0.495.0> with 0 neighbours exited with reason: bad return value: ok in gen_server:terminate/6 line 747
+2013-04-29 19:24:41.420 [error] <0.131.0> Supervisor boss_service_sup had child zdft_ocr_websocket started with boss_service_worker:start_link(zdft_ocr_websocket, <<"/websocket/ocr">>) at <0.495.0> exit with reason bad return value: ok in context child_terminated
+2013-04-29 19:35:05.580 [error] <0.506.0> ** Boss Service Handler zdft_ocr_websocket terminating in handle_incoming/4
+   for the reason error:undef
+ServiceUrl: "/websocket/ocr"
+WebSocketId: <0.514.0>
+SessionId  : <<"76dc691752b73bfd5bee03deb5bae61ff20577cc">>
+Message    : <<"Message to send">>
+State    : {state,{dict,1,16,16,8,80,48,{[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]},{{[],[],[],[],[[<0.514.0>|<<"76dc691752b73bfd5bee03deb5bae61ff20577cc">>]],[],[],[],[],[],[],[],[],[],[],[]}}}}
+** Stacktrace: [{jsx,parse,[<<"Message to send">>],[]},{zdft_ocr_websocket,handle_incoming,5,[{file,"/home/jackie/Erlang/projects/zdft/src/websocket/zdft_ocr_websocket.erl"},{line,57}]},{boss_service_worker,handle_cast,2,[{file,"src/boss/boss_service_worker.erl"},{line,175}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,607}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,239}]}]
+
+
+2013-04-29 19:35:05.608 [error] <0.506.0> gen_server zdft_ocr_websocket terminated with reason: bad return value: ok
+2013-04-29 19:35:05.617 [error] <0.506.0> CRASH REPORT Process <0.506.0> with 0 neighbours exited with reason: bad return value: ok in gen_server:terminate/6 line 747
+2013-04-29 19:35:05.626 [error] <0.131.0> Supervisor boss_service_sup had child zdft_ocr_websocket started with boss_service_worker:start_link(zdft_ocr_websocket, <<"/websocket/ocr">>) at <0.506.0> exit with reason bad return value: ok in context child_terminated
+2013-04-29 20:04:08.740 [error] <0.517.0> ** Boss Service Handler zdft_ocr_websocket terminating in handle_incoming/4
+   for the reason error:undef
+ServiceUrl: "/websocket/ocr"
+WebSocketId: <0.545.0>
+SessionId  : <<"76dc691752b73bfd5bee03deb5bae61ff20577cc">>
+Message    : <<"[object Object]">>
+State    : {state,{dict,1,16,16,8,80,48,{[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]},{{[],[],[],[[<0.545.0>|<<"76dc691752b73bfd5bee03deb5bae61ff20577cc">>]],[],[],[],[],[],[],[],[],[],[],[],[]}}}}
+** Stacktrace: [{jsx,parse,[<<"[object Object]">>],[]},{zdft_ocr_websocket,handle_incoming,5,[{file,"/home/jackie/Erlang/projects/zdft/src/websocket/zdft_ocr_websocket.erl"},{line,57}]},{boss_service_worker,handle_cast,2,[{file,"src/boss/boss_service_worker.erl"},{line,175}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,607}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,239}]}]
+
+
+2013-04-29 20:04:08.910 [error] <0.517.0> gen_server zdft_ocr_websocket terminated with reason: bad return value: ok
+2013-04-29 20:04:08.913 [error] <0.517.0> CRASH REPORT Process <0.517.0> with 0 neighbours exited with reason: bad return value: ok in gen_server:terminate/6 line 747
+2013-04-29 20:04:08.915 [error] <0.131.0> Supervisor boss_service_sup had child zdft_ocr_websocket started with boss_service_worker:start_link(zdft_ocr_websocket, <<"/websocket/ocr">>) at <0.517.0> exit with reason bad return value: ok in context child_terminated
+2013-04-29 21:21:16.142 [error] <0.548.0> ** Handler zdft_ocr_websocket terminating in init/0
+   for the reason error:{badmatch,{state,{dict,1,16,16,8,80,48,{[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]},{{[],[],[],[],[],[],[],[],[],[[<0.647.0>|<<"76dc691752b73bfd5bee03deb5bae61ff20577cc">>]],[],[],[],[],[],[]}}}}}
+ServiceUrl: "/websocket/ocr"
+WebSocketId: <0.647.0>
+SessionId  : <<"76dc691752b73bfd5bee03deb5bae61ff20577cc">>
+State    : {state,{dict,1,16,16,8,80,48,{[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]},{{[],[],[],[],[],[],[],[],[],[[<0.647.0>|<<"76dc691752b73bfd5bee03deb5bae61ff20577cc">>]],[],[],[],[],[],[]}}}}
+** Stacktrace: [{zdft_ocr_websocket,handle_close,4,[{file,"/home/jackie/Erlang/projects/zdft/src/websocket/zdft_ocr_websocket.erl"},{line,45}]},{boss_service_worker,handle_call,3,[{file,"src/boss/boss_service_worker.erl"},{line,129}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,588}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,239}]}]
+
+
+2013-04-29 21:21:17.570 [error] <0.548.0> gen_server zdft_ocr_websocket terminated with reason: bad return value: ok
+2013-04-29 21:21:17.850 [error] <0.548.0> CRASH REPORT Process <0.548.0> with 0 neighbours exited with reason: bad return value: ok in gen_server:terminate/6 line 747
+2013-04-29 21:21:17.853 [error] <0.131.0> Supervisor boss_service_sup had child zdft_ocr_websocket started with boss_service_worker:start_link(zdft_ocr_websocket, <<"/websocket/ocr">>) at <0.548.0> exit with reason bad return value: ok in context child_terminated
+2013-04-29 21:23:52.576 [error] <0.670.0> ** Handler zdft_ocr_websocket terminating in handle_info/2
+   for the reason error:{badrecord,dict}
+** Stacktrace: [{dict,get_slot,2,[{file,"dict.erl"},{line,396}]},{dict,store,3,[{file,"dict.erl"},{line,179}]},{zdft_ocr_websocket,handle_info,2,[{file,"/home/jackie/Erlang/projects/zdft/src/websocket/zdft_ocr_websocket.erl"},{line,80}]},{boss_service_worker,handle_info,2,[{file,"src/boss/boss_service_worker.erl"},{line,230}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,607}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,239}]}]
+
+
+2013-04-29 21:23:52.625 [error] <0.670.0> gen_server zdft_ocr_websocket terminated with reason: bad return value: ok
+2013-04-29 21:23:52.629 [error] <0.670.0> CRASH REPORT Process <0.670.0> with 0 neighbours exited with reason: bad return value: ok in gen_server:terminate/6 line 747
+2013-04-29 21:23:52.642 [error] <0.131.0> Supervisor boss_service_sup had child zdft_ocr_websocket started with boss_service_worker:start_link(zdft_ocr_websocket, <<"/websocket/ocr">>) at <0.670.0> exit with reason bad return value: ok in context child_terminated
+2013-04-29 21:24:03.740 [error] <0.690.0> ** Boss Service Handler zdft_ocr_websocket terminating in handle_incoming/4
+   for the reason error:{badrecord,dict}
+ServiceUrl: "/websocket/ocr"
+WebSocketId: <0.682.0>
+SessionId  : <<"76dc691752b73bfd5bee03deb5bae61ff20577cc">>
+Message    : <<"[object Object]">>
+State    : {state,{dict,0,16,16,8,80,48,{[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]},{{[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]}}},undefined}
+** Stacktrace: [{dict,fold_dict,3,[{file,"dict.erl"},{line,428}]},{zdft_ocr_websocket,handle_incoming,5,[{file,"/home/jackie/Erlang/projects/zdft/src/websocket/zdft_ocr_websocket.erl"},{line,59}]},{boss_service_worker,handle_cast,2,[{file,"src/boss/boss_service_worker.erl"},{line,175}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,607}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,239}]}]
+
+
+2013-04-29 21:24:03.773 [error] <0.690.0> gen_server zdft_ocr_websocket terminated with reason: bad return value: ok
+2013-04-29 21:24:03.776 [error] <0.690.0> CRASH REPORT Process <0.690.0> with 0 neighbours exited with reason: bad return value: ok in gen_server:terminate/6 line 747
+2013-04-29 21:24:03.796 [error] <0.131.0> Supervisor boss_service_sup had child zdft_ocr_websocket started with boss_service_worker:start_link(zdft_ocr_websocket, <<"/websocket/ocr">>) at <0.690.0> exit with reason bad return value: ok in context child_terminated
+2013-04-29 21:24:52.601 [error] <0.692.0> ** Handler zdft_ocr_websocket terminating in init/0
+   for the reason error:{badrecord,dict}
+ServiceUrl: "/websocket/ocr"
+WebSocketId: <0.682.0>
+SessionId  : <<"76dc691752b73bfd5bee03deb5bae61ff20577cc">>
+State    : {state,{dict,0,16,16,8,80,48,{[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]},{{[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]}}},undefined}
+** Stacktrace: [{dict,get_slot,2,[{file,"dict.erl"},{line,396}]},{dict,erase,2,[{file,"dict.erl"},{line,161}]},{zdft_ocr_websocket,handle_close,4,[{file,"/home/jackie/Erlang/projects/zdft/src/websocket/zdft_ocr_websocket.erl"},{line,46}]},{boss_service_worker,handle_call,3,[{file,"src/boss/boss_service_worker.erl"},{line,129}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,588}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,239}]}]
+
+
+2013-04-29 21:24:52.604 [error] <0.692.0> gen_server zdft_ocr_websocket terminated with reason: bad return value: ok
+2013-04-29 21:24:52.612 [error] <0.692.0> CRASH REPORT Process <0.692.0> with 0 neighbours exited with reason: bad return value: ok in gen_server:terminate/6 line 747
+2013-04-29 21:24:52.645 [error] <0.131.0> Supervisor boss_service_sup had child zdft_ocr_websocket started with boss_service_worker:start_link(zdft_ocr_websocket, <<"/websocket/ocr">>) at <0.692.0> exit with reason bad return value: ok in context child_terminated
+2013-04-29 21:59:26.641 [error] <0.694.0> ** Handler zdft_ocr_websocket terminating in handle_info/2
+   for the reason error:{badrecord,dict}
+** Stacktrace: [{dict,get_slot,2,[{file,"dict.erl"},{line,396}]},{dict,store,3,[{file,"dict.erl"},{line,179}]},{zdft_ocr_websocket,handle_info,2,[{file,"/home/jackie/Erlang/projects/zdft/src/websocket/zdft_ocr_websocket.erl"},{line,80}]},{boss_service_worker,handle_info,2,[{file,"src/boss/boss_service_worker.erl"},{line,230}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,607}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,239}]}]
+
+
+2013-04-29 21:59:26.643 [error] <0.694.0> gen_server zdft_ocr_websocket terminated with reason: bad return value: ok
+2013-04-29 21:59:26.646 [error] <0.694.0> CRASH REPORT Process <0.694.0> with 0 neighbours exited with reason: bad return value: ok in gen_server:terminate/6 line 747
+2013-04-29 21:59:26.648 [error] <0.131.0> Supervisor boss_service_sup had child zdft_ocr_websocket started with boss_service_worker:start_link(zdft_ocr_websocket, <<"/websocket/ocr">>) at <0.694.0> exit with reason bad return value: ok in context child_terminated
+2013-04-29 22:02:23.376 [error] <0.705.0> ** Handler zdft_ocr_websocket terminating in handle_info/2
+   for the reason error:{badrecord,dict}
+** Stacktrace: [{dict,get_slot,2,[{file,"dict.erl"},{line,396}]},{dict,store,3,[{file,"dict.erl"},{line,179}]},{zdft_ocr_websocket,handle_info,2,[{file,"/home/jackie/Erlang/projects/zdft/src/websocket/zdft_ocr_websocket.erl"},{line,82}]},{boss_service_worker,handle_info,2,[{file,"src/boss/boss_service_worker.erl"},{line,230}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,607}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,239}]}]
+
+
+2013-04-29 22:02:23.377 [error] <0.705.0> gen_server zdft_ocr_websocket terminated with reason: bad return value: ok
+2013-04-29 22:02:23.428 [error] <0.705.0> CRASH REPORT Process <0.705.0> with 0 neighbours exited with reason: bad return value: ok in gen_server:terminate/6 line 747
+2013-04-29 22:02:23.447 [error] <0.131.0> Supervisor boss_service_sup had child zdft_ocr_websocket started with boss_service_worker:start_link(zdft_ocr_websocket, <<"/websocket/ocr">>) at <0.705.0> exit with reason bad return value: ok in context child_terminated
+2013-04-29 22:08:48.340 [error] <0.716.0> ** Handler zdft_ocr_websocket terminating in handle_info/2
+   for the reason error:{badrecord,dict}
+** Stacktrace: [{dict,get_slot,2,[{file,"dict.erl"},{line,396}]},{dict,store,3,[{file,"dict.erl"},{line,179}]},{zdft_ocr_websocket,handle_info,2,[{file,"/home/jackie/Erlang/projects/zdft/src/websocket/zdft_ocr_websocket.erl"},{line,82}]},{boss_service_worker,handle_info,2,[{file,"src/boss/boss_service_worker.erl"},{line,230}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,607}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,239}]}]
+
+
+2013-04-29 22:08:48.342 [error] <0.716.0> gen_server zdft_ocr_websocket terminated with reason: bad return value: ok
+2013-04-29 22:08:48.499 [error] <0.716.0> CRASH REPORT Process <0.716.0> with 0 neighbours exited with reason: bad return value: ok in gen_server:terminate/6 line 747
+2013-04-29 22:08:48.507 [error] <0.131.0> Supervisor boss_service_sup had child zdft_ocr_websocket started with boss_service_worker:start_link(zdft_ocr_websocket, <<"/websocket/ocr">>) at <0.716.0> exit with reason bad return value: ok in context child_terminated
+2013-04-29 22:14:01.496 [error] <0.736.0> ** Handler zdft_ocr_websocket terminating in handle_info/2
+   for the reason error:{badrecord,dict}
+** Stacktrace: [{dict,get_slot,2,[{file,"dict.erl"},{line,396}]},{dict,store,3,[{file,"dict.erl"},{line,179}]},{zdft_ocr_websocket,handle_info,2,[{file,"/home/jackie/Erlang/projects/zdft/src/websocket/zdft_ocr_websocket.erl"},{line,82}]},{boss_service_worker,handle_info,2,[{file,"src/boss/boss_service_worker.erl"},{line,230}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,607}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,239}]}]
+
+
+2013-04-29 22:14:01.500 [error] <0.736.0> gen_server zdft_ocr_websocket terminated with reason: bad return value: ok
+2013-04-29 22:14:01.504 [error] <0.736.0> CRASH REPORT Process <0.736.0> with 0 neighbours exited with reason: bad return value: ok in gen_server:terminate/6 line 747
+2013-04-29 22:14:01.506 [error] <0.131.0> Supervisor boss_service_sup had child zdft_ocr_websocket started with boss_service_worker:start_link(zdft_ocr_websocket, <<"/websocket/ocr">>) at <0.736.0> exit with reason bad return value: ok in context child_terminated
+2013-04-29 22:20:41.570 [error] emulator Error in process <0.764.0> on node 'zdft@localhost' with exit value: {{case_clause,closed},[{cowboy_protocol,execute,4,[{file,"src/cowboy_protocol.erl"},{line,514}]}]}
+
+
+2013-04-29 22:20:41.573 [error] <0.144.0> Supervisor ranch_conns_sup had child ranch_conns_sup started with {ranch_conns_sup,start_protocol,undefined} at <0.764.0> exit with reason no case clause matching closed in cowboy_protocol:execute/4 line 514 in context child_terminated
+2013-04-29 22:21:05.022 [error] <0.144.0> Supervisor ranch_conns_sup had child ranch_conns_sup started with {ranch_conns_sup,start_protocol,undefined} at <0.771.0> exit with reason killed in context child_terminated
+2013-04-29 22:25:55.360 [error] <0.144.0> Supervisor ranch_conns_sup had child ranch_conns_sup started with {ranch_conns_sup,start_protocol,undefined} at <0.799.0> exit with reason killed in context child_terminated
+2013-04-29 22:42:56.357 [error] <0.747.0> ** Handler zdft_ocr_websocket terminating in handle_info/2
+   for the reason error:undef
+** Stacktrace: [{lager,trace,["To save pid:~p",[<0.833.0>]],[]},{zdft_ocr_websocket,handle_info,2,[{file,"/home/jackie/Erlang/projects/zdft/src/websocket/zdft_ocr_websocket.erl"},{line,78}]},{boss_service_worker,handle_info,2,[{file,"src/boss/boss_service_worker.erl"},{line,230}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,607}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,239}]}]
+
+
+2013-04-29 22:42:56.362 [error] <0.747.0> gen_server zdft_ocr_websocket terminated with reason: bad return value: ok
+2013-04-29 22:42:56.476 [error] <0.747.0> CRASH REPORT Process <0.747.0> with 0 neighbours exited with reason: bad return value: ok in gen_server:terminate/6 line 747
+2013-04-29 22:42:56.479 [error] <0.131.0> Supervisor boss_service_sup had child zdft_ocr_websocket started with boss_service_worker:start_link(zdft_ocr_websocket, <<"/websocket/ocr">>) at <0.747.0> exit with reason bad return value: ok in context child_terminated
+2013-04-29 22:42:59.084 [error] <0.839.0> ** Boss Service Handler zdft_ocr_websocket terminating in handle_incoming/4
+   for the reason error:undef
+ServiceUrl: "/websocket/ocr"
+WebSocketId: <0.831.0>
+SessionId  : <<"76dc691752b73bfd5bee03deb5bae61ff20577cc">>
+Message    : <<"123">>
+State    : {state,{dict,0,16,16,8,80,48,{[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]},{{[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]}}},{dict,0,16,16,8,80,48,{[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]},{{[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]}}}}
+** Stacktrace: [{lager,trace,["Retrieved stored pids is ~p",[[]]],[]},{zdft_ocr_websocket,handle_incoming,5,[{file,"/home/jackie/Erlang/projects/zdft/src/websocket/zdft_ocr_websocket.erl"},{line,57}]},{boss_service_worker,handle_cast,2,[{file,"src/boss/boss_service_worker.erl"},{line,175}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,607}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,239}]}]
+
+
+2013-04-29 22:42:59.086 [error] <0.839.0> gen_server zdft_ocr_websocket terminated with reason: bad return value: ok
+2013-04-29 22:42:59.092 [error] <0.839.0> CRASH REPORT Process <0.839.0> with 0 neighbours exited with reason: bad return value: ok in gen_server:terminate/6 line 747
+2013-04-29 22:42:59.107 [error] <0.131.0> Supervisor boss_service_sup had child zdft_ocr_websocket started with boss_service_worker:start_link(zdft_ocr_websocket, <<"/websocket/ocr">>) at <0.839.0> exit with reason bad return value: ok in context child_terminated
+2013-04-30 10:31:15.813 [error] <0.77.0>@lager_handler_watcher:98 Lager fatally failed to install handler lager_console_backend into lager_event, NOT retrying: bad_log_level
+2013-04-30 21:59:14.428 [error] <0.352.0> ** Handler zdft_ocr_websocket terminating in handle_info/2
+   for the reason error:badarg
+** Stacktrace: [{zdft_ocr_websocket,handle_info,2,[{file,"/home/jackie/Erlang/projects/zdft/src/websocket/zdft_ocr_websocket.erl"},{line,76}]},{boss_service_worker,handle_info,2,[{file,"src/boss/boss_service_worker.erl"},{line,230}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,607}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,239}]}]
+
+
+2013-04-30 21:59:14.437 [error] <0.352.0> gen_server zdft_ocr_websocket terminated with reason: bad return value: ok
+2013-04-30 21:59:14.437 [error] <0.352.0> CRASH REPORT Process <0.352.0> with 0 neighbours exited with reason: bad return value: ok in gen_server:terminate/6 line 747
+2013-04-30 21:59:14.438 [error] <0.135.0> Supervisor {global,boss_service_sup} had child zdft_ocr_websocket started with boss_service_worker:start_link(zdft_ocr_websocket, <<"/websocket/ocr">>) at <0.352.0> exit with reason bad return value: ok in context child_terminated
+2013-04-30 22:00:27.112 [error] <0.431.0> ** Handler zdft_ocr_websocket terminating in handle_info/2
+   for the reason error:badarg
+** Stacktrace: [{zdft_ocr_websocket,handle_info,2,[{file,"/home/jackie/Erlang/projects/zdft/src/websocket/zdft_ocr_websocket.erl"},{line,76}]},{boss_service_worker,handle_info,2,[{file,"src/boss/boss_service_worker.erl"},{line,230}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,607}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,239}]}]
+
+
+2013-04-30 22:00:27.112 [error] <0.431.0> gen_server zdft_ocr_websocket terminated with reason: bad return value: ok
+2013-04-30 22:00:27.113 [error] <0.431.0> CRASH REPORT Process <0.431.0> with 0 neighbours exited with reason: bad return value: ok in gen_server:terminate/6 line 747
+2013-04-30 22:00:27.113 [error] <0.135.0> Supervisor {global,boss_service_sup} had child zdft_ocr_websocket started with boss_service_worker:start_link(zdft_ocr_websocket, <<"/websocket/ocr">>) at <0.431.0> exit with reason bad return value: ok in context child_terminated
+2013-04-30 22:08:52.070 [error] <0.439.0> ** Handler zdft_ocr_websocket terminating in handle_info/2
+   for the reason error:badarg
+** Stacktrace: [{zdft_ocr_websocket,handle_info,2,[{file,"/home/jackie/Erlang/projects/zdft/src/websocket/zdft_ocr_websocket.erl"},{line,77}]},{boss_service_worker,handle_info,2,[{file,"src/boss/boss_service_worker.erl"},{line,230}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,607}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,239}]}]
+
+
+2013-04-30 22:08:52.070 [error] <0.439.0> gen_server zdft_ocr_websocket terminated with reason: bad return value: ok
+2013-04-30 22:08:52.070 [error] <0.439.0> CRASH REPORT Process <0.439.0> with 0 neighbours exited with reason: bad return value: ok in gen_server:terminate/6 line 747
+2013-04-30 22:08:52.071 [error] <0.135.0> Supervisor {global,boss_service_sup} had child zdft_ocr_websocket started with boss_service_worker:start_link(zdft_ocr_websocket, <<"/websocket/ocr">>) at <0.439.0> exit with reason bad return value: ok in context child_terminated
+2013-04-30 22:09:14.580 [error] <0.77.0>@lager_handler_watcher:98 Lager fatally failed to install handler lager_console_backend into lager_event, NOT retrying: bad_log_level
+2013-04-30 22:09:23.537 [error] <0.360.0> {function_clause,[{zdft_ocr_controller,parse,['GET',[],{zdft_ocr_controller,{simple_bridge_request_wrapper,mochiweb_request_bridge,{mochicow_request,#Port<0.11329>,'GET',"/ocr/parse",{1,1},{8,{"host",{"host","localhost:8001"},{"connection",{"connection","keep-alive"},{"accept",{"accept","text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8"},nil,{"accept-encoding",{"accept-encoding","gzip,deflate,sdch"},{"accept-charset",{"accept-charset","ISO-8859-1,utf-8;q=0.7,*;q=0.3"},nil,nil},{"accept-language",{"accept-language","en-US,en;q=0.8"},nil,nil}}},{"cookie",{"cookie","_boss_session=f25bffa5ec5f6e1be2cea6e4760bdb37720b4d7a"},nil,nil}},{"user-agent",{"user-agent","Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.31 (KHTML, like Gecko) Chrome/26.0.1410.63 Safari/537.31"},nil,nil}}},<<>>},false,[],[],none}}],[{file,"/home/jackie/Erlang/projects/zdft/src/controller/zdft_ocr_controller.erl"},{line,12}]},{boss_web_controller,execute_action,5,[{file,"src/boss/boss_web_controller.erl"},{line,828}]},{boss_web_controller,process_dynamic_request,5,[{file,"src/boss/boss_web_controller.erl"},{line,535}]},{boss_web_controller,process_request,5,[{file,"src/boss/boss_web_controller.erl"},{line,524}]},{timer,tc,3,[{file,"timer.erl"},{line,194}]},{boss_web_controller,build_dynamic_response,4,[{file,"src/boss/boss_web_controller.erl"},{line,454}]},{mochicow_upgrade,upgrade,4,[{file,"src/mochicow_upgrade.erl"},{line,72}]},{cowboy_protocol,execute,4,[{file,"src/cowboy_protocol.erl"},{line,514}]}]}
+2013-04-30 22:09:23.542 [error] <0.360.0> GET /ocr/parse [zdft] 500 34ms
+2013-04-30 22:10:49.254 [error] <0.352.0> ** Handler zdft_ocr_websocket terminating in handle_info/2
+   for the reason error:badarg
+** Stacktrace: [{zdft_ocr_websocket,handle_info,2,[{file,"/home/jackie/Erlang/projects/zdft/src/websocket/zdft_ocr_websocket.erl"},{line,77}]},{boss_service_worker,handle_info,2,[{file,"src/boss/boss_service_worker.erl"},{line,230}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,607}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,239}]}]
+
+
+2013-04-30 22:10:49.254 [error] <0.352.0> gen_server zdft_ocr_websocket terminated with reason: bad return value: ok
+2013-04-30 22:10:49.254 [error] <0.352.0> CRASH REPORT Process <0.352.0> with 0 neighbours exited with reason: bad return value: ok in gen_server:terminate/6 line 747
+2013-04-30 22:10:49.255 [error] <0.135.0> Supervisor {global,boss_service_sup} had child zdft_ocr_websocket started with boss_service_worker:start_link(zdft_ocr_websocket, <<"/websocket/ocr">>) at <0.352.0> exit with reason bad return value: ok in context child_terminated
+2013-04-30 22:14:26.058 [error] <0.378.0> ** Handler zdft_ocr_websocket terminating in handle_info/2
+   for the reason error:badarg
+** Stacktrace: [{zdft_ocr_websocket,handle_info,2,[{file,"/home/jackie/Erlang/projects/zdft/src/websocket/zdft_ocr_websocket.erl"},{line,78}]},{boss_service_worker,handle_info,2,[{file,"src/boss/boss_service_worker.erl"},{line,230}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,607}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,239}]}]
+
+
+2013-04-30 22:14:26.058 [error] <0.378.0> gen_server zdft_ocr_websocket terminated with reason: bad return value: ok
+2013-04-30 22:14:26.059 [error] <0.378.0> CRASH REPORT Process <0.378.0> with 0 neighbours exited with reason: bad return value: ok in gen_server:terminate/6 line 747
+2013-04-30 22:14:26.059 [error] <0.135.0> Supervisor {global,boss_service_sup} had child zdft_ocr_websocket started with boss_service_worker:start_link(zdft_ocr_websocket, <<"/websocket/ocr">>) at <0.378.0> exit with reason bad return value: ok in context child_terminated
+2013-04-30 22:17:52.293 [error] <0.390.0> ** Handler zdft_ocr_websocket terminating in handle_info/2
+   for the reason error:badarg
+** Stacktrace: [{zdft_ocr_websocket,handle_info,2,[{file,"/home/jackie/Erlang/projects/zdft/src/websocket/zdft_ocr_websocket.erl"},{line,78}]},{boss_service_worker,handle_info,2,[{file,"src/boss/boss_service_worker.erl"},{line,230}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,607}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,239}]}]
+
+
+2013-04-30 22:17:52.293 [error] <0.390.0> gen_server zdft_ocr_websocket terminated with reason: bad return value: ok
+2013-04-30 22:17:52.293 [error] <0.390.0> CRASH REPORT Process <0.390.0> with 0 neighbours exited with reason: bad return value: ok in gen_server:terminate/6 line 747
+2013-04-30 22:17:52.294 [error] <0.135.0> Supervisor {global,boss_service_sup} had child zdft_ocr_websocket started with boss_service_worker:start_link(zdft_ocr_websocket, <<"/websocket/ocr">>) at <0.390.0> exit with reason bad return value: ok in context child_terminated
+2013-04-30 22:18:41.195 [error] <0.399.0> ** Handler zdft_ocr_websocket terminating in handle_info/2
+   for the reason error:badarg
+** Stacktrace: [{zdft_ocr_websocket,handle_info,2,[{file,"/home/jackie/Erlang/projects/zdft/src/websocket/zdft_ocr_websocket.erl"},{line,79}]},{boss_service_worker,handle_info,2,[{file,"src/boss/boss_service_worker.erl"},{line,230}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,607}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,239}]}]
+
+
+2013-04-30 22:18:41.195 [error] <0.399.0> gen_server zdft_ocr_websocket terminated with reason: bad return value: ok
+2013-04-30 22:18:41.196 [error] <0.399.0> CRASH REPORT Process <0.399.0> with 0 neighbours exited with reason: bad return value: ok in gen_server:terminate/6 line 747
+2013-04-30 22:18:41.196 [error] <0.135.0> Supervisor {global,boss_service_sup} had child zdft_ocr_websocket started with boss_service_worker:start_link(zdft_ocr_websocket, <<"/websocket/ocr">>) at <0.399.0> exit with reason bad return value: ok in context child_terminated
+2013-04-30 22:18:52.294 [error] emulator Error in process <0.391.0> on node 'zdft@localhost' with exit value: {{case_clause,closed},[{cowboy_protocol,execute,4,[{file,"src/cowboy_protocol.erl"},{line,514}]}]}
+
+
+2013-04-30 22:18:52.295 [error] <0.148.0> Supervisor {<0.148.0>,ranch_conns_sup} had child ranch_conns_sup started with {ranch_conns_sup,start_protocol,undefined} at <0.391.0> exit with reason no case clause matching closed in cowboy_protocol:execute/4 line 514 in context child_terminated
+2013-04-30 22:42:58.645 [error] <0.408.0> ** Boss Service Handler zdft_ocr_websocket terminating in join/0
+   for the reason error:{badmatch,{state,{dict,0,16,16,8,80,48,{[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]},{{[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]}}},{dict,0,16,16,8,80,48,{[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]},{{[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]}}}}}
+ServiceUrl: "/websocket/ocr"
+WebSocketId: <0.441.0>
+SessionId  : <<"e279f5526fd327d5977c116c30766982f0f57842">>
+State    : {state,{dict,0,16,16,8,80,48,{[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]},{{[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]}}},{dict,0,16,16,8,80,48,{[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]},{{[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]}}}}
+** Stacktrace: [{zdft_ocr_websocket,handle_join,4,[{file,"/home/jackie/Erlang/projects/zdft/src/websocket/zdft_ocr_websocket.erl"},{line,36}]},{boss_service_worker,handle_call,3,[{file,"src/boss/boss_service_worker.erl"},{line,98}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,588}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,239}]}]
+
+
+2013-04-30 22:42:58.647 [error] <0.408.0> gen_server zdft_ocr_websocket terminated with reason: bad return value: ok
+2013-04-30 22:42:58.647 [error] <0.408.0> CRASH REPORT Process <0.408.0> with 0 neighbours exited with reason: bad return value: ok in gen_server:terminate/6 line 747
+2013-04-30 22:42:58.650 [error] <0.135.0> Supervisor {global,boss_service_sup} had child zdft_ocr_websocket started with boss_service_worker:start_link(zdft_ocr_websocket, <<"/websocket/ocr">>) at <0.408.0> exit with reason bad return value: ok in context child_terminated
+2013-04-30 22:44:05.334 [error] <0.439.0> {function_clause,[{zdft_ocr_controller,parse,['GET',[],{zdft_ocr_controller,{simple_bridge_request_wrapper,mochiweb_request_bridge,{mochicow_request,#Port<0.12624>,'GET',"/ocr/parse",{1,1},{8,{"host",{"host","localhost:8001"},{"connection",{"connection","keep-alive"},{"accept",{"accept","text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8"},nil,{"accept-encoding",{"accept-encoding","gzip,deflate,sdch"},{"accept-charset",{"accept-charset","ISO-8859-1,utf-8;q=0.7,*;q=0.3"},nil,nil},{"accept-language",{"accept-language","en-US,en;q=0.8"},nil,nil}}},{"cookie",{"cookie","_boss_session=e279f5526fd327d5977c116c30766982f0f57842"},nil,nil}},{"user-agent",{"user-agent","Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.31 (KHTML, like Gecko) Chrome/26.0.1410.63 Safari/537.31"},nil,nil}}},<<>>},false,[],[],none}}],[{file,"/home/jackie/Erlang/projects/zdft/src/controller/zdft_ocr_controller.erl"},{line,12}]},{boss_web_controller,execute_action,5,[{file,"src/boss/boss_web_controller.erl"},{line,828}]},{boss_web_controller,process_dynamic_request,5,[{file,"src/boss/boss_web_controller.erl"},{line,535}]},{boss_web_controller,process_request,5,[{file,"src/boss/boss_web_controller.erl"},{line,524}]},{timer,tc,3,[{file,"timer.erl"},{line,194}]},{boss_web_controller,build_dynamic_response,4,[{file,"src/boss/boss_web_controller.erl"},{line,454}]},{mochicow_upgrade,upgrade,4,[{file,"src/mochicow_upgrade.erl"},{line,72}]},{cowboy_protocol,execute,4,[{file,"src/cowboy_protocol.erl"},{line,514}]}]}
+2013-04-30 22:44:05.345 [error] <0.439.0> GET /ocr/parse [zdft] 500 90ms

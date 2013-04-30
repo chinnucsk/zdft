@@ -4,6 +4,8 @@
 -module(zdft_ocr_websocket).
 -behaviour(boss_service_handler).
 
+%% users is a dict, store WebsocketId <-->SessionId
+%% pids is a dict, store WebsocketId <--> Pid (This Pid is that sending messages to mine directly)
 -record(state,{users}).
 
 %% API
@@ -30,8 +32,9 @@ init() ->
 %% to handle a connection to your service
 %%--------------------------------------------------------------------
 handle_join(_ServiceName, WebSocketId, SessionId, State) ->
+	io:fwrite("a client joined"),
     #state{users=Users} = State,
-    {reply, ok, #state{users=dict:store(WebSocketId,SessionId,Users)}}.
+    {reply, ok, State#state{users=dict:store(WebSocketId,SessionId,Users)}}.
 %%--------------------------------------------------------------------
 
 
@@ -40,7 +43,7 @@ handle_join(_ServiceName, WebSocketId, SessionId, State) ->
 %%--------------------------------------------------------------------
 handle_close(ServiceName, WebSocketId, _SessionId, State) ->
     #state{users=Users} = State,
-    {reply, ok, #state{users=dict:erase(WebSocketId,Users)}}.
+    {reply, ok, State#state{users=dict:erase(WebSocketId,Users)}}.
 %%--------------------------------------------------------------------
 
 
@@ -49,16 +52,31 @@ handle_close(ServiceName, WebSocketId, _SessionId, State) ->
 %% here is simple copy to all
 %%--------------------------------------------------------------------
 handle_incoming(_ServiceName, WebSocketId,_SessionId, Message, State) ->
-    %% Message is json
-	%% get pid and ocr text
-    Json = jsx:parse(Message),
-	Pid = proplists:get_value(Json, pid),
-	Text = proplists:get_value(Json, text),
-	list_to_pid(Pid) ! {ok, Text},
-	{reply, ok, State}.
+    %%io:format("Received Message:~p", [Message]),
+	Json = jsx:decode(Message),
+	Pid_dec = proplists:get_value(<<"pid">>, Json),
+	Pid = list_to_pid(Pid_dec),
+	Code = proplists:get_value(<<"code">>, Json),
+	io:format("Sending response:~p back to ~p", [Code, Pid]),
+	Pid ! {ok, Code},				 
+    {noreply, State}.
+	
 %%--------------------------------------------------------------------
 
 
+handle_info({parse, {Pid, Base64Img}}, State) ->
+    #state{users=Users} = State,
+	WebSockets = dict:fetch_keys(Users),
+	case WebSockets of
+		[] ->
+			{noreply, State};
+		[WebSocketId|_Tail] ->
+			io:format("To save pid:~p", [Pid]),
+			Props = [{<<"img">>, Base64Img}, {<<"pid">>, pid_to_list(Pid)}],
+			Json = jsx:encode(Props),
+			WebSocketId ! {text, Json},
+			{noreply, State}
+	end;
 handle_info(ping, State) ->
 	error_logger:info_msg("pong:~p~n", [now()]),
 	{noreply, State};
@@ -67,14 +85,9 @@ handle_info(state, State) ->
 	All = dict:fetch_keys(Users),
 	error_logger:info_msg("state:~p~n", [All]),
   {noreply, State};
-handle_info({parse, {Pid, Base64Img}, State) ->
-	#state{users=Users} = State,
-	    Fun = fun(X) when is_pid(X)-> X ! {pid_to_list(Pid), Base64Img} end,
-	    All = dict:fetch_keys(Users),
-	    [Fun(E) || E <- All, E /= WebSocketId],
-  {noreply, State};
 handle_info(_Info, State) ->
   {noreply, State}.
+
 
 terminate(_Reason, _State) ->
    %call boss_service:unregister(?SERVER),
