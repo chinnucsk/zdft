@@ -3,7 +3,7 @@
 
 -module(zdft_ocr_websocket).
 -behaviour(boss_service_handler).
-
+-compile([{parse_transform, lager_transform}]).
 %% users is a dict, store WebsocketId <-->SessionId
 %% pids is a dict, store WebsocketId <--> Pid (This Pid is that sending messages to mine directly)
 -record(state,{users}).
@@ -24,7 +24,8 @@
 %% Description: Initiates the server
 %%--------------------------------------------------------------------
 init() ->
-  io:format("~p (~p) starting...~n", [?MODULE, self()]),
+  io:format("~p ~p(~p) starting...~n", [?MODULE, ?LINE, self()]),
+  lager:info("init~p", [?MODULE, ?LINE]),
   %timer:send_interval(1000, ping),
   {ok, #state{users=dict:new()}}.
 

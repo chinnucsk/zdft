@@ -1,0 +1,27 @@
+  <!DOCTYPE html> 
+   <html lang="en"> 
+   <head> 
+     <meta charset="utf-8"> 
+     <title>jQuery demo</title>
+     <script src="/static/js/jquery.min.1.6.2.js"></script> 
+ <script> 
+       $(document).ready(function(){  // almost all the functions in this method
+         $(".like").click(function(event){  
+           alert("As you can see, the link no longer took you to jquery.com");  
+           event.preventDefault();  
+         });
+        
+         $(".tag").click(function(){alert("Tag is clicked");});
+         
+         $(".button").click(function(){alert("Button is clicked");});
+
+       });  
+     </script> 
+   </head> 
+   <body> 
+     <a href="http://jquery.com/" class="like">Like</a> 
+     <a href="" class="tag">Tag</a>
+     <button class="button">Click me</button>
+     <div></div>
+   </body> 
+   </html> 

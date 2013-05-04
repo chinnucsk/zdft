@@ -1,0 +1,157 @@
+  <!DOCTYPE html> 
+   <html lang="en"> 
+   <head> 
+     <meta charset="utf-8"> 
+     <title>jQuery demo</title>
+     <link href="/static/css/test.css" rel="stylesheet" type="text/css" />
+
+     <script src="/static/js/jquery.min.1.6.2.js"></script>
+     <script src="/static/js/jquery.masonry.min.js"></script>
+     
+ <script> 
+       $(document).ready(function(){  // almost all the functions in this method
+         alert("document is ready");
+
+         
+  		 $(".like").click(function(event){  
+           alert("As you can see, the link no longer took you to jquery.com");  
+           event.preventDefault();  
+         });
+             
+				       
+       $(".tag").click(function(event){
+                 alert("Tag is clicked");
+                 event.preventDefault();  
+
+                 $.ajax({
+                       type: "get",
+                       url: "/home/ajax/tag/like",
+                       dataType: "json",
+                       success:function(json){
+                       						
+                                   alert(json.tag);
+                                   },
+                       error:function(msg) { alert("error:"+msg); }
+
+                         }); 
+                 }); 
+                 
+       $(".button").click(function(event){
+                 alert("Tag is clicked");
+                 event.preventDefault();  
+
+                 $.ajax({
+                       type: "get",
+                       url: "/home/ajax/1234",
+                       dataType: "json",
+                       success:function(json){
+                       						
+                                   alert(json.id);
+                                   },
+                       error:function(msg) { alert("error:"+msg); }
+
+                         }); 
+                 }); 
+       
+       $("#button1").click(function(event){
+                 alert("Tag is clicked");
+                 event.preventDefault();  
+
+                 $.ajax({
+                       type: "post",
+                       url: "/home/ajax/",
+                       dataType: "json",
+                       data: {tag:"like"},
+                       success:function(json){
+                       						
+                                   alert(json.tag);
+                                   },
+                       error:function(msg) { alert("error:"+msg); }
+
+                         }); 
+                 });
+                 
+       var $container = $('#container');          
+       $container.imageLoaded(function(){
+       		$container.masonry({
+            singleMode: true,
+            columnWidth: 240,
+            itemSelector: '.item'
+                      });         
+             });
+       
+       });  
+     </script> 
+   </head> 
+   <body> 
+     <a href="http://jquery.com/" class="like">Like</a> 
+     <a href="" class="tag">Tag</a>
+     <button class="button">Click me</button>
+     <button id="button1">Button 1</button>
+     
+     <div id="container">
+     		<div class="item">item1
+     			<a href=""><img src="/static/image/1.jpg" /></a>
+     		</div>
+  	    <div class="item">item2
+     			<a href=""><img src="/static/image/2.jpg" /></a>
+     		</div>
+     		<div class="item">item3
+     			<a href=""><img src="/static/image/3.jpg" /></a>
+     		</div>
+     		<div class="item">item4
+     			<a href=""><img src="/static/image/4.jpg" /></a>
+     		</div>
+     		<div class="item">item5
+     			<a href=""><img src="/static/image/5.jpg" /></a>
+     		</div>
+        <div class="item">item6
+     			<a href=""><img src="/static/image/6.jpg" /></a>
+     		</div>
+  	    <div class="item">item7
+     			<a href=""><img src="/static/image/7.jpg" /></a>
+     		</div>
+     		<div class="item">item8
+     			<a href=""><img src="/static/image/8.jpg" /></a>
+     		</div>
+     		<div class="item">item9
+     			<a href=""><img src="/static/image/9.jpg" /></a>
+     		</div>
+     		<div class="item">item10
+     			<a href=""><img src="/static/image/10.jpg" /></a>
+        </div>
+        
+        <div class="item">item1
+     			<a href=""><img src="/static/image/1.jpg" /></a>
+     		</div>
+  	    <div class="item">item2
+     			<a href=""><img src="/static/image/2.jpg" /></a>
+     		</div>
+     		<div class="item">item3
+     			<a href=""><img src="/static/image/3.jpg" /></a>
+     		</div>
+     		<div class="item">item4
+     			<a href=""><img src="/static/image/4.jpg" /></a>
+     		</div>
+     		<div class="item">item5
+     			<a href=""><img src="/static/image/5.jpg" /></a>
+     		</div>
+        <div class="item">item6
+     			<a href=""><img src="/static/image/6.jpg" /></a>
+     		</div>
+  	    <div class="item">item7
+     			<a href=""><img src="/static/image/7.jpg" /></a>
+     		</div>
+     		<div class="item">item8
+     			<a href=""><img src="/static/image/8.jpg" /></a>
+     		</div>
+     		<div class="item">item9
+     			<a href=""><img src="/static/image/9.jpg" /></a>
+     		</div>
+     		<div class="item">item10
+     			<a href=""><img src="/static/image/10.jpg" /></a>
+     		</div>
+     </div>
+     
+   </body> 
+   </html> 

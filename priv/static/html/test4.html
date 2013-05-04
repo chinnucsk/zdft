@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Chat - 4</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<script src="/static/js/jquery.min.1.6.2.js" ></script>
+		<script type="text/javascript" src="/static/js/jquery.stream-1.2.my.js" ></script>
+		<script type="text/javascript">
+			$(function() {
+				alert("ready go");
+				$.stream("/comet/stat/", {
+					type : "http",
+					dataType : "json",
+					message : function(event, stream) {
+						alert(event.data.likeCount);
+					},
+					error : function() {
+						alert("comet error");
+					}
+				});
+
+			});
+
+		</script>
+	</head>
+	<body>
+		Test <div id=#data></div>
+	</body>
+</html>

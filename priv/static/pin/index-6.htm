@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Pinterest / Careers</title>
+        
+        <link rel="icon" href="http://passets-cdn.pinterest.com/images/favicon.png" type="image/x-icon" />
+        <link rel="apple-touch-icon-precomposed" href="http://passets-cdn.pinterest.com/images/ipad_touch_icon.png" />
+        <link rel="stylesheet" href="pinboard_842b6c5d.css" tppabs="http://passets-cdn.pinterest.com/css/pinboard_842b6c5d.css" type="text/css" media="all"/>
+        <!--[if (gt IE 6)&(lt IE 9)]><link rel="stylesheet" href="ie7-and-up_fa603afa.css" tppabs="http://passets-cdn.pinterest.com/css/ie7-and-up_fa603afa.css" type="text/css" media="all" /><![endif]-->
+        <script type="text/javascript">var _sf_startpt=(new Date()).getTime()</script>
+        <script type="text/javascript" src="jquery.min.js" tppabs="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+        <script src="bundle_pin_4c5e5aaa.js" tppabs="http://passets-cdn.pinterest.com/js/bundle_pin_4c5e5aaa.js" type="text/javascript" charset=utf-8"utf-8"></script>
+        
+        
+    <link rel="stylesheet" href="about_dc0f3cd9.css" tppabs="http://passets-cdn.pinterest.com/css/about_dc0f3cd9.css" type="text/css" media="all">
+    <script type="text/javascript">
+        $(document).ready(function(){$('#AboutLeft .selected').addClass('loaded');});
+  	</script>
+  	
+<script type="text/javascript" src="jquery.scrollTo.js" tppabs="http://passets-cdn.pinterest.com/js/jquery.scrollTo.js"></script>
+<script type="text/javascript" src="jquery.localscroll-min.js" tppabs="http://passets-cdn.pinterest.com/js/jquery.localscroll-min.js"></script>
+<script type="text/javascript">
+    <!--//--><![CDATA[//><!--
+        var images = new Array()
+        function preload() {
+            for (i = 0; i < preload.arguments.length; i++) {
+                images[i] = new Image()
+                images[i].src = preload.arguments[i]
+            }
+        }
+        preload(
+            media_url + "images/about/jobs/Jobs01.png",
+            media_url + "images/about/jobs/Jobs02.png",
+            media_url + "images/about/jobs/Jobs03.png",
+            media_url + "images/about/jobs/Jobs04.png",
+            media_url + "images/about/jobs/Jobs05.png",
+            media_url + "images/about/jobs/Jobs06.png",
+            media_url + "images/about/jobs/Jobs07.png",
+            media_url + "images/about/jobs/Jobs08.png"
+        )
+    //--><!]]>
+
+    $('document').ready(function() {
+        var visible;
+        var defaultPosition = "lead_engineer";
+        var displayAll = true;
+                
+        if (!displayAll) {
+            $('.images li:first-child img').addClass('pressed');
+    
+            if (window.location.hash) {
+                if ($('.position[data-position="' + window.location.hash.substring(1) +'"]')) {
+                    $('.position[data-position="' + window.location.hash.substring(1) + '"]').show();
+                    $('.positions a[data-position="' + window.location.hash.substring(1) + '"]').addClass('pressed');
+                    window.location.hash = window.location.hash;
+                    visible = window.location.hash.substring(1);
+                }
+            } else {
+                $('.position[data-position="' + defaultPosition +'"]').show();
+                $('.positions a[data-position="' + defaultPosition+ '"]').addClass('pressed');
+                visible = defaultPosition;
+            }
+            
+            $('.positions a').click(function() {
+                $('.pressed').removeClass('pressed');
+                $(this).addClass('pressed');
+    
+                if (visible != '') {
+                    $('.position[data-position="' + visible + '"]').hide();
+                }
+    
+                var position = $(this).attr('data-position');
+                $('.position[data-position="' + position + '"]').fadeIn(250);
+    
+                window.location.hash = '#' + position;
+                visible = position;
+    
+                return false;
+            });
+        } else {
+            $('.positions a').each(function() {
+                var position = '#' + $(this).attr('data-position');
+                $(this).attr('href', position);
+            });
+            
+            $.localScroll();
+            
+            $('.position').each(function(i) {
+                if (i > 0) 
+                    $(this).before('<img class="jobs_rule clear" id="' + $(this).attr('data-position') + '" src="Rule.png"/*tpa=http://passets-cdn.pinterest.com/images/about/Rule.png*/>');
+                
+                $(this).css({
+                    'margin-bottom': 0,
+                    'height'       : 'auto',
+                });
+                
+                $(this).show();
+            });
+            
+            $('.position:last-child').css('margin-bottom', '60px');
+        }
+        
+        $('.images li img.thumb:not(.grayscale)').live('click', function() {
+            var src = $(this).attr('src');
+            var index = src.indexOf('.th');
+
+            src = src.substring(0, index) + ".png";
+
+            $(this).parents('.images').find('.pressed').removeClass('pressed');
+            $(this).siblings('img').addClass('pressed');
+
+            var eyecatch = $('.eyecatch');
+            eyecatch.after('<img class="eyecatch" src="' + src + '" style="display: none;">');
+            eyecatch.fadeOut(500, function() {
+                eyecatch.remove();
+            });
+            $('.eyecatch').fadeIn(500);
+
+            return false;
+        });
+    });
+
+    // On window load. This waits until images have loaded which is essential
+    $(window).load(function(){
+
+        // Fade in images so there isn't a color "pop" document load and then on window load
+        $(".images li img").fadeIn(500);
+
+        // Fade image
+        $('img.thumb').mouseover(function(){
+            $(this).parent().find('img:first').stop().animate({opacity:1}, 250);
+        });
+
+        $('img.thumb').mouseout(function(){
+            $(this).stop().animate({opacity:0}, 250);
+        });
+    });
+
+    // Grayscale w canvas method
+    function grayscale(src) {
+        var canvas = document.createElement('canvas');
+        var ctx = canvas.getContext('2d');
+        var imgObj = new Image();
+        imgObj.src = src;
+        canvas.width = imgObj.width;
+        canvas.height = imgObj.height;
+        ctx.drawImage(imgObj, 0, 0); 
+        var imgPixels = ctx.getImageData(0, 0, canvas.width, canvas.height);
+        for(var y = 0; y < imgPixels.height; y++) {
+            for(var x = 0; x < imgPixels.width; x++) {
+                var i = (y * 4) * imgPixels.width + x * 4;
+                var avg = (imgPixels.data[i] + imgPixels.data[i + 1] + imgPixels.data[i + 2]) / 3;
+                imgPixels.data[i] = avg; 
+                imgPixels.data[i + 1] = avg; 
+                imgPixels.data[i + 2] = avg;
+            }
+        }
+        ctx.putImageData(imgPixels, 0, 0, 0, 0, imgPixels.width, imgPixels.height);
+        return canvas.toDataURL();
+    }
+
+</script>
+
+
+    </head>
+    
+<body>
+
+    <div id="Header">
+    <div class="FixedContainer HeaderContainer">
+        
+<a href="index-1.htm" tppabs="http://pinterest.com/" id="Pinterest"><img src="LogoRed.png" tppabs="http://passets-cdn.pinterest.com/images/LogoRed.png" width="100" height="26" alt="Pinterest Logo" /></a>
+
+
+<ul id="Navigation">
+    
+    <li>
+        <a href="index-2.htm" tppabs="http://pinterest.com/about/" class="nav">About<span></span></a>
+        <ul>
+            <li><a href="index-3.htm" tppabs="http://pinterest.com/about/help/">Help</a></li>
+            <li><a href="index-4.htm" tppabs="http://pinterest.com/about/goodies/">Pin It Button</a></li>
+            <li class="beforeDivider"><a href="index-5.htm" tppabs="http://pinterest.com/about/copyright/">Copyright</a></li>
+            <li class="divider"><a href="index-6.htm" tppabs="http://pinterest.com/about/careers/">Careers</a></li>
+            <li><a href="index-7.htm" tppabs="http://pinterest.com/about/team/">Team</a></li>
+            <li><a href="javascript:if(confirm('http://blog.pinterest.com/  \n\nThis file was not retrieved by Teleport Pro, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?'))window.location='http://blog.pinterest.com/'" tppabs="http://blog.pinterest.com/">Blog</a></li>
+        </ul>
+    </li>
+    
+        <li><a href="javascript:if(confirm('http://pinterest.com/login/  \n\nThis file was not retrieved by Teleport Pro, because it is addressed on a path excluded by the site\'s Robot Exclusion parameters.  (Teleport Pro\'s compliance with this system is optional; see the Project Properties, Netiquette page.)  \n\nDo you want to open it from the server?'))window.location='http://pinterest.com/login/'" tppabs="http://pinterest.com/login/" class="nav LoginNav">Login</a></li>
+    
+</ul>
+
+
+
+<div id="Search" >
+    <form action="http://pinterest.com/search/" method="get" class="text">
+        <input type="text" id="query" name="q" size="27" value="Search"/>
+        <a id="query_button" href="#" class="lg"><img src="search.gif" tppabs="http://passets-cdn.pinterest.com/images/search.gif" alt="" /></a>
+    </form>
+</div>
+    </div>
+</div>
+
+    
+
+    <div id="AboutContainer">
+        <div id="AboutContent">
+            <div id="AboutLeft">
+                <ul>
+                    <li>
+                        <a href="index-2.htm" tppabs="http://pinterest.com/about/" >
+                            <span>What is Pinterest?</span>
+                            <span class="pointer normal"></span>
+                            <span class="pointer hover"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:if(confirm('http://pinterest.com/about/etiquette/  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?'))window.location='http://pinterest.com/about/etiquette/'" tppabs="http://pinterest.com/about/etiquette/" >
+                            <span>Pin Etiquette</span>
+                            <span class="pointer normal"></span>
+                            <span class="pointer hover"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="index-3.htm" tppabs="http://pinterest.com/about/help/" >
+                            <span>Help</span>
+                            <span class="pointer normal"></span>
+                            <span class="pointer hover"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="index-4.htm" tppabs="http://pinterest.com/about/goodies/" >
+                            <span>Goodies</span>
+                            <span class="pointer normal"></span>
+                            <span class="pointer hover"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="index-6.htm" tppabs="http://pinterest.com/about/careers/" class="selected">
+                            <span>Careers</span>
+                            <span class="pointer normal"></span>
+                            <span class="pointer hover"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:if(confirm('http://pinterest.com/about/press/  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?'))window.location='http://pinterest.com/about/press/'" tppabs="http://pinterest.com/about/press/" >
+                            <span>Press</span>
+                            <span class="pointer normal"></span>
+                            <span class="pointer hover"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="index-7.htm" tppabs="http://pinterest.com/about/team/" >
+                            <span>Team</span>
+                            <span class="pointer normal"></span>
+                            <span class="pointer hover"></span>
+                        </a>
+                    </li>
+                </ul>
+                <img src="NavRule.png" tppabs="http://passets-cdn.pinterest.com/images/about/NavRule.png" alt="Navigation Rule" id="NavRule" />
+                <ul>
+                    <li>
+                        <a href="javascript:if(confirm('http://pinterest.com/about/privacy/  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?'))window.location='http://pinterest.com/about/privacy/'" tppabs="http://pinterest.com/about/privacy/" >
+                            <span>Privacy</span>
+                            <span class="pointer normal"></span>
+                            <span class="pointer hover"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="index-5.htm" tppabs="http://pinterest.com/about/copyright/" >
+                            <span>Copyright</span>
+                            <span class="pointer normal"></span>
+                            <span class="pointer hover"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:if(confirm('http://pinterest.com/about/terms/  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?'))window.location='http://pinterest.com/about/terms/'" tppabs="http://pinterest.com/about/terms/" >
+                            <span>Terms</span>
+                            <span class="pointer normal"></span>
+                            <span class="pointer hover"></span>
+                        </a>
+                    </li>
+                </ul>
+            </div><!-- #AboutLeft -->
+
+            <div id="AboutRight">
+                
+
+<h1>
+
+    <div class="actions">
+
+        <div class="action">
+            <div id="fb-root"></div>
+            <script src="all.js#xfbml=1" tppabs="http://connect.facebook.net/en_US/all.js#xfbml=1" type="text/javascript"></script>
+            <fb:send href="index-6.htm" tppabs="http://pinterest.com/about/careers/" font="arial"></fb:send>
+        </div>
+
+        <div class="action">
+            <a href="javascript:if(confirm('http://twitter.com/share  \n\nThis file was not retrieved by Teleport Pro, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?'))window.location='http://twitter.com/share'" tppabs="http://twitter.com/share" class="twitter-share-button" data-url="http://pinterest.com/about/careers/" data-text="One of my favorite websites, @Pinterest, is looking for a great engineer!" data-count="none">Tweet</a>
+            <script type="text/javascript" src="widgets.js" tppabs="http://platform.twitter.com/widgets.js" type="text/javascript"></script>
+        </div>
+
+    </div><!-- .actions -->
+
+    Careers
+
+</h1>
+
+<div class="image_container"><img alt="Work for Pinterest!" class="eyecatch" src="Jobs01.png" tppabs="http://passets-cdn.pinterest.com/images/about/jobs/Jobs01.png" /></div>
+
+<ul class="images">
+    <li>
+        <img class="thumb" src="Jobs01.th.png" tppabs="http://passets-cdn.pinterest.com/images/about/jobs/Jobs01.th.png" style="position: absolute; z-index: 998; opacity: 0;" />
+        <img class="thumb grayscale" src="Jobs01g.th.png" tppabs="http://passets-cdn.pinterest.com/images/about/jobs/Jobs01g.th.png" />
+    </li>
+
+    <li>
+        <img class="thumb" src="Jobs02.th.png" tppabs="http://passets-cdn.pinterest.com/images/about/jobs/Jobs02.th.png" style="position: absolute; z-index: 998; opacity: 0;" />
+        <img class="thumb grayscale" src="Jobs02g.th.png" tppabs="http://passets-cdn.pinterest.com/images/about/jobs/Jobs02g.th.png" />
+    </li>
+
+    <li>
+        <img class="thumb" src="Jobs08.th.png" tppabs="http://passets-cdn.pinterest.com/images/about/jobs/Jobs08.th.png" style="position: absolute; z-index: 998; opacity: 0;" />
+        <img class="thumb grayscale" src="Jobs08g.th.png" tppabs="http://passets-cdn.pinterest.com/images/about/jobs/Jobs08g.th.png" />
+    </li>
+
+    <li>
+        <img class="thumb" src="Jobs04.th.png" tppabs="http://passets-cdn.pinterest.com/images/about/jobs/Jobs04.th.png" style="position: absolute; z-index: 998; opacity: 0;" />
+        <img class="thumb grayscale" src="Jobs04g.th.png" tppabs="http://passets-cdn.pinterest.com/images/about/jobs/Jobs04g.th.png" />
+    </li>
+
+    <li>
+        <img class="thumb" src="Jobs07.th.png" tppabs="http://passets-cdn.pinterest.com/images/about/jobs/Jobs07.th.png" style="position: absolute; z-index: 998; opacity: 0;" />
+        <img class="thumb grayscale" src="Jobs07g.th.png" tppabs="http://passets-cdn.pinterest.com/images/about/jobs/Jobs07g.th.png" />
+    </li>
+
+    <li>
+        <img class="thumb" src="Jobs06.th.png" tppabs="http://passets-cdn.pinterest.com/images/about/jobs/Jobs06.th.png" style="position: absolute; z-index: 998; opacity: 0;" />
+        <img class="thumb grayscale" src="Jobs06g.th.png" tppabs="http://passets-cdn.pinterest.com/images/about/jobs/Jobs06g.th.png" />
+    </li>
+</ul>
+
+
+    <h2>Join a World-Class Product Team.</h2>
+    <p>
+        Pinterest is one of the fastest growing social services in the world. Our mission is to connect people through their common interests.<br /><br />
+        Every day, people use Pinterest to discover new recipes to cook, products to buy, and places to visit. Pinterest is <a href="javascript:if(confirm('http://twitter.com/  \n\nThis file was not retrieved by Teleport Pro, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?'))window.location='http://twitter.com/#%21/search/%22I%20love%20pinterest%22'" tppabs="http://twitter.com/#%21/search/%22I%20love%20pinterest%22">loved</a> by millions of regular people: school teachers, gardeners, techies...even our Moms!
+    </p>
+
+    <h2>Work & Benefits</h2>
+    <p>
+        Our team ships code quickly and iteratively. We care about details. We think design and community management are as important as great technology.<br /><br/>
+        Our goal is to empower every person at Pinterest to do their best work. This means working collaboratively, and giving every person ownership over an important part of our service.<br><br>
+        We value learning, and invite successful entrepreneurs from other companies to grab lunch with the team regularly. Other benefits include:
+    <p>
+
+    <ul class="grid">
+
+        <li>
+            <h3>Medical</h3>
+            <p>Comprehensive medical benefits.<br>We want you to be healthy!</p>
+        </li>
+
+        <li>
+            <h3>Equipment</h3>
+            <p>Whatever you need to be productive is what you should be using. Usually, that means lots of trips to the Apple Store.</p>
+        </li>
+
+        <li>
+            <h3>Salary & Equity</h3>
+            <p>Every employee is paid a competitive salary and given meaningful equity in the company.</p>
+        </li>
+
+        <li>
+            <h3>Location</h3>
+            <p>We are 2 blocks from the University Avenue Caltrain in Palo Alto, steps away from good food and coffee.</p>
+        </li>
+
+    </ul>
+
+    <div class="AboutRule clear"></div>
+
+    <ul class="positions">
+        <li><a href="#" data-position="software_engineer">Software Engineer</a></li>
+        <li><a href="#" data-position="product_designer">Product Designer</a></li>
+        <li><a href="#" data-position="search_and_data_mining_engineer">Search and Data Mining Engineer</a></li>
+        <li><a href="#" data-position="ios_engineer">iOS Engineer</a></li>
+        <li><a href="#" data-position="front_end_engineer">Front-End Engineer</a></li>
+        <!--<li><a href="#" data-position="head_of_recruiting">Head of Recruiting</a></li>-->
+    </ul>
+
+    <div class="position" data-position="software_engineer">
+        <h2>Software Engineer</h2>
+        <p>As a lead engineer, you will have a huge impact on how we design, build and deliver our service to millions of people. You should be a generalist and enjoy working across the software stack. Our current technologies include Python (Django), MySQL, Redis, Solr, and Hadoop. </p>
+        <p>We look for engineers who love finding efficient and thoughtful solutions to a variety of technical and product challenges. You should strive to write efficient, maintainable code and you should enjoy pushing code everyday. Sample projects include:</p>
+        <div class="small columns">
+            <h4>Search</h4>
+            <p>Design algorithms to return socially and thematically relevant content.</p>
+            <h4>API</h4>
+            <p>Build and maintain an API for third party developers.</p>
+            <h4>Recommendations</h4>
+            <p>Use MapReduce to recommend content to new users.</p>
+            <h4>Measurement</h4>
+            <p>Implement real-time measurement frameworks to help us evaluate new features.</p>
+            <h4>Speed &amp; Scale</h4>
+            <p>Improving site speed by implementing comprehensive caching and optimizing queries.</p>
+        </div><!-- .small columns -->
+        <p>To apply, send your resume and links to things you've built to <a href="mailto: careers@pinterest.com">careers@pinterest.com</a>.</p>
+    </div>
+
+    <div class="position" data-position="product_designer">
+        <h2>Product Designer</h2>
+        <p>You will be responsible for defining how people interact with Pinterest. We're looking for designers passionate about social product design - not just how Pinterest looks (although that counts too), but how people use Pinterest to connect with each other. Our product designers sit with engineers at the beginning of every new project. We care about how every little bit of an interaction feels, and you need to as well.</p>
+        <div class="small columns">
+            <h4>Communication</h4>
+            <p>You should be able to clearly articulate your design decisions.</p>
+            <h4>Execution</h4>
+            <p>Portfolio of design projects demonstrating outstanding product design skill.</p>
+            <h4>Self-Sufficiency</h4>
+            <p>The ability to implement what you design (javascript, css, html).</p>
+            <h4>Social</h4>
+            <p>Passion for social web applications and social design.</p>
+            <h4>Mobile</h4>
+            <p>Experience with mobile design is a plus.</p>
+            <h4>Learning</h4>
+            <p>Desire to better yourself as a product designer.</p>
+        </div><!-- .small columns -->
+        <p>To apply, send your resume and a link to your portfolio to <a href="mailto: careers@pinterest.com">careers@pinterest.com</a>.</p>
+    </div>
+
+    <div class="position" data-position="search_and_data_mining_engineer">
+        <h2>Search and Data Mining Engineer</h2>
+        <p>You will be responsible for mining our deeply linked data set connecting millions of people to the objects they love. Our data set gives us the opportunity to provide personal recommendations of unprecedented specificity and quality. Your work will help millions of people discover products, services and places they love.</p>
+        <div class="small columns">
+            <h4>Programming Fundamentals</h4>
+            <p>Proficiency in the programming language of your choice. Python preferred.</p>
+            <h4>Curiosity</h4>
+            <p>Boundless appetite to form hypotheses and run experiments on our expanding data set.</p>
+            <h4>Communication</h4>
+            <p>The ability to clearly articulate your hypotheses and findings.</p>
+            <h4>Education</h4>
+            <p>Minimum BA/BS degree in Math or Computer Science.</p>
+            <h4>Love of Data</h4>
+            <p>Strong interest in search engines, machine learning, recommendation systems, or social networks.</p>
+        </div><!-- .small columns -->
+        <p>To apply, send your resume to <a href="mailto: careers@pinterest.com">careers@pinterest.com</a>.</p>
+    </div>
+
+    <div class="position" data-position="ios_engineer">
+        <h2>iOS Engineer</h2>
+        <p>You will be responsible for bringing Pinterest to the iPhone and iPad. We think of iOS as a core platform at Pinterest. You will work closely with a team of experienced engineers and product designers to bring your vision for Pinterest on iOS to reality. This role requires experience with iOS and a strong understanding (and appreciation) of touch and gestural interfaces. Ideal candidates will have applications they have built as personal or professional projects.</p>
+        <p>To apply, send your resume and a link to apps you've built to <a href="mailto: careers@pinterest.com">careers@pinterest.com</a>.</p>
+    </div>
+
+    <div class="position" data-position="front_end_engineer">
+        <h2>Front-End Engineer</h2>
+        <p>Pinterest is one of the most visually engaging social applications on the web. The front-end engineer will help us push the boundaries of what is possible. You'll work side by side with outstanding designers. You should be proficient in HTML, CSS and Javascript. You should appreciate the details that make a front-end user experience memorable, and demonstrate enthusiasm for new front-end technologies. A few other things we look for:</p>
+        <div class="small columns">
+            <h4>Execution</h4>
+            <p>A portfolio of products you have shipped.</p>
+            <h4>Attention to Detail</h4>
+            <p>An appreciation for high-quality execution.</p>
+            <h4>Ambition</h4>
+            <p>A desire to improve yourself as an engineer.</p>
+            <h4>Culture</h4>
+            <p>Broad personal interests beyond software.</p>
+            <h4>Personality</h4>
+            <p>Enthusiasm for working collaboratively with talented people.</p>
+            <h4>Marksmanship</h4>
+            <p>Excellence in NERF dart-throwing a plus.</p>
+        </div><!-- .small columns -->
+        <p>To apply, send your resume and a link to your portfolio to <a href="mailto: careers@pinterest.com">careers@pinterest.com</a>.</p>
+    </div>
+
+    <!--
+    <div class="position" data-position="head_of_recruiting" id="head_of_recruiting">  
+        <h2>Head of Recruiting</h2>
+        <p>You will help build the Pinterest team, starting with our engineering organization. We're hiring for a variety of positions including system architects, web engineers and data scientists. As the company grows, the Head of Recruiting will have a direct impact on shaping the employee and engineering culture at Pinterest. We offer competitive salary and equity as well as significant upside for successfully filling key roles.</p>
+        <p>To apply, send your resume to <a href="mailto: careers@pinterest.com">careers@pinterest.com</a>.</p>
+    </div>
+    -->
+
+            </div><!-- #AboutRight -->
+
+        </div><!-- #AboutContent -->
+    </div><!-- #AboutContainer -->
+</body>
+
+    <div id="SearchAutocompleteHolder"></div>
+    <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-12967896-1']);
+    
+    
+    _gaq.push(['_trackPageview']);
+    
+    _gaq.push(['_setCustomVar', 1, 'is_logged_in', false, 3]);
+    _gaq.push(['_setCustomVar', 2, 'page_name', 'about-careers', 1]);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type='text/javascript'; ga.async=true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www/') + '.google-analytics.com/ga.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ga);
+    })();
+</script>
+</html>

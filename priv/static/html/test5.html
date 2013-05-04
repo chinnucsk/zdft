@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Elastic Search Charts</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<script type="text/javascript" src="/static/js/jquery.min.1.6.2.js" ></script>
+		<script type="text/javascript" src="/static/js/Highcharts-2.2.0/js/highcharts.js" ></script>
+		
+		<script type="text/javascript">
+		    var chart;
+			$(function() { load_data();});
+			var load_data = function() {
+				alert("ready go");
+				
+			};
+	
+		</script>
+	</head>
+	<body>
+		<!-- Placeholder for the chart -->
+		<div>
+			<fieldset>
+				<label>搜索</label>
+				<input id="queryString" type="text"/>
+				<button id="search">Search</button>
+			</fieldset>
+			
+		</div>
+		<div id="searchResult">
+		</div>
+		
+		<div id="chart"></div>
+		
+		<select id="chart_type" onchange="change_chart_type();">
+   			<option value="line">line</option>
+   			<option value="spline">spline</option>
+   			<option value="area">area</option>
+   			<option value="areaspline">areaspline</option>
+   			<option value="column">column</option>
+   			<option value="bar">bar</option>
+   			<option value="pie">pie</option>
+   			<option value="scatter">scatter</option>
+  		</select>
+			
+	<script type="text/javascript" src="/static/js/chartsbuilder.js" ></script>
+	<script type="text/javascript" src="/static/js/escharts.js" ></script>
+	</body>
+</html>

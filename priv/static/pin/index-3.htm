@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Pinterest / Help</title>
+        
+        <link rel="icon" href="http://passets-cdn.pinterest.com/images/favicon.png" type="image/x-icon" />
+        <link rel="apple-touch-icon-precomposed" href="http://passets-cdn.pinterest.com/images/ipad_touch_icon.png" />
+        <link rel="stylesheet" href="pinboard_842b6c5d.css" tppabs="http://passets-cdn.pinterest.com/css/pinboard_842b6c5d.css" type="text/css" media="all"/>
+        <!--[if (gt IE 6)&(lt IE 9)]><link rel="stylesheet" href="ie7-and-up_fa603afa.css" tppabs="http://passets-cdn.pinterest.com/css/ie7-and-up_fa603afa.css" type="text/css" media="all" /><![endif]-->
+        <script type="text/javascript">var _sf_startpt=(new Date()).getTime()</script>
+        <script type="text/javascript" src="jquery.min.js" tppabs="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+        <script src="bundle_pin_4c5e5aaa.js" tppabs="http://passets-cdn.pinterest.com/js/bundle_pin_4c5e5aaa.js" type="text/javascript" charset=utf-8"utf-8"></script>
+        
+        
+    <link rel="stylesheet" href="about_dc0f3cd9.css" tppabs="http://passets-cdn.pinterest.com/css/about_dc0f3cd9.css" type="text/css" media="all">
+    <script type="text/javascript">
+        $(document).ready(function(){$('#AboutLeft .selected').addClass('loaded');});
+  	</script>
+  	
+    <style type="text/css">
+        img#user_image { width: 24px; height: 24px; -webkit-border-radius: 2px; -moz-border-radius: 2px; -o-border-radius: 2px; -ms-border-radius: 2px; border-radius: 2px; float: left; margin-right: 10px;}
+        .loggedinuser { margin-top: 4px; font-size: 14px; float: left; }
+        .logout { font-size: 14px; }
+        .ContactForm { overflow: hidden; width: 500px; padding: 0 10px; margin: 0 -10px; }
+        .ContactForm li.contact_user { width: 375px; overflow: hidden; }
+        .ContactButton { float: right; margin-top: -8px; }
+        .faq_topic { display: none; opacity: 0; }
+        .visible { display: block; }
+        #CategoryPicker .ProblemList { height: auto; }
+        #CategoryPicker .ProblemList ul { margin-bottom: 0; }
+        #CategoryPicker .ProblemList li { margin-bottom: 0; }
+        .success { font-size: 18px; color: green; font-weight: 300; text-align: left;}
+        .error { margin-bottom: 10px; }
+        h2#tips { font-size: 24px; margin-bottom: 0; margin-top: 30px; opacity: 0 }
+    </style>
+
+    <script type="text/javascript">
+        function disableButton(button) {
+            if (!(button.hasClass('disabled')))
+                button.addClass('disabled');
+        }
+
+        function enableButton(button) {
+            if (button.hasClass('disabled'))
+                button.removeClass('disabled');
+        }
+
+        $(document).ready(function() {
+            var header = $('h2#tips');
+            var button = $('.ContactButton');
+
+            BoardPicker.setup(".BoardPicker", function(value) {
+                // If the description isn't empty, enable the button now.
+                if ($('#description').val() !== '') {
+                    enableButton(button);
+                }
+
+                // Add the problem name and short value to our hidden input.
+                $('#id_category').val(value);
+                $('#id_category').attr('data-name', $('.CurrentBoard').html());
+
+
+                // Hide any FAQs that are currently visible.
+                $('.visible').removeClass('visible');
+
+
+                // If the selected option is "Bugs", "Other", or "Suggestions", there are no tips,
+                // so if the header is visible we should hide it.
+                if (value == 'bugs' || value == 'other' || value == 'suggestions') {
+                     if (!(header.hasClass('hidden')))
+                            header.animate({ 'opacity' : 0 }, 400, function() { $(this).addClass('hidden') });
+                }
+
+
+                // If the selected option isn't "Bugs" or "Other",
+                // we can show the related tips, otherwise create the browser
+                // dropdown for a bug report.
+                if (value != 'bugs' && value != 'other') {
+                    // Fade in the "Helpful Tips" header if it is hidden.
+                    if (header.hasClass('hidden'))
+                        header.removeClass('hidden').animate({ 'opacity' : 1 }, 400);
+
+                    // Fade in the frequently-asked questions for this topic.
+                    $('#' + value).addClass('visible').animate({ 'opacity' : 1 }, 400);
+                }
+            });
+
+            $('.FAQTitle').click(function() {
+                $(this).toggleClass("active").parent().next().slideToggle("fast");
+                return false
+            });
+
+            $('#description').keyup(function() {
+                if ($(this).val() !== '' && $('#id_category').val() !== '')
+                    enableButton(button);
+                else if ($(this).val() === '')
+                    disableButton(button);
+            });
+
+            $('.ContactButton').click(function() {
+                // Every email will have a problem, problem code, and message.
+                var problem = $('#id_category').attr('data-name');
+                var problemCode = $('#id_category').val();
+                var message = $('#description').val();
+                var browser = $('#browser').val();
+
+                // If the user is logged in, get their username, user ID, and email address.
+                // Otherwise, the user was prompted for an email address.
+                var email;
+                var loggedInUser = $('.loggedinuser');
+                var loggedIn = false;
+
+                if (loggedInUser.length < 1) {
+                    if ($('#contact').val().length > 0) {
+                        loggedIn = true;
+                        email = $('#contact').val();
+                    } else {
+                        disableButton(button);
+                        $('.ContactForm').before('<div class="error">Please enter your email address.</div>');
+                        $('#contact').focus();
+                        setTimeout(function() { $('.error').fadeOut(500) }, 5000, function() { $('.error').remove() });
+                    }
+                } else {
+                    loggedIn = true;
+                }
+
+                if (loggedIn) {
+                    if (problem !== '' && message !== '') {
+                        $.post($('.ContactForm').attr('action'), {
+                                email    : email,
+                                problem  : problem,
+                                message  : message,
+                                browser  : navigator.userAgent
+                            }, function(data) {
+                                if (data.status == 'success') {
+                                    $('.Button').addClass('disabled');
+                                    $('#contact').val('');
+                                    $('#description').val('');
+                                    $('#id_category').val('');
+                                    $('.CurrentBoard').html('What do you need help with?');
+                                    $('.ContactForm').before('<div class="success">Your message was sent successfully! Thanks for your feedback.</div>');
+                                    setTimeout(function() { $('.success').fadeOut(500) }, 5000, function() { $('.success').remove() });
+                                }
+                            }, 'json'
+                        );
+                    } else {
+                        $('.ContactForm').before('<div class="error">Sorry! You have to fill out all the fields before submitting this form.</div>');
+                        setTimeout(function() { $('.error').fadeOut(500) }, 5000, function() { $('.error').remove() });
+                    }
+                }
+                return false;
+            });
+
+        });
+    </script>
+
+
+    </head>
+    
+<body>
+
+    <div id="Header">
+    <div class="FixedContainer HeaderContainer">
+        
+<a href="index-1.htm" tppabs="http://pinterest.com/" id="Pinterest"><img src="LogoRed.png" tppabs="http://passets-cdn.pinterest.com/images/LogoRed.png" width="100" height="26" alt="Pinterest Logo" /></a>
+
+
+<ul id="Navigation">
+    
+    <li>
+        <a href="index-2.htm" tppabs="http://pinterest.com/about/" class="nav">About<span></span></a>
+        <ul>
+            <li><a href="index-3.htm" tppabs="http://pinterest.com/about/help/">Help</a></li>
+            <li><a href="index-4.htm" tppabs="http://pinterest.com/about/goodies/">Pin It Button</a></li>
+            <li class="beforeDivider"><a href="index-5.htm" tppabs="http://pinterest.com/about/copyright/">Copyright</a></li>
+            <li class="divider"><a href="index-6.htm" tppabs="http://pinterest.com/about/careers/">Careers</a></li>
+            <li><a href="index-7.htm" tppabs="http://pinterest.com/about/team/">Team</a></li>
+            <li><a href="javascript:if(confirm('http://blog.pinterest.com/  \n\nThis file was not retrieved by Teleport Pro, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?'))window.location='http://blog.pinterest.com/'" tppabs="http://blog.pinterest.com/">Blog</a></li>
+        </ul>
+    </li>
+    
+        <li><a href="javascript:if(confirm('http://pinterest.com/login/  \n\nThis file was not retrieved by Teleport Pro, because it is addressed on a path excluded by the site\'s Robot Exclusion parameters.  (Teleport Pro\'s compliance with this system is optional; see the Project Properties, Netiquette page.)  \n\nDo you want to open it from the server?'))window.location='http://pinterest.com/login/'" tppabs="http://pinterest.com/login/" class="nav LoginNav">Login</a></li>
+    
+</ul>
+
+
+
+<div id="Search" >
+    <form action="http://pinterest.com/search/" method="get" class="text">
+        <input type="text" id="query" name="q" size="27" value="Search"/>
+        <a id="query_button" href="#" class="lg"><img src="search.gif" tppabs="http://passets-cdn.pinterest.com/images/search.gif" alt="" /></a>
+    </form>
+</div>
+    </div>
+</div>
+
+    
+
+    <div id="AboutContainer">
+        <div id="AboutContent">
+            <div id="AboutLeft">
+                <ul>
+                    <li>
+                        <a href="index-2.htm" tppabs="http://pinterest.com/about/" >
+                            <span>What is Pinterest?</span>
+                            <span class="pointer normal"></span>
+                            <span class="pointer hover"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:if(confirm('http://pinterest.com/about/etiquette/  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?'))window.location='http://pinterest.com/about/etiquette/'" tppabs="http://pinterest.com/about/etiquette/" >
+                            <span>Pin Etiquette</span>
+                            <span class="pointer normal"></span>
+                            <span class="pointer hover"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="index-3.htm" tppabs="http://pinterest.com/about/help/" class="selected">
+                            <span>Help</span>
+                            <span class="pointer normal"></span>
+                            <span class="pointer hover"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="index-4.htm" tppabs="http://pinterest.com/about/goodies/" >
+                            <span>Goodies</span>
+                            <span class="pointer normal"></span>
+                            <span class="pointer hover"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="index-6.htm" tppabs="http://pinterest.com/about/careers/" >
+                            <span>Careers</span>
+                            <span class="pointer normal"></span>
+                            <span class="pointer hover"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:if(confirm('http://pinterest.com/about/press/  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?'))window.location='http://pinterest.com/about/press/'" tppabs="http://pinterest.com/about/press/" >
+                            <span>Press</span>
+                            <span class="pointer normal"></span>
+                            <span class="pointer hover"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="index-7.htm" tppabs="http://pinterest.com/about/team/" >
+                            <span>Team</span>
+                            <span class="pointer normal"></span>
+                            <span class="pointer hover"></span>
+                        </a>
+                    </li>
+                </ul>
+                <img src="NavRule.png" tppabs="http://passets-cdn.pinterest.com/images/about/NavRule.png" alt="Navigation Rule" id="NavRule" />
+                <ul>
+                    <li>
+                        <a href="javascript:if(confirm('http://pinterest.com/about/privacy/  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?'))window.location='http://pinterest.com/about/privacy/'" tppabs="http://pinterest.com/about/privacy/" >
+                            <span>Privacy</span>
+                            <span class="pointer normal"></span>
+                            <span class="pointer hover"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="index-5.htm" tppabs="http://pinterest.com/about/copyright/" >
+                            <span>Copyright</span>
+                            <span class="pointer normal"></span>
+                            <span class="pointer hover"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:if(confirm('http://pinterest.com/about/terms/  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?'))window.location='http://pinterest.com/about/terms/'" tppabs="http://pinterest.com/about/terms/" >
+                            <span>Terms</span>
+                            <span class="pointer normal"></span>
+                            <span class="pointer hover"></span>
+                        </a>
+                    </li>
+                </ul>
+            </div><!-- #AboutLeft -->
+
+            <div id="AboutRight">
+                
+    <h1>Help</h1>
+
+    <!-- This is the generic FAQ section -->
+    <div id="faqs">
+        <div id="pinning101">
+            <h2>Pinning 101</h2>
+
+            <h3><a href="#" class="FAQTitle">What is Pinterest?</a></h3>
+            <div class="FAQContent">
+                <p>Pinterest is a virtual pinboard. Pinterest allows you to organize and share all the beautiful things you find on the web. You can browse pinboards created by other people to discover new things and get inspiration from people who share your interests.</p>
+                <p>People use pinboards to plan their weddings, decorate their homes, and share their favorite recipes.</p>
+                <div class="AboutRule"></div>
+            </div>
+
+            <h3><a href="#" class="FAQTitle">What is a pin?</a></h3>
+            <div class="FAQContent">
+                <p>A pin is an image added to Pinterest. A pin can be a dded from a website using the Pin It button, or you can upload images from your computer. Each pin added using the Pin It button links back to the site it came from.</p>
+                <p><img src="FAQ-What-is-a-Pin.jpg" tppabs="http://passets-cdn.pinterest.com/images/about/faq/FAQ-What-is-a-Pin.jpg" alt="Product Screenshot" /></p>
+                <div class="AboutRule"></div>
+            </div>
+
+            <h3><a href="#" class="FAQTitle">How do I install the "Pin It"" button?</a></h3>
+            <div class="FAQContent">
+                <p>We have instructions and a video tutorial to install the "Pin It" button on our <a href="javascript:if(confirm('http://pinterest.com/about/goodies  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?'))window.location='http://pinterest.com/about/goodies'" tppabs="http://pinterest.com/about/goodies">Goodies page</a>.</p>
+                <div class="AboutRule"></div>
+            </div>
+
+            <h3><a href="#" class="FAQTitle">What is a board?</a></h3>
+            <div class="FAQContent">
+                <p>A board is a set of pins. A board can be created on any topic, such as Cool Posters, Recipes For Dinner, or Wishlist. You can add as many pins to a board as you want.</p>
+                <p><img src="FAQ-What-is-a-board.jpg" tppabs="http://passets-cdn.pinterest.com/images/about/faq/FAQ-What-is-a-board.jpg" alt="Product Screenshot" /></p>
+                <div class="AboutRule"></div>
+            </div>
+
+            <h3><a href="#" class="FAQTitle">What is following?</a></h3>
+            <div class="FAQContent">
+                <p>&ldquo;Following All&rdquo; means you'll have all of a user’s pins on all their boards shown to you in real-time on Pinterest. If the user makes new boards, you will automatically follow them.</p>
+                <p>You can follow individual boards if you're only interested in seeing a user's pins to specific boards.</p>
+                <p>You can unfollow boards and users at any time: they will not be notified.</p>
+                <p><img src="FAQ-What-is-Following.jpg" tppabs="http://passets-cdn.pinterest.com/images/about/faq/FAQ-What-is-Following.jpg" alt="Product Screenshot" /></p>
+                <div class="AboutRule"></div>
+            </div>
+        </div>
+
+        <div id="account_faqs">
+            <h2>Profile and Account Settings</h2>
+            <h3><a href="#" class="FAQTitle">How to sign up for Pinterest</a></h3>
+            <div class="FAQContent">
+                <p>Pinterest is currently invite-only. You can request an invite from us or you can be invited by someone who is already a part of Pinterest.</p>
+                <p>When you receive an invite, you can register via Facebook Connect or connect through Twitter.</p>
+                <div class="AboutRule"></div>
+            </div>
+
+            <h3><a href="#" class="FAQTitle">How to change your email address</a></h3>
+            <div class="FAQContent">
+                <p>When you're logged into Pinterest, click your username at the top-right toolbar, then click Edit Profile. Type in a new email address for your Pinterest account and click Save Profile at the bottom of the page.</p>
+                <p><img src="FAQ-Edit-Profile.jpg" tppabs="http://passets-cdn.pinterest.com/images/about/faq/FAQ-Edit-Profile.jpg" alt="Product Screenshot" /></p>
+                <div class="AboutRule"></div>
+            </div>
+
+            <h3><a href="#" class="FAQTitle">How to change your username</a></h3>
+            <div class="FAQContent">
+                <p>When you're signed onto Pinterest, click your username at the top-right toolbar, then click Edit Profile. Type a new username and then click Save Profile at the bottom of the page.</p>
+                <div class="AboutRule"></div>
+            </div>
+
+            <h3><a href="#" class="FAQTitle">How to change your bio</a></h3>
+            <div class="FAQContent">
+                <p>When you're signed onto Pinterest, click your username at the top-right toolbar, then click Edit Profile. Type in a bio and then click Save Profile at the bottom of the page.</p>
+                <div class="AboutRule"></div>
+            </div>
+
+            <h3><a href="#" class="FAQTitle">How to change your profile picture</a></h3>
+            <div class="FAQContent">
+                <p>When you're signed onto Pinterest, click your username at the top-right toolbar, then click Edit Profile. Next, click Change Image. Click the Choose File button to select the image file you want.</p>
+                <p>You will see a thumbnail preview of your new image. Click Save Profile at the bottom of the page.</p>
+                <div class="AboutRule"></div>
+            </div>
+
+            <h3><a href="#" class="FAQTitle">How to prevent your account from appearing in Google search</a></h3>
+            <div class="FAQContent">
+                <p>When you're signed onto Pinterest, click your username at the top-right toolbar, then click Edit Profile. Select the checkbox to have your account hidden from search indexes. Be sure to click Save Profile at the bottom of the page.</p>
+                <p>This change won't take affect immediately because we cannot flush Google's cache, but they update their information regularly and your account will soon be fully hidden.</p>
+                <div class="AboutRule"></div>
+            </div>
+
+            <h3><a href="#" class="FAQTitle">How to change email notification preferences</a></h3>
+            <div class="FAQContent">
+                <p>Mouse-over your username at the top-right toolbar on Pinterest. Then click Preferences. Select the email preferences you would like. Click Save.</p>
+                <p><img src="FAQ-Edit-Email-Preferences.jpg" tppabs="http://passets-cdn.pinterest.com/images/about/faq/FAQ-Edit-Email-Preferences.jpg" alt="Product Screenshot" /></p>
+                <div class="AboutRule"></div>
+            </div>
+
+            <h3><a href="#" class="FAQTitle">How to deactivate your account</a></h3>
+            <div class="FAQContent">
+                <p>When you're signed onto Pinterest, click your username at the top-right toolbar, then click Edit Profile. Next, click Delete Account. This will delete all your boards and pins so be careful!</p>
+                <div class="AboutRule"></div>
+            </div>
+        </div>
+
+        <div id="pinning_faqs">
+            <h2>Pinning and Repinning</h2>
+
+            <h3><a href="#" class="FAQTitle">What is a pin (anatomy of a good pin)?</a></h3>
+            <div class="FAQContent">
+                <p>A pin is an image added to Pinterest. A pin can be added from a website using our bookmarklet or you can upload images from your computer. Each pin added using the bookmarklet links back to the site it came from.</p>
+                <p><img src="FAQ-Anatomy-of-a-Pin.jpg" tppabs="http://passets-cdn.pinterest.com/images/about/faq/FAQ-Anatomy-of-a-Pin.jpg" alt="Product Screenshot" /></p>
+                <p>To make Pinterest the most useful to yourself and others, follow best practices when pinning:</p>
+                <ol>
+                    <li>Pin from the original source.</li>
+                    <li>Pin from permalinks.</li>
+                    <li>Give credit and include a thoughtful pin description.</li>
+                </ol>
+                <div class="AboutRule"></div>
+            </div>
+
+            <h3><a href="#" class="FAQTitle">How to pin with the bookmarklet</a></h3>
+            <div class="FAQContent">
+                <p>Use the bookmarklet to pin as you browse the web. When you see an image you wan to pin, click Pin It on your browser. This will pull up all the images you can pin.</p>
+                <p>Select the image you want to pin, choose which board the image belongs on, type a description, and add some tags to help users search for it.</p>
+                <p>You can choose to share the pin to Facebook and/or Twitter.</p>
+                <p>When you're done, click Pin It.</p>
+                <div class="AboutRule"></div>
+            </div>
+
+            <h3><a href="#" class="FAQTitle">What is a repin?</a></h3>
+            <div class="FAQContent">
+                <p>A repin is adding an image you find while browsing Pinterest to your own board. When you repin an image, the user who first pinned the image will also get credit. Repins maintain the source-link of the image no matter how many times it’s repinned.</p>
+                <p><img src="FAQ-What-is-a-Repin.jpg" tppabs="http://passets-cdn.pinterest.com/images/about/faq/FAQ-What-is-a-Repin.jpg" alt="Product Screenshot" /></p>
+                <div class="AboutRule"></div>
+            </div>
+
+            <h3><a href="#" class="FAQTitle">How to repin</a></h3>
+            <div class="FAQContent">
+                <p>There are two ways to repin an image:</p>
+                <ol>
+                    <li>When viewing a pin in thumbnail-view, mouse-over the pin and click the Repin button.</li>
+                    <li>When you're viewing a pin in full-size view, click the Repin button at the top-left corner.</li>
+                </ol>
+                <p>After you click Repin, choose a board. You can edit the description of the pin and choose to share it on Facebook and/or Twitter.</p>
+                <p>Then click Repin.</p>
+                <p><img src="FAQ-How-to-Repin.jpg" tppabs="http://passets-cdn.pinterest.com/images/about/faq/FAQ-How-to-Repin.jpg" alt="Product Screenshot" /></p>
+                <div class="AboutRule"></div>
+            </div>
+
+            <h3><a href="#" class="FAQTitle">How to edit a pin</a></h3>
+            <div class="FAQContent">
+                <p>There are two ways to edit a pin:</p>
+                <ol>
+                    <li>When viewing one of your pins in thumbnail view, mouse-over the pin and then click the Edit button. After you make your changes, click Save.</li>
+                    <li>When viewing a pin in full-size view, click Edit at the top-left corner. Make your changes and then click Save.</li>
+                </ol>
+                <p><img src="FAQ-How-to-edit-a-pin.jpg" tppabs="http://passets-cdn.pinterest.com/images/about/faq/FAQ-How-to-edit-a-pin.jpg" alt="Product Screenshot" /></p>
+                <div class="AboutRule"></div>
+            </div>
+
+            <h3><a href="#" class="FAQTitle">What is the difference between Liking and repinning?</a></h3>
+            <div class="FAQContent">
+                <p>Liking a pin adds the image to your profile’s Likes section; the image does not get added to one of your boards.</p>
+                <p>Repinning an image allows you to categorize the image onto one of your boards. You can edit the description of a repin. The source-link of an image is saved automatically, no matter how many times it’s repinned.</p>
+                <div class="AboutRule"></div>
+            </div>
+
+            <h3><a href="#" class="FAQTitle">How to add a price to a pin</a></h3>
+            <div class="FAQContent">
+                <p>To add a price to a pin, type the $ or £ symbol followed by the number amount in the description. When you are finished, click Pin It.</p>
+                <div class="AboutRule"></div>
+            </div>
+
+            <h3><a href="#" class="FAQTitle">How to mention a pin to a Pinterest user</a></h3>
+            <div class="FAQContent">
+                <p>To mention a pin to a Pinterest user, you first need to be following at least one board belonging to him/her. Then, type the @ symbol immediately followed by his/her username. Potential matches to this username will begin to load; when you see the person you want, click their name.</p>
+                <p>You can mention a user in a pin description while you’re pinning or repinning. You can also mention a user in a comment.</p>
+                <p><img src="FAQ-How-to-mention-a-user.jpg" tppabs="http://passets-cdn.pinterest.com/images/about/faq/FAQ-How-to-mention-a-user.jpg" alt="Product Screenshot" /></p>
+                <div class="AboutRule"></div>
+            </div>
+        </div>
+
+        <div id="pinboard_faqs">
+            <h2>Creating and Managing Your Pinboards</h2>
+
+            <h3><a href="#" class="FAQTitle">What is a board?</a></h3>
+            <div class="FAQContent">
+                <p>A board is a set of pins. A board can be created on any topic, such as Cool Posters, Recipes For Dinner, or Wishlist. You can add as many pins to a board as you want.</p>
+                <div class="AboutRule"></div>
+            </div>
+
+            <h3><a href="#" class="FAQTitle">How to create a new board</a></h3>
+            <div class="FAQContent">
+                <p>To create a new board, click Add > Add a Board on the top toolbar on Pinterest. Type in a board title, choose a category, and then click Create when you are finished.</p>
+                <p><img src="FAQ-How-to-add-a-board---Pin-Form-method.jpg" tppabs="http://passets-cdn.pinterest.com/images/about/faq/FAQ-How-to-add-a-board---Pin-Form-method.jpg" alt="Product Screenshot" /></p>
+                <p>To create a new board while you’re pinning, scroll to the bottom of your board list. Enter in a new board title and click Create. </p>
+                <p><img src="FAQ-How-to-add-a-board-Toolbar-method.jpg" tppabs="http://passets-cdn.pinterest.com/images/about/faq/FAQ-How-to-add-a-board-Toolbar-method.jpg" alt="Product Screenshot" /></p>
+                <div class="AboutRule"></div>
+            </div>
+
+            <h3><a href="#" class="FAQTitle">How to edit the title of a board</a></h3>
+            <div class="FAQContent">
+                <p>Go to that board and click the Edit button. After you make your changes, click Save Board Settings.</p>
+                <p><img src="FAQ-How-to-Edit-Board.jpg" tppabs="http://passets-cdn.pinterest.com/images/about/faq/FAQ-How-to-Edit-Board.jpg" alt="Product Screenshot" /></p>
+                <div class="AboutRule"></div>
+            </div>
+
+            <h3><a href="#" class="FAQTitle">How to delete a board</a></h3>
+            <div class="FAQContent">
+                <p>Go to that board and click the Edit button in the top-right corner. Click Delete Board. This will also delete all the pins contained in the board.</p>
+                <div class="AboutRule"></div>
+            </div>
+
+            <h3><a href="#" class="FAQTitle">How to let other people contribute to your board</a></h3>
+            <div class="FAQContent">
+                <p>To add contributors to a board, go to that board and click the Edit button in the top-right corner. Change the setting from “Just Me” to “Me + Contributors.”</p>
+                <p>You must follow at least one board belonging to a user in order to add him/her as a contributor. Then, type his/her username into the text field. Potential matches to this username will begin to load; when you see the person you want, click their name. Click Add. When you are finished, click Save Board Settings.</p>
+                <p><img src="FAQ-How-to-add-a-contributor-board.jpg" tppabs="http://passets-cdn.pinterest.com/images/about/faq/FAQ-How-to-add-a-contributor-board.jpg" alt="Product Screenshot" /></p>
+                <p>You can also create a new board by clicking Add > Add a Board on the toolbar on Pinterest. Select the setting “Me + Contributors” and proceed to add other users.</p>
+                <p>Users who you add as contributors will receive an email notification. They can choose to remove themselves at any time.</p>
+                <div class="AboutRule"></div>
+            </div>
+        </div>
+
+        <div id="commenting_faqs">
+            <h2>Commenting</h2>
+
+            <h3><a href="#" class="FAQTitle">How to comment on a pin</a></h3>
+            <div class="FAQContent">
+                <p>There are two ways to comment on a pin:</p>
+                <ol>
+                    <li>Mouse-over a pin in thumbnail view and click the Comment button. Type in your comment and then click the Comment button.</li>
+                    <li>When viewing a pin in full-size view, you can type a comment in the text box below the image. In this view, you can type @username to mention other users in your comment.</li>
+                </ol>
+                <p><img src="FAQ-What-is-a-Pin.jpg" tppabs="http://passets-cdn.pinterest.com/images/about/faq/FAQ-What-is-a-Pin.jpg" alt="Product Screenshot" /></p>
+                <div class="AboutRule"></div>
+            </div>
+
+            <h3><a href="#" class="FAQTitle">How to mention a pin to a Pinterest user</a></h3>
+            <div class="FAQContent">
+                <p>To mention a pin to a Pinterest user, you first need to be following at least one board belonging to him/her. Then, type the @ symbol immediately followed by his/her username. Potential matches to this username will begin to load; when you see the person you want to mention, click his/her name.</p>
+                <p>You can mention a user in a pin/repin description or in a comment.</p>
+                <p>The user you mention will receive a notification.</p>
+                <div class="AboutRule"></div>
+            </div>
+        </div>
+
+        <div id="linking_faqs">
+            <h2>Linking to your blog or website</h2>
+
+            <h3><a href="#" class="FAQTitle">How to add the follow button to your website</a></h3>
+            <div class="FAQContent">
+                <p>To add a Pinterest follow button to your website, go to our Goodies page. Select the style of button you want, then copy the code to embed on your website.</p>
+                <div class="AboutRule"></div>
+            </div>
+
+            <h3><a href="#" class="FAQTitle">How to add the Pin It button to your website</a></h3>
+            <div class="FAQContent">
+                <p>To add a Pin It button to your website, go to our Goodies page.</p>
+                <div class="AboutRule"></div>
+            </div>
+        </div>
+    </div>
+
+    <h2>Contact Us</h2>
+    <form class="Form FancyForm ContactForm" id="contact-form" action="http://pinterest.com/about/help/contact/" method="post">
+        <ul>
+            
+                <li class="contact_user">
+                    <input id="contact" name="contact" type="text">
+                    <label for="contact">Your Email Address</label>
+                    <span class="fff"></span>
+                </li>
+            
+
+            <li style="position: relative; z-index: 10;">
+                <div class="BoardListOverlay" style="display: block; "></div>
+                <div id="CategoryPicker" class="BoardSelector BoardPicker">
+                    <div class="current">
+                        <span class="CurrentBoard">What do you need help with?</span>
+                        <span class="DownArrow"></span>
+                    </div>
+                    <div class="ProblemList BoardList" style="display: none;">
+                      <ul>
+
+                        <li class="BoardCategory" name="BoardCategory" data="suggestions"><span>Suggestions</span></li>
+                            <li class="BoardCategory" name="BoardCategory" data="account"><span>Account/Registration</span></li>
+                            <li class="BoardCategory" name="BoardCategory" data="pinning"><span>Pin It! Bookmarklet</span></li>
+                            <li class="BoardCategory" name="BoardCategory" data="bugs"><span>Bugs</span></li>
+                            <li class="BoardCategory" name="BoardCategory" data="spam"><span>Spam/Abuse</span></li>
+                            <li class="BoardCategory" name="BoardCategory" data="other"><span>Other</span></li>
+                        </ul>
+                    </div><!-- .BoardList -->
+                    <input id="id_category" type="hidden" name="category" value="">
+                </div>
+            </li>
+
+            <li>
+                <textarea id="description" name="description" rows="3"></textarea>
+                <label for="description">Tell us a little bit about your problem.</label>
+                <span class="fff"></span>
+            </li>
+        </ul>
+        
+        <a class="Button Button18 RedButton ContactButton disabled"><strong>Send</strong><span></span></a>
+    </form>
+
+    <!-- These are the tips that appear when a user selects their problem in the form dropdown -->
+    <div id="responsive_tips">
+        <h2 class="hidden" id="tips">Related Tips</h2>
+        <div class="faq_topic" id="account">
+            <h3><a href="#" class="FAQTitle">Do I have to register with Facebook or Twitter?</a></h3>
+            <div class="FAQContent">
+                <p>Right now you have to register with either Facebook or Twitter. We do this to make it easier to find people you already know on Pinterest and prevent spam accounts. Activity on Pinterest is never posted automatically: only pins/repins can be shared and you will control when you want to do so, if at all.</p>
+
+                <p>If you don't want to join through Facebook, we recommend opening a Twitter account &mdash; the registration is very lightweight. After you join Pinterest, you can always unlink, or even delete, your Facebook/Twitter account and still log in with your email address and password.</p>
+                <div class="AboutRule"></div>
+            </div>
+
+            <h3><a href="#" class="FAQTitle">Help! I can't access my account.</a></h3>
+            <div class="FAQContent">
+                <p>If you can't log in to your Pinterest account, try <a href="javascript:if(confirm('http://pinterest.com/about/password/change  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?'))window.location='http://pinterest.com/about/password/change'" tppabs="http://pinterest.com/about/password/change">resetting your password.</a></p>
+                <div class="AboutRule"></div>
+            </div>
+
+            <h3><a href="#" class="FAQTitle">How do I deactivate my account?</a></h3>
+            <div class="FAQContent">
+                <p>There is no way to deactivate your account.</p>
+
+                <p>If you'd like to permanently delete your account, sign into Pinterest and click your username in the top-right toolbar, then click Edit Profile. Next, click Delete Account and follow the instructions. Keep in mind that this will delete all of your boards and pins, so be careful!
+</p>
+                <div class="AboutRule"></div>
+            </div>
+
+            <h3><a href="#" class="FAQTitle">Help! I accidentally deleted my account.</a></h3>
+            <div class="FAQContent">
+                <p>If you accidentally deleted your account, email us using the form above. Make sure to include your username. We may not be able to restore your account but we will try to help you get restarted soon.</p>
+            </div>
+        </div>
+
+        <div class="faq_topic" id="pinning">
+            <h3><a href="#" class="FAQTitle">How do I install the "Pin It" button?</a></h3>
+            <div class="FAQContent">
+                <p>We have instructions and a video tutorial to install the "Pin It" button on our <a href="javascript:if(confirm('http://pinterest.com/about/goodies  \n\nThis file was not retrieved by Teleport Pro, because it was unavailable, or its retrieval was aborted, or the project was stopped too soon.  \n\nDo you want to open it from the server?'))window.location='http://pinterest.com/about/goodies'" tppabs="http://pinterest.com/about/goodies">Goodies page</a>.</p>
+                <div class="AboutRule"></div>
+            </div>
+
+            <h3><a href="#" class="FAQTitle">How do I install the "Pin It" button on iPad?</a></h3>
+            <div class="FAQContent">
+              <p>There are two methods for adding the Pin It bookmarklet to your iPad:
+                <ol>
+                  <li><p>Add the Pinterest bookmarklet to your computer's Safari toolbar, and then sync your iPad with your computer making sure to sync your Safari Bookmarks.  When you use mobile Safari on your iPad, the Pinterest button should now be in your toolbar.</p></li>
+
+                  <li><p>Download our iPhone app from the app store, log in, then tap Profile &gt; Account &gt; Install Bookmarklet.</p></li>
+                </ol>
+
+                <p><strong>Important note</strong>: When you're on your iPad or iPhone, use two-finger scroll to toggle through your complete list of boards while you're pinning.</p>
+            </div>
+        </div>
+
+        <div class="faq_topic" id="spam">
+            <h3><a href="#" class="FAQTitle">Help! Someone has pinned my intellectual property?</a></h3>
+            <div class="FAQContent">
+                <p>If you have found your intellectual property on Pinterest and would like it to be taken down, please consult our <a href="index-5.htm" tppabs="http://pinterest.com/about/copyright/">Copyright page</a> for the quickest attention possible.</p>
+                <div class="AboutRule"></div>
+            </div>
+
+            <h3><a href="#" class="FAQTitle">How do I block someone on Pinterest?</a></h3>
+            <div class="FAQContent">
+                <p>Right now, we don't have private boards, but it's something we're thinking about carefully and may implement in the future.</p>
+            </div>
+        </div>
+    </div>
+
+            </div><!-- #AboutRight -->
+
+        </div><!-- #AboutContent -->
+    </div><!-- #AboutContainer -->
+</body>
+
+    <div id="SearchAutocompleteHolder"></div>
+    <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-12967896-1']);
+    
+    
+    _gaq.push(['_trackPageview']);
+    
+    _gaq.push(['_setCustomVar', 1, 'is_logged_in', false, 3]);
+    _gaq.push(['_setCustomVar', 2, 'page_name', 'about-help', 1]);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type='text/javascript'; ga.async=true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www/') + '.google-analytics.com/ga.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ga);
+    })();
+</script>
+</html>

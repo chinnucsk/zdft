@@ -1,518 +1,586 @@
-2013-04-29 16:24:39.105 [info] <0.7.0> Application lager started on node zdft@localhost
-2013-04-29 16:24:39.250 [info] <0.65.0> Starting Boss in development mode....
-
-2013-04-29 16:24:39.564 [info] <0.65.0> Starting master services on zdft@localhost
-
-2013-04-29 16:24:39.667 [info] <0.7.0> Application tinymq started on node zdft@localhost
-2013-04-29 16:24:40.042 [info] <0.65.0> SSL:[]
-
-2013-04-29 16:24:40.046 [info] <0.65.0> Starting cowboy... on zdft@localhost
-
-2013-04-29 16:24:40.095 [info] <0.7.0> Application ranch started on node zdft@localhost
-2013-04-29 16:24:40.133 [info] <0.7.0> Application cowboy started on node zdft@localhost
-2013-04-29 16:24:40.134 [info] <0.65.0> Starting http listener... on 8001 
-
-2013-04-29 16:24:40.269 [info] <0.7.0> Application boss started on node zdft@localhost
-2013-04-29 16:24:40.269 [info] <0.7.0> Application zdft started on node zdft@localhost
-2013-04-29 16:24:40.314 [info] <0.349.0> Loading routes from "/home/jackie/Erlang/projects/zdft/priv/zdft.routes" ....
-2013-04-29 16:29:29.667 [info] <0.7.0> Application lager started on node zdft@localhost
-2013-04-29 16:29:29.680 [info] <0.65.0> Starting Boss in development mode....
-
-2013-04-29 16:29:29.827 [info] <0.65.0> Starting master services on zdft@localhost
-
-2013-04-29 16:29:29.933 [info] <0.7.0> Application tinymq started on node zdft@localhost
-2013-04-29 16:29:30.152 [info] <0.65.0> SSL:[]
-
-2013-04-29 16:29:30.156 [info] <0.65.0> Starting cowboy... on zdft@localhost
-
-2013-04-29 16:29:30.164 [info] <0.7.0> Application ranch started on node zdft@localhost
-2013-04-29 16:29:30.200 [info] <0.7.0> Application cowboy started on node zdft@localhost
-2013-04-29 16:29:30.200 [info] <0.65.0> Starting http listener... on 8001 
-
-2013-04-29 16:29:30.299 [info] <0.7.0> Application boss started on node zdft@localhost
-2013-04-29 16:29:30.300 [info] <0.7.0> Application zdft started on node zdft@localhost
-2013-04-29 16:29:30.361 [info] <0.349.0> Loading routes from "/home/jackie/Erlang/projects/zdft/priv/zdft.routes" ....
-2013-04-29 16:30:42.900 [info] <0.7.0> Application lager started on node zdft@localhost
-2013-04-29 16:30:42.914 [info] <0.65.0> Starting Boss in development mode....
-
-2013-04-29 16:30:43.019 [info] <0.65.0> Starting master services on zdft@localhost
-
-2013-04-29 16:30:43.119 [info] <0.7.0> Application tinymq started on node zdft@localhost
-2013-04-29 16:30:43.557 [info] <0.65.0> SSL:[]
-
-2013-04-29 16:30:43.568 [info] <0.65.0> Starting cowboy... on zdft@localhost
-
-2013-04-29 16:30:43.719 [info] <0.7.0> Application ranch started on node zdft@localhost
-2013-04-29 16:30:43.814 [info] <0.7.0> Application cowboy started on node zdft@localhost
-2013-04-29 16:30:43.815 [info] <0.65.0> Starting http listener... on 8001 
-
-2013-04-29 16:30:44.181 [info] <0.7.0> Application boss started on node zdft@localhost
-2013-04-29 16:30:44.181 [info] <0.7.0> Application zdft started on node zdft@localhost
-2013-04-29 16:30:44.918 [info] <0.349.0> Loading routes from "/home/jackie/Erlang/projects/zdft/priv/zdft.routes" ....
-2013-04-29 17:03:55.522 [info] <0.7.0> Application lager started on node zdft@localhost
-2013-04-29 17:03:55.585 [info] <0.66.0> Starting Boss in development mode....
-
-2013-04-29 17:03:55.689 [info] <0.66.0> Starting master services on zdft@localhost
-
-2013-04-29 17:03:55.797 [info] <0.7.0> Application tinymq started on node zdft@localhost
-2013-04-29 17:03:55.981 [info] <0.66.0> SSL:[]
-
-2013-04-29 17:03:55.986 [info] <0.66.0> Starting cowboy... on zdft@localhost
-
-2013-04-29 17:03:56.051 [info] <0.7.0> Application ranch started on node zdft@localhost
-2013-04-29 17:03:56.085 [info] <0.7.0> Application cowboy started on node zdft@localhost
-2013-04-29 17:03:56.086 [info] <0.66.0> Starting http listener... on 8001 
-
-2013-04-29 17:03:56.197 [info] <0.7.0> Application boss started on node zdft@localhost
-2013-04-29 17:03:56.198 [info] <0.7.0> Application zdft started on node zdft@localhost
-2013-04-29 17:03:56.311 [info] <0.350.0> Loading routes from "/home/jackie/Erlang/projects/zdft/priv/zdft.routes" ....
-2013-04-29 17:04:52.733 [info] <0.350.0> Loading routes from "/home/jackie/Erlang/projects/zdft/priv/zdft.routes" ....
-2013-04-29 17:04:52.891 [error] <0.369.0> GET /zdft/index/ [zdft] 404 157ms
-2013-04-29 17:06:15.547 [info] <0.350.0> Loading routes from "/home/jackie/Erlang/projects/zdft/priv/zdft.routes" ....
-2013-04-29 17:06:15.572 [error] <0.379.0> GET /zdft/index/ [zdft] 404 1ms
-2013-04-29 17:06:40.891 [info] <0.350.0> Loading routes from "/home/jackie/Erlang/projects/zdft/priv/zdft.routes" ....
-2013-04-29 17:06:40.895 [error] <0.386.0> GET / [zdft] 404 1ms
-2013-04-29 17:07:42.378 [info] <0.350.0> Loading routes from "/home/jackie/Erlang/projects/zdft/priv/zdft.routes" ....
-2013-04-29 17:07:42.808 [info] <0.393.0> GET /ocr/index/ [zdft] 200 434ms
-2013-04-29 17:07:47.133 [info] <0.350.0> Loading routes from "/home/jackie/Erlang/projects/zdft/priv/zdft.routes" ....
-2013-04-29 17:07:47.191 [info] <0.393.0> GET /ocr/index/loader.gif [zdft] 200 56ms
-2013-04-29 17:07:47.317 [info] <0.350.0> Loading routes from "/home/jackie/Erlang/projects/zdft/priv/zdft.routes" ....
-2013-04-29 17:07:48.110 [error] <0.393.0> GET /comet/stat/ [zdft] 404 787ms
-2013-04-29 17:14:14.517 [info] <0.350.0> Loading routes from "/home/jackie/Erlang/projects/zdft/priv/zdft.routes" ....
-2013-04-29 17:14:14.634 [info] <0.410.0> GET /ocr/index/ [zdft] 200 110ms
-2013-04-29 17:14:16.660 [info] <0.350.0> Loading routes from "/home/jackie/Erlang/projects/zdft/priv/zdft.routes" ....
-2013-04-29 17:14:16.751 [info] <0.425.0> GET /ocr/index/loader.gif [zdft] 200 84ms
-2013-04-29 17:14:16.809 [info] <0.350.0> Loading routes from "/home/jackie/Erlang/projects/zdft/priv/zdft.routes" ....
-2013-04-29 17:14:16.811 [error] <0.425.0> GET /comet/stat/ [zdft] 404 1ms
-2013-04-29 17:18:12.652 [info] <0.7.0> Application lager started on node zdft@localhost
-2013-04-29 17:18:12.667 [info] <0.66.0> Starting Boss in development mode....
-
-2013-04-29 17:18:12.701 [info] <0.66.0> Starting master services on zdft@localhost
-
-2013-04-29 17:18:12.710 [info] <0.7.0> Application tinymq started on node zdft@localhost
-2013-04-29 17:18:12.733 [info] <0.66.0> SSL:[]
-
-2013-04-29 17:18:12.736 [info] <0.66.0> Starting cowboy... on zdft@localhost
-
-2013-04-29 17:18:12.739 [info] <0.7.0> Application ranch started on node zdft@localhost
-2013-04-29 17:18:12.746 [info] <0.7.0> Application cowboy started on node zdft@localhost
-2013-04-29 17:18:12.746 [info] <0.66.0> Starting http listener... on 8001 
-
-2013-04-29 17:18:12.764 [info] <0.7.0> Application boss started on node zdft@localhost
-2013-04-29 17:18:12.764 [info] <0.7.0> Application zdft started on node zdft@localhost
-2013-04-29 17:18:12.776 [info] <0.350.0> Loading routes from "/home/jackie/Erlang/projects/zdft/priv/zdft.routes" ....
-2013-04-29 17:19:22.640 [info] <0.350.0> Loading routes from "/home/jackie/Erlang/projects/zdft/priv/zdft.routes" ....
-2013-04-29 17:19:22.689 [info] <0.358.0> GET /ocr/index/ [zdft] 200 49ms
-2013-04-29 17:19:30.935 [info] <0.350.0> Loading routes from "/home/jackie/Erlang/projects/zdft/priv/zdft.routes" ....
-2013-04-29 17:19:31.070 [info] <0.378.0> GET /ocr/index/loader.gif [zdft] 200 124ms
-2013-04-29 17:19:31.117 [info] <0.350.0> Loading routes from "/home/jackie/Erlang/projects/zdft/priv/zdft.routes" ....
-2013-04-29 17:19:31.124 [error] <0.378.0> GET /comet/stat/ [zdft] 404 4ms
-2013-04-29 17:25:12.868 [info] <0.350.0> Loading routes from "/home/jackie/Erlang/projects/zdft/priv/zdft.routes" ....
-2013-04-29 17:25:13.116 [info] <0.386.0> GET /ocr/index/ [zdft] 200 238ms
-2013-04-29 17:29:27.289 [info] <0.350.0> Loading routes from "/home/jackie/Erlang/projects/zdft/priv/zdft.routes" ....
-2013-04-29 17:29:27.402 [info] <0.404.0> GET /ocr/index/ [zdft] 200 90ms
-2013-04-29 17:34:05.647 [info] <0.7.0> Application lager started on node zdft@localhost
-2013-04-29 17:34:05.671 [info] <0.66.0> Starting Boss in development mode....
-
-2013-04-29 17:34:05.706 [info] <0.66.0> Starting master services on zdft@localhost
-
-2013-04-29 17:34:05.719 [info] <0.7.0> Application tinymq started on node zdft@localhost
-2013-04-29 17:34:05.790 [info] <0.66.0> SSL:[]
-
-2013-04-29 17:34:05.793 [info] <0.66.0> Starting cowboy... on zdft@localhost
-
-2013-04-29 17:34:05.796 [info] <0.7.0> Application ranch started on node zdft@localhost
-2013-04-29 17:34:05.804 [info] <0.7.0> Application cowboy started on node zdft@localhost
-2013-04-29 17:34:05.804 [info] <0.66.0> Starting http listener... on 8001 
-
-2013-04-29 17:34:05.821 [info] <0.7.0> Application boss started on node zdft@localhost
-2013-04-29 17:34:05.821 [info] <0.7.0> Application zdft started on node zdft@localhost
-2013-04-29 17:34:05.834 [info] <0.350.0> Loading routes from "/home/jackie/Erlang/projects/zdft/priv/zdft.routes" ....
-2013-04-29 18:40:37.151 [info] <0.350.0> Loading routes from "/home/jackie/Erlang/projects/zdft/priv/zdft.routes" ....
-2013-04-29 18:40:39.642 [info] <0.423.0> GET /ocr/index/ [zdft] 200 2533ms
-2013-04-29 18:47:32.667 [info] <0.350.0> Loading routes from "/home/jackie/Erlang/projects/zdft/priv/zdft.routes" ....
-2013-04-29 18:47:32.740 [info] <0.441.0> GET /ocr/index/ [zdft] 200 67ms
-2013-04-29 18:57:13.921 [info] <0.350.0> Loading routes from "/home/jackie/Erlang/projects/zdft/priv/zdft.routes" ....
-2013-04-29 18:57:14.022 [info] <0.454.0> GET /ocr/index/ [zdft] 200 80ms
-2013-04-29 19:13:07.124 [info] <0.350.0> Loading routes from "/home/jackie/Erlang/projects/zdft/priv/zdft.routes" ....
-2013-04-29 19:13:07.311 [info] <0.473.0> GET /ocr/index/ [zdft] 200 177ms
-2013-04-29 19:13:26.572 [error] <0.348.0> gen_server zdft_ocr_websocket terminated with reason: bad argument in call to io:format(<0.63.0>, "Handler is: ~p_", zdft_ocr_websocket) in boss_service_worker:handle_cast/2 line 174
-2013-04-29 19:13:27.005 [error] <0.348.0> CRASH REPORT Process <0.348.0> with 0 neighbours exited with reason: bad argument in call to io:format(<0.63.0>, "Handler is: ~p_", zdft_ocr_websocket) in boss_service_worker:handle_cast/2 line 174 in gen_server:terminate/6 line 747
-2013-04-29 19:13:27.008 [error] <0.131.0> Supervisor boss_service_sup had child zdft_ocr_websocket started with boss_service_worker:start_link(zdft_ocr_websocket, <<"/websocket/ocr">>) at <0.348.0> exit with reason bad argument in call to io:format(<0.63.0>, "Handler is: ~p_", zdft_ocr_websocket) in boss_service_worker:handle_cast/2 line 174 in context child_terminated
-2013-04-29 19:17:52.625 [info] <0.350.0> Loading routes from "/home/jackie/Erlang/projects/zdft/priv/zdft.routes" ....
-2013-04-29 19:17:52.742 [info] <0.485.0> GET /ocr/index/ [zdft] 200 85ms
-2013-04-29 19:17:56.928 [error] <0.484.0> ** Boss Service Handler zdft_ocr_websocket terminating in handle_incoming/4
-   for the reason error:undef
-ServiceUrl: "/websocket/ocr"
-WebSocketId: <0.492.0>
-SessionId  : <<"76dc691752b73bfd5bee03deb5bae61ff20577cc">>
-Message    : <<"Message to send">>
-State    : {state,{dict,1,16,16,8,80,48,{[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]},{{[],[],[],[],[],[[<0.492.0>|<<"76dc691752b73bfd5bee03deb5bae61ff20577cc">>]],[],[],[],[],[],[],[],[],[],[]}}}}
-** Stacktrace: [{jsx,parse,[<<"Message to send">>],[]},{zdft_ocr_websocket,handle_incoming,5,[{file,"/home/jackie/Erlang/projects/zdft/src/websocket/zdft_ocr_websocket.erl"},{line,57}]},{boss_service_worker,handle_cast,2,[{file,"src/boss/boss_service_worker.erl"},{line,175}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,607}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,239}]}]
-
-
-2013-04-29 19:17:56.935 [error] <0.484.0> gen_server zdft_ocr_websocket terminated with reason: bad return value: ok
-2013-04-29 19:17:56.996 [error] <0.484.0> CRASH REPORT Process <0.484.0> with 0 neighbours exited with reason: bad return value: ok in gen_server:terminate/6 line 747
-2013-04-29 19:17:57.019 [error] <0.131.0> Supervisor boss_service_sup had child zdft_ocr_websocket started with boss_service_worker:start_link(zdft_ocr_websocket, <<"/websocket/ocr">>) at <0.484.0> exit with reason bad return value: ok in context child_terminated
-2013-04-29 19:24:35.097 [info] <0.350.0> Loading routes from "/home/jackie/Erlang/projects/zdft/priv/zdft.routes" ....
-2013-04-29 19:24:35.349 [info] <0.496.0> GET /ocr/index/ [zdft] 200 248ms
-2013-04-29 19:24:41.391 [error] <0.495.0> ** Boss Service Handler zdft_ocr_websocket terminating in handle_incoming/4
-   for the reason error:undef
-ServiceUrl: "/websocket/ocr"
-WebSocketId: <0.503.0>
-SessionId  : <<"76dc691752b73bfd5bee03deb5bae61ff20577cc">>
-Message    : <<"Message to send">>
-State    : {state,{dict,1,16,16,8,80,48,{[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]},{{[[<0.503.0>|<<"76dc691752b73bfd5bee03deb5bae61ff20577cc">>]],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]}}}}
-** Stacktrace: [{jsx,parse,[<<"Message to send">>],[]},{zdft_ocr_websocket,handle_incoming,5,[{file,"/home/jackie/Erlang/projects/zdft/src/websocket/zdft_ocr_websocket.erl"},{line,57}]},{boss_service_worker,handle_cast,2,[{file,"src/boss/boss_service_worker.erl"},{line,175}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,607}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,239}]}]
-
-
-2013-04-29 19:24:41.404 [error] <0.495.0> gen_server zdft_ocr_websocket terminated with reason: bad return value: ok
-2013-04-29 19:24:41.415 [error] <0.495.0> CRASH REPORT Process <0.495.0> with 0 neighbours exited with reason: bad return value: ok in gen_server:terminate/6 line 747
-2013-04-29 19:24:41.420 [error] <0.131.0> Supervisor boss_service_sup had child zdft_ocr_websocket started with boss_service_worker:start_link(zdft_ocr_websocket, <<"/websocket/ocr">>) at <0.495.0> exit with reason bad return value: ok in context child_terminated
-2013-04-29 19:34:56.784 [info] <0.350.0> Loading routes from "/home/jackie/Erlang/projects/zdft/priv/zdft.routes" ....
-2013-04-29 19:34:57.011 [info] <0.507.0> GET /ocr/index/ [zdft] 200 220ms
-2013-04-29 19:35:05.580 [error] <0.506.0> ** Boss Service Handler zdft_ocr_websocket terminating in handle_incoming/4
-   for the reason error:undef
-ServiceUrl: "/websocket/ocr"
-WebSocketId: <0.514.0>
-SessionId  : <<"76dc691752b73bfd5bee03deb5bae61ff20577cc">>
-Message    : <<"Message to send">>
-State    : {state,{dict,1,16,16,8,80,48,{[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]},{{[],[],[],[],[[<0.514.0>|<<"76dc691752b73bfd5bee03deb5bae61ff20577cc">>]],[],[],[],[],[],[],[],[],[],[],[]}}}}
-** Stacktrace: [{jsx,parse,[<<"Message to send">>],[]},{zdft_ocr_websocket,handle_incoming,5,[{file,"/home/jackie/Erlang/projects/zdft/src/websocket/zdft_ocr_websocket.erl"},{line,57}]},{boss_service_worker,handle_cast,2,[{file,"src/boss/boss_service_worker.erl"},{line,175}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,607}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,239}]}]
-
-
-2013-04-29 19:35:05.608 [error] <0.506.0> gen_server zdft_ocr_websocket terminated with reason: bad return value: ok
-2013-04-29 19:35:05.617 [error] <0.506.0> CRASH REPORT Process <0.506.0> with 0 neighbours exited with reason: bad return value: ok in gen_server:terminate/6 line 747
-2013-04-29 19:35:05.626 [error] <0.131.0> Supervisor boss_service_sup had child zdft_ocr_websocket started with boss_service_worker:start_link(zdft_ocr_websocket, <<"/websocket/ocr">>) at <0.506.0> exit with reason bad return value: ok in context child_terminated
-2013-04-29 19:37:02.426 [info] <0.350.0> Loading routes from "/home/jackie/Erlang/projects/zdft/priv/zdft.routes" ....
-2013-04-29 19:37:02.487 [info] <0.518.0> GET /ocr/index/ [zdft] 200 52ms
-2013-04-29 19:55:50.239 [info] <0.350.0> Loading routes from "/home/jackie/Erlang/projects/zdft/priv/zdft.routes" ....
-2013-04-29 19:55:50.785 [info] <0.527.0> GET /ocr/index/ [zdft] 200 517ms
-2013-04-29 20:04:03.031 [info] <0.350.0> Loading routes from "/home/jackie/Erlang/projects/zdft/priv/zdft.routes" ....
-2013-04-29 20:04:03.143 [info] <0.537.0> GET /ocr/index/ [zdft] 200 104ms
-2013-04-29 20:04:08.740 [error] <0.517.0> ** Boss Service Handler zdft_ocr_websocket terminating in handle_incoming/4
-   for the reason error:undef
-ServiceUrl: "/websocket/ocr"
-WebSocketId: <0.545.0>
-SessionId  : <<"76dc691752b73bfd5bee03deb5bae61ff20577cc">>
-Message    : <<"[object Object]">>
-State    : {state,{dict,1,16,16,8,80,48,{[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]},{{[],[],[],[[<0.545.0>|<<"76dc691752b73bfd5bee03deb5bae61ff20577cc">>]],[],[],[],[],[],[],[],[],[],[],[],[]}}}}
-** Stacktrace: [{jsx,parse,[<<"[object Object]">>],[]},{zdft_ocr_websocket,handle_incoming,5,[{file,"/home/jackie/Erlang/projects/zdft/src/websocket/zdft_ocr_websocket.erl"},{line,57}]},{boss_service_worker,handle_cast,2,[{file,"src/boss/boss_service_worker.erl"},{line,175}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,607}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,239}]}]
-
-
-2013-04-29 20:04:08.910 [error] <0.517.0> gen_server zdft_ocr_websocket terminated with reason: bad return value: ok
-2013-04-29 20:04:08.913 [error] <0.517.0> CRASH REPORT Process <0.517.0> with 0 neighbours exited with reason: bad return value: ok in gen_server:terminate/6 line 747
-2013-04-29 20:04:08.915 [error] <0.131.0> Supervisor boss_service_sup had child zdft_ocr_websocket started with boss_service_worker:start_link(zdft_ocr_websocket, <<"/websocket/ocr">>) at <0.517.0> exit with reason bad return value: ok in context child_terminated
-2013-04-29 20:06:03.393 [info] <0.350.0> Loading routes from "/home/jackie/Erlang/projects/zdft/priv/zdft.routes" ....
-2013-04-29 20:06:03.507 [info] <0.549.0> GET /ocr/index/ [zdft] 200 106ms
-2013-04-29 20:07:58.254 [info] <0.350.0> Loading routes from "/home/jackie/Erlang/projects/zdft/priv/zdft.routes" ....
-2013-04-29 20:07:58.427 [info] <0.558.0> GET /ocr/index/ [zdft] 200 137ms
-2013-04-29 20:08:03.180 [info] <0.350.0> Loading routes from "/home/jackie/Erlang/projects/zdft/priv/zdft.routes" ....
-2013-04-29 20:08:03.262 [info] <0.558.0> GET /ocr/index/ [zdft] 200 74ms
-2013-04-29 20:08:05.701 [info] <0.350.0> Loading routes from "/home/jackie/Erlang/projects/zdft/priv/zdft.routes" ....
-2013-04-29 20:08:05.910 [info] <0.558.0> GET /ocr/index/ [zdft] 200 200ms
-2013-04-29 20:08:08.540 [info] <0.350.0> Loading routes from "/home/jackie/Erlang/projects/zdft/priv/zdft.routes" ....
-2013-04-29 20:08:08.688 [info] <0.558.0> GET /ocr/index/ [zdft] 200 142ms
-2013-04-29 20:08:09.781 [info] <0.350.0> Loading routes from "/home/jackie/Erlang/projects/zdft/priv/zdft.routes" ....
-2013-04-29 20:08:09.849 [info] <0.558.0> GET /ocr/index/ [zdft] 200 48ms
-2013-04-29 20:08:10.589 [info] <0.350.0> Loading routes from "/home/jackie/Erlang/projects/zdft/priv/zdft.routes" ....
-2013-04-29 20:08:10.647 [info] <0.558.0> GET /ocr/index/ [zdft] 200 52ms
-2013-04-29 20:39:22.690 [info] <0.350.0> Loading routes from "/home/jackie/Erlang/projects/zdft/priv/zdft.routes" ....
-2013-04-29 20:39:22.916 [info] <0.600.0> GET /ocr/index/ [zdft] 200 225ms
-2013-04-29 20:40:23.352 [info] <0.350.0> Loading routes from "/home/jackie/Erlang/projects/zdft/priv/zdft.routes" ....
-2013-04-29 20:40:23.479 [info] <0.611.0> GET /ocr/index/ [zdft] 200 122ms
-2013-04-29 20:40:26.001 [info] <0.350.0> Loading routes from "/home/jackie/Erlang/projects/zdft/priv/zdft.routes" ....
-2013-04-29 20:40:26.070 [info] <0.611.0> GET /ocr/index/ [zdft] 200 64ms
-2013-04-29 20:40:54.450 [info] <0.350.0> Loading routes from "/home/jackie/Erlang/projects/zdft/priv/zdft.routes" ....
-2013-04-29 20:40:54.529 [info] <0.626.0> GET /ocr/index/ [zdft] 200 47ms
-2013-04-29 20:41:16.738 [info] <0.350.0> Loading routes from "/home/jackie/Erlang/projects/zdft/priv/zdft.routes" ....
-2013-04-29 20:41:16.795 [info] <0.635.0> GET /ocr/index/ [zdft] 200 51ms
-2013-04-29 20:41:18.170 [info] <0.350.0> Loading routes from "/home/jackie/Erlang/projects/zdft/priv/zdft.routes" ....
-2013-04-29 20:41:18.244 [info] <0.635.0> GET /ocr/index/ [zdft] 200 69ms
-2013-04-29 21:21:14.356 [info] <0.350.0> Loading routes from "/home/jackie/Erlang/projects/zdft/priv/zdft.routes" ....
-2013-04-29 21:21:14.697 [info] <0.662.0> GET /ocr/index/ [zdft] 200 319ms
-2013-04-29 21:21:16.142 [error] <0.548.0> ** Handler zdft_ocr_websocket terminating in init/0
-   for the reason error:{badmatch,{state,{dict,1,16,16,8,80,48,{[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]},{{[],[],[],[],[],[],[],[],[],[[<0.647.0>|<<"76dc691752b73bfd5bee03deb5bae61ff20577cc">>]],[],[],[],[],[],[]}}}}}
-ServiceUrl: "/websocket/ocr"
-WebSocketId: <0.647.0>
-SessionId  : <<"76dc691752b73bfd5bee03deb5bae61ff20577cc">>
-State    : {state,{dict,1,16,16,8,80,48,{[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]},{{[],[],[],[],[],[],[],[],[],[[<0.647.0>|<<"76dc691752b73bfd5bee03deb5bae61ff20577cc">>]],[],[],[],[],[],[]}}}}
-** Stacktrace: [{zdft_ocr_websocket,handle_close,4,[{file,"/home/jackie/Erlang/projects/zdft/src/websocket/zdft_ocr_websocket.erl"},{line,45}]},{boss_service_worker,handle_call,3,[{file,"src/boss/boss_service_worker.erl"},{line,129}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,588}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,239}]}]
-
-
-2013-04-29 21:21:17.570 [error] <0.548.0> gen_server zdft_ocr_websocket terminated with reason: bad return value: ok
-2013-04-29 21:21:17.850 [error] <0.548.0> CRASH REPORT Process <0.548.0> with 0 neighbours exited with reason: bad return value: ok in gen_server:terminate/6 line 747
-2013-04-29 21:21:17.853 [error] <0.131.0> Supervisor boss_service_sup had child zdft_ocr_websocket started with boss_service_worker:start_link(zdft_ocr_websocket, <<"/websocket/ocr">>) at <0.548.0> exit with reason bad return value: ok in context child_terminated
-2013-04-29 21:21:26.522 [info] <0.350.0> Loading routes from "/home/jackie/Erlang/projects/zdft/priv/zdft.routes" ....
-2013-04-29 21:22:26.678 [info] <0.671.0> POST /ocr/parse [zdft] 200 60154ms
-2013-04-29 21:23:31.823 [info] <0.350.0> Loading routes from "/home/jackie/Erlang/projects/zdft/priv/zdft.routes" ....
-2013-04-29 21:23:31.904 [info] <0.675.0> GET /ocr/index/ [zdft] 200 67ms
-2013-04-29 21:23:52.521 [info] <0.350.0> Loading routes from "/home/jackie/Erlang/projects/zdft/priv/zdft.routes" ....
-2013-04-29 21:23:52.576 [error] <0.670.0> ** Handler zdft_ocr_websocket terminating in handle_info/2
-   for the reason error:{badrecord,dict}
-** Stacktrace: [{dict,get_slot,2,[{file,"dict.erl"},{line,396}]},{dict,store,3,[{file,"dict.erl"},{line,179}]},{zdft_ocr_websocket,handle_info,2,[{file,"/home/jackie/Erlang/projects/zdft/src/websocket/zdft_ocr_websocket.erl"},{line,80}]},{boss_service_worker,handle_info,2,[{file,"src/boss/boss_service_worker.erl"},{line,230}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,607}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,239}]}]
-
-
-2013-04-29 21:23:52.625 [error] <0.670.0> gen_server zdft_ocr_websocket terminated with reason: bad return value: ok
-2013-04-29 21:23:52.629 [error] <0.670.0> CRASH REPORT Process <0.670.0> with 0 neighbours exited with reason: bad return value: ok in gen_server:terminate/6 line 747
-2013-04-29 21:23:52.642 [error] <0.131.0> Supervisor boss_service_sup had child zdft_ocr_websocket started with boss_service_worker:start_link(zdft_ocr_websocket, <<"/websocket/ocr">>) at <0.670.0> exit with reason bad return value: ok in context child_terminated
-2013-04-29 21:24:03.740 [error] <0.690.0> ** Boss Service Handler zdft_ocr_websocket terminating in handle_incoming/4
-   for the reason error:{badrecord,dict}
-ServiceUrl: "/websocket/ocr"
-WebSocketId: <0.682.0>
-SessionId  : <<"76dc691752b73bfd5bee03deb5bae61ff20577cc">>
-Message    : <<"[object Object]">>
-State    : {state,{dict,0,16,16,8,80,48,{[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]},{{[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]}}},undefined}
-** Stacktrace: [{dict,fold_dict,3,[{file,"dict.erl"},{line,428}]},{zdft_ocr_websocket,handle_incoming,5,[{file,"/home/jackie/Erlang/projects/zdft/src/websocket/zdft_ocr_websocket.erl"},{line,59}]},{boss_service_worker,handle_cast,2,[{file,"src/boss/boss_service_worker.erl"},{line,175}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,607}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,239}]}]
-
-
-2013-04-29 21:24:03.773 [error] <0.690.0> gen_server zdft_ocr_websocket terminated with reason: bad return value: ok
-2013-04-29 21:24:03.776 [error] <0.690.0> CRASH REPORT Process <0.690.0> with 0 neighbours exited with reason: bad return value: ok in gen_server:terminate/6 line 747
-2013-04-29 21:24:03.796 [error] <0.131.0> Supervisor boss_service_sup had child zdft_ocr_websocket started with boss_service_worker:start_link(zdft_ocr_websocket, <<"/websocket/ocr">>) at <0.690.0> exit with reason bad return value: ok in context child_terminated
-2013-04-29 21:24:52.578 [info] <0.684.0> POST /ocr/parse [zdft] 200 60054ms
-2013-04-29 21:24:52.601 [error] <0.692.0> ** Handler zdft_ocr_websocket terminating in init/0
-   for the reason error:{badrecord,dict}
-ServiceUrl: "/websocket/ocr"
-WebSocketId: <0.682.0>
-SessionId  : <<"76dc691752b73bfd5bee03deb5bae61ff20577cc">>
-State    : {state,{dict,0,16,16,8,80,48,{[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]},{{[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]}}},undefined}
-** Stacktrace: [{dict,get_slot,2,[{file,"dict.erl"},{line,396}]},{dict,erase,2,[{file,"dict.erl"},{line,161}]},{zdft_ocr_websocket,handle_close,4,[{file,"/home/jackie/Erlang/projects/zdft/src/websocket/zdft_ocr_websocket.erl"},{line,46}]},{boss_service_worker,handle_call,3,[{file,"src/boss/boss_service_worker.erl"},{line,129}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,588}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,239}]}]
-
-
-2013-04-29 21:24:52.604 [error] <0.692.0> gen_server zdft_ocr_websocket terminated with reason: bad return value: ok
-2013-04-29 21:24:52.612 [error] <0.692.0> CRASH REPORT Process <0.692.0> with 0 neighbours exited with reason: bad return value: ok in gen_server:terminate/6 line 747
-2013-04-29 21:24:52.645 [error] <0.131.0> Supervisor boss_service_sup had child zdft_ocr_websocket started with boss_service_worker:start_link(zdft_ocr_websocket, <<"/websocket/ocr">>) at <0.692.0> exit with reason bad return value: ok in context child_terminated
-2013-04-29 21:59:26.346 [info] <0.350.0> Loading routes from "/home/jackie/Erlang/projects/zdft/priv/zdft.routes" ....
-2013-04-29 21:59:26.641 [error] <0.694.0> ** Handler zdft_ocr_websocket terminating in handle_info/2
-   for the reason error:{badrecord,dict}
-** Stacktrace: [{dict,get_slot,2,[{file,"dict.erl"},{line,396}]},{dict,store,3,[{file,"dict.erl"},{line,179}]},{zdft_ocr_websocket,handle_info,2,[{file,"/home/jackie/Erlang/projects/zdft/src/websocket/zdft_ocr_websocket.erl"},{line,80}]},{boss_service_worker,handle_info,2,[{file,"src/boss/boss_service_worker.erl"},{line,230}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,607}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,239}]}]
-
-
-2013-04-29 21:59:26.643 [error] <0.694.0> gen_server zdft_ocr_websocket terminated with reason: bad return value: ok
-2013-04-29 21:59:26.646 [error] <0.694.0> CRASH REPORT Process <0.694.0> with 0 neighbours exited with reason: bad return value: ok in gen_server:terminate/6 line 747
-2013-04-29 21:59:26.648 [error] <0.131.0> Supervisor boss_service_sup had child zdft_ocr_websocket started with boss_service_worker:start_link(zdft_ocr_websocket, <<"/websocket/ocr">>) at <0.694.0> exit with reason bad return value: ok in context child_terminated
-2013-04-29 22:00:26.611 [info] <0.699.0> POST /ocr/parse [zdft] 200 60289ms
-2013-04-29 22:02:23.317 [info] <0.350.0> Loading routes from "/home/jackie/Erlang/projects/zdft/priv/zdft.routes" ....
-2013-04-29 22:02:23.376 [error] <0.705.0> ** Handler zdft_ocr_websocket terminating in handle_info/2
-   for the reason error:{badrecord,dict}
-** Stacktrace: [{dict,get_slot,2,[{file,"dict.erl"},{line,396}]},{dict,store,3,[{file,"dict.erl"},{line,179}]},{zdft_ocr_websocket,handle_info,2,[{file,"/home/jackie/Erlang/projects/zdft/src/websocket/zdft_ocr_websocket.erl"},{line,82}]},{boss_service_worker,handle_info,2,[{file,"src/boss/boss_service_worker.erl"},{line,230}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,607}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,239}]}]
-
-
-2013-04-29 22:02:23.377 [error] <0.705.0> gen_server zdft_ocr_websocket terminated with reason: bad return value: ok
-2013-04-29 22:02:23.428 [error] <0.705.0> CRASH REPORT Process <0.705.0> with 0 neighbours exited with reason: bad return value: ok in gen_server:terminate/6 line 747
-2013-04-29 22:02:23.447 [error] <0.131.0> Supervisor boss_service_sup had child zdft_ocr_websocket started with boss_service_worker:start_link(zdft_ocr_websocket, <<"/websocket/ocr">>) at <0.705.0> exit with reason bad return value: ok in context child_terminated
-2013-04-29 22:03:23.386 [info] <0.710.0> POST /ocr/parse [zdft] 200 60047ms
-2013-04-29 22:08:48.240 [info] <0.350.0> Loading routes from "/home/jackie/Erlang/projects/zdft/priv/zdft.routes" ....
-2013-04-29 22:08:48.340 [error] <0.716.0> ** Handler zdft_ocr_websocket terminating in handle_info/2
-   for the reason error:{badrecord,dict}
-** Stacktrace: [{dict,get_slot,2,[{file,"dict.erl"},{line,396}]},{dict,store,3,[{file,"dict.erl"},{line,179}]},{zdft_ocr_websocket,handle_info,2,[{file,"/home/jackie/Erlang/projects/zdft/src/websocket/zdft_ocr_websocket.erl"},{line,82}]},{boss_service_worker,handle_info,2,[{file,"src/boss/boss_service_worker.erl"},{line,230}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,607}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,239}]}]
-
-
-2013-04-29 22:08:48.342 [error] <0.716.0> gen_server zdft_ocr_websocket terminated with reason: bad return value: ok
-2013-04-29 22:08:48.499 [error] <0.716.0> CRASH REPORT Process <0.716.0> with 0 neighbours exited with reason: bad return value: ok in gen_server:terminate/6 line 747
-2013-04-29 22:08:48.507 [error] <0.131.0> Supervisor boss_service_sup had child zdft_ocr_websocket started with boss_service_worker:start_link(zdft_ocr_websocket, <<"/websocket/ocr">>) at <0.716.0> exit with reason bad return value: ok in context child_terminated
-2013-04-29 22:09:48.334 [info] <0.730.0> POST /ocr/parse [zdft] 200 60079ms
-2013-04-29 22:14:01.454 [info] <0.350.0> Loading routes from "/home/jackie/Erlang/projects/zdft/priv/zdft.routes" ....
-2013-04-29 22:14:01.496 [error] <0.736.0> ** Handler zdft_ocr_websocket terminating in handle_info/2
-   for the reason error:{badrecord,dict}
-** Stacktrace: [{dict,get_slot,2,[{file,"dict.erl"},{line,396}]},{dict,store,3,[{file,"dict.erl"},{line,179}]},{zdft_ocr_websocket,handle_info,2,[{file,"/home/jackie/Erlang/projects/zdft/src/websocket/zdft_ocr_websocket.erl"},{line,82}]},{boss_service_worker,handle_info,2,[{file,"src/boss/boss_service_worker.erl"},{line,230}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,607}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,239}]}]
-
-
-2013-04-29 22:14:01.500 [error] <0.736.0> gen_server zdft_ocr_websocket terminated with reason: bad return value: ok
-2013-04-29 22:14:01.504 [error] <0.736.0> CRASH REPORT Process <0.736.0> with 0 neighbours exited with reason: bad return value: ok in gen_server:terminate/6 line 747
-2013-04-29 22:14:01.506 [error] <0.131.0> Supervisor boss_service_sup had child zdft_ocr_websocket started with boss_service_worker:start_link(zdft_ocr_websocket, <<"/websocket/ocr">>) at <0.736.0> exit with reason bad return value: ok in context child_terminated
-2013-04-29 22:15:01.493 [info] <0.741.0> POST /ocr/parse [zdft] 200 60037ms
-2013-04-29 22:16:57.821 [info] <0.350.0> Loading routes from "/home/jackie/Erlang/projects/zdft/priv/zdft.routes" ....
-2013-04-29 22:17:57.911 [info] <0.748.0> POST /ocr/parse [zdft] 200 60088ms
-2013-04-29 22:19:30.181 [info] <0.350.0> Loading routes from "/home/jackie/Erlang/projects/zdft/priv/zdft.routes" ....
-2013-04-29 22:19:30.278 [info] <0.755.0> GET /ocr/index/ [zdft] 200 87ms
-2013-04-29 22:19:41.500 [info] <0.350.0> Loading routes from "/home/jackie/Erlang/projects/zdft/priv/zdft.routes" ....
-2013-04-29 22:20:40.923 [info] <0.350.0> Loading routes from "/home/jackie/Erlang/projects/zdft/priv/zdft.routes" ....
-2013-04-29 22:20:41.569 [info] <0.764.0> POST /ocr/parse [zdft] 200 60068ms
-2013-04-29 22:20:41.570 [error] emulator Error in process <0.764.0> on node 'zdft@localhost' with exit value: {{case_clause,closed},[{cowboy_protocol,execute,4,[{file,"src/cowboy_protocol.erl"},{line,514}]}]}
-
-
-2013-04-29 22:20:41.573 [error] <0.144.0> Supervisor ranch_conns_sup had child ranch_conns_sup started with {ranch_conns_sup,start_protocol,undefined} at <0.764.0> exit with reason no case clause matching closed in cowboy_protocol:execute/4 line 514 in context child_terminated
-2013-04-29 22:20:55.595 [info] <0.350.0> Loading routes from "/home/jackie/Erlang/projects/zdft/priv/zdft.routes" ....
-2013-04-29 22:20:55.721 [info] <0.776.0> GET /ocr/index/ [zdft] 200 116ms
-2013-04-29 22:21:04.976 [info] <0.350.0> Loading routes from "/home/jackie/Erlang/projects/zdft/priv/zdft.routes" ....
-2013-04-29 22:21:05.022 [error] <0.144.0> Supervisor ranch_conns_sup had child ranch_conns_sup started with {ranch_conns_sup,start_protocol,undefined} at <0.771.0> exit with reason killed in context child_terminated
-2013-04-29 22:22:05.029 [info] <0.786.0> POST /ocr/parse [zdft] 200 60051ms
-2013-04-29 22:24:18.137 [info] <0.350.0> Loading routes from "/home/jackie/Erlang/projects/zdft/priv/zdft.routes" ....
-2013-04-29 22:25:18.199 [info] <0.791.0> POST /ocr/parse [zdft] 200 60060ms
-2013-04-29 22:25:27.605 [info] <0.350.0> Loading routes from "/home/jackie/Erlang/projects/zdft/priv/zdft.routes" ....
-2013-04-29 22:25:46.646 [info] <0.350.0> Loading routes from "/home/jackie/Erlang/projects/zdft/priv/zdft.routes" ....
-2013-04-29 22:25:46.710 [info] <0.806.0> GET /ocr/index/ [zdft] 200 58ms
-2013-04-29 22:25:55.291 [info] <0.350.0> Loading routes from "/home/jackie/Erlang/projects/zdft/priv/zdft.routes" ....
-2013-04-29 22:25:55.360 [error] <0.144.0> Supervisor ranch_conns_sup had child ranch_conns_sup started with {ranch_conns_sup,start_protocol,undefined} at <0.799.0> exit with reason killed in context child_terminated
-2013-04-29 22:26:55.855 [info] <0.815.0> POST /ocr/parse [zdft] 200 60556ms
-2013-04-29 22:29:08.867 [info] <0.350.0> Loading routes from "/home/jackie/Erlang/projects/zdft/priv/zdft.routes" ....
-2013-04-29 22:29:08.914 [info] <0.822.0> POST /ocr/parse [zdft] 200 43ms
-2013-04-29 22:42:56.246 [info] <0.350.0> Loading routes from "/home/jackie/Erlang/projects/zdft/priv/zdft.routes" ....
-2013-04-29 22:42:56.357 [error] <0.747.0> ** Handler zdft_ocr_websocket terminating in handle_info/2
-   for the reason error:undef
-** Stacktrace: [{lager,trace,["To save pid:~p",[<0.833.0>]],[]},{zdft_ocr_websocket,handle_info,2,[{file,"/home/jackie/Erlang/projects/zdft/src/websocket/zdft_ocr_websocket.erl"},{line,78}]},{boss_service_worker,handle_info,2,[{file,"src/boss/boss_service_worker.erl"},{line,230}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,607}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,239}]}]
-
-
-2013-04-29 22:42:56.362 [error] <0.747.0> gen_server zdft_ocr_websocket terminated with reason: bad return value: ok
-2013-04-29 22:42:56.476 [error] <0.747.0> CRASH REPORT Process <0.747.0> with 0 neighbours exited with reason: bad return value: ok in gen_server:terminate/6 line 747
-2013-04-29 22:42:56.479 [error] <0.131.0> Supervisor boss_service_sup had child zdft_ocr_websocket started with boss_service_worker:start_link(zdft_ocr_websocket, <<"/websocket/ocr">>) at <0.747.0> exit with reason bad return value: ok in context child_terminated
-2013-04-29 22:42:59.084 [error] <0.839.0> ** Boss Service Handler zdft_ocr_websocket terminating in handle_incoming/4
-   for the reason error:undef
-ServiceUrl: "/websocket/ocr"
-WebSocketId: <0.831.0>
-SessionId  : <<"76dc691752b73bfd5bee03deb5bae61ff20577cc">>
-Message    : <<"123">>
-State    : {state,{dict,0,16,16,8,80,48,{[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]},{{[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]}}},{dict,0,16,16,8,80,48,{[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]},{{[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]}}}}
-** Stacktrace: [{lager,trace,["Retrieved stored pids is ~p",[[]]],[]},{zdft_ocr_websocket,handle_incoming,5,[{file,"/home/jackie/Erlang/projects/zdft/src/websocket/zdft_ocr_websocket.erl"},{line,57}]},{boss_service_worker,handle_cast,2,[{file,"src/boss/boss_service_worker.erl"},{line,175}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,607}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,239}]}]
-
-
-2013-04-29 22:42:59.086 [error] <0.839.0> gen_server zdft_ocr_websocket terminated with reason: bad return value: ok
-2013-04-29 22:42:59.092 [error] <0.839.0> CRASH REPORT Process <0.839.0> with 0 neighbours exited with reason: bad return value: ok in gen_server:terminate/6 line 747
-2013-04-29 22:42:59.107 [error] <0.131.0> Supervisor boss_service_sup had child zdft_ocr_websocket started with boss_service_worker:start_link(zdft_ocr_websocket, <<"/websocket/ocr">>) at <0.839.0> exit with reason bad return value: ok in context child_terminated
-2013-04-29 22:43:56.337 [info] <0.833.0> POST /ocr/parse [zdft] 200 60064ms
-2013-04-30 10:31:15.489 [info] <0.7.0> Application lager started on node zdft@localhost
-2013-04-30 10:31:15.498 [info] <0.66.0> Starting Boss in development mode....
-
-2013-04-30 10:31:15.528 [info] <0.66.0> Starting master services on zdft@localhost
-
-2013-04-30 10:31:15.537 [info] <0.7.0> Application tinymq started on node zdft@localhost
-2013-04-30 10:31:15.647 [info] <0.66.0> SSL:[]
-
-2013-04-30 10:31:15.651 [info] <0.66.0> Starting cowboy... on zdft@localhost
-
-2013-04-30 10:31:15.657 [info] <0.7.0> Application ranch started on node zdft@localhost
-2013-04-30 10:31:15.670 [info] <0.7.0> Application cowboy started on node zdft@localhost
-2013-04-30 10:31:15.670 [info] <0.66.0> Starting http listener... on 8001 
-
-2013-04-30 10:31:15.810 [notice] <0.69.0>@lager_app:119 Deprecated lager_file_backend config detected, please consider updating it
-2013-04-30 10:31:15.813 [error] <0.77.0>@lager_handler_watcher:98 Lager fatally failed to install handler lager_console_backend into lager_event, NOT retrying: bad_log_level
-2013-04-30 10:31:36.596 [info] <0.354.0> Loading routes from "/home/jackie/Erlang/projects/zdft/priv/zdft.routes" ....
-2013-04-30 10:32:36.635 [info] <0.365.0> POST /ocr/parse [zdft] 200 60038ms
-2013-04-30 10:34:59.344 [info] <0.354.0> Loading routes from "/home/jackie/Erlang/projects/zdft/priv/zdft.routes" ....
-2013-04-30 10:34:59.390 [info] <0.369.0> POST /ocr/parse [zdft] 200 26ms
-2013-04-30 10:37:40.944 [info] <0.354.0> Loading routes from "/home/jackie/Erlang/projects/zdft/priv/zdft.routes" ....
-2013-04-30 10:38:40.988 [info] <0.374.0> POST /ocr/parse [zdft] 200 60041ms
-2013-04-30 10:39:29.612 [info] <0.354.0> Loading routes from "/home/jackie/Erlang/projects/zdft/priv/zdft.routes" ....
-2013-04-30 10:40:29.642 [info] <0.380.0> POST /ocr/parse [zdft] 200 60027ms
-2013-04-30 10:45:13.754 [info] <0.354.0> Loading routes from "/home/jackie/Erlang/projects/zdft/priv/zdft.routes" ....
-2013-04-30 10:45:16.458 [info] <0.390.0> POST /ocr/parse [zdft] 200 2702ms
-2013-04-30 21:36:18.404 [info] <0.354.0> Loading routes from "/home/jackie/Erlang/projects/zdft/priv/zdft.routes" ....
-2013-04-30 21:36:38.004 [info] <0.403.0> POST /ocr/parse [zdft] 200 19679ms
-2013-04-30 21:59:14.356 [info] <0.354.0> Loading routes from "/home/jackie/Erlang/projects/zdft/priv/zdft.routes" ....
-2013-04-30 21:59:14.428 [error] <0.352.0> ** Handler zdft_ocr_websocket terminating in handle_info/2
+2013-05-01 00:15:33.943 [info] <0.354.0> Loading routes from "/home/jackie/Erlang/projects/zdft/priv/zdft.routes" ....
+2013-05-01 00:15:35.702 [info] <0.367.0> POST /ocr/parse [zdft] 200 1759ms
+2013-05-01 18:55:37.724 [info] <0.7.0> Application lager started on node zdft@localhost
+2013-05-01 18:55:37.734 [info] <0.66.0> Starting Boss in development mode....
+
+2013-05-01 18:55:37.773 [info] <0.66.0> Starting master services on zdft@localhost
+
+2013-05-01 18:55:37.797 [info] <0.7.0> Application tinymq started on node zdft@localhost
+2013-05-01 18:55:37.822 [notice] <0.69.0>@lager_app:119 Deprecated lager_file_backend config detected, please consider updating it
+2013-05-01 18:55:37.854 [info] <0.66.0> SSL:[]
+
+2013-05-01 18:55:37.857 [info] <0.66.0> Starting cowboy... on zdft@localhost
+
+2013-05-01 18:55:37.861 [info] <0.7.0> Application ranch started on node zdft@localhost
+2013-05-01 18:55:37.868 [info] <0.7.0> Application cowboy started on node zdft@localhost
+2013-05-01 18:55:37.868 [info] <0.66.0> Starting http listener... on 8001 
+
+2013-05-01 18:55:37.943 [info] <0.352.0>@zdft_ocr_websocket:init:{28,8} FORMAT ERROR: "init~p" [zdft_ocr_websocket,28]
+2013-05-01 19:07:43.468 [info] <0.354.0> Loading routes from "/home/jackie/Erlang/projects/zdft/priv/zdft.routes" ....
+2013-05-01 19:07:44.434 [info] <0.363.0> POST /ocr/parse [zdft] 200 964ms
+2013-05-02 07:00:07.543 [info] <0.7.0> Application lager started on node zdft@localhost
+2013-05-02 07:00:07.556 [info] <0.66.0> Starting Boss in development mode....
+
+2013-05-02 07:00:07.669 [info] <0.66.0> Starting master services on zdft@localhost
+
+2013-05-02 07:00:07.679 [notice] <0.69.0>@lager_app:119 Deprecated lager_file_backend config detected, please consider updating it
+2013-05-02 07:00:07.689 [info] <0.7.0> Application tinymq started on node zdft@localhost
+2013-05-02 07:00:07.787 [info] <0.66.0> SSL:[]
+
+2013-05-02 07:00:07.795 [info] <0.66.0> Starting cowboy... on zdft@localhost
+
+2013-05-02 07:00:07.799 [info] <0.7.0> Application ranch started on node zdft@localhost
+2013-05-02 07:00:07.808 [info] <0.7.0> Application cowboy started on node zdft@localhost
+2013-05-02 07:00:07.808 [info] <0.66.0> Starting http listener... on 8001 
+
+2013-05-02 07:00:07.857 [info] <0.352.0>@zdft_ocr_websocket:init:{28,8} FORMAT ERROR: "init~p" [zdft_ocr_websocket,28]
+2013-05-02 07:22:56.301 [info] <0.354.0> Loading routes from "/home/jackie/Erlang/projects/zdft/priv/zdft.routes" ....
+2013-05-02 07:22:56.706 [info] <0.360.0> GET /ocr/index/ [zdft] 200 412ms
+2013-05-02 07:52:58.241 [info] <0.354.0> Loading routes from "/home/jackie/Erlang/projects/zdft/priv/zdft.routes" ....
+2013-05-02 07:53:00.531 [info] <0.371.0> POST /ocr/parse [zdft] 200 2285ms
+2013-05-02 08:23:52.353 [info] <0.354.0> Loading routes from "/home/jackie/Erlang/projects/zdft/priv/zdft.routes" ....
+2013-05-02 08:23:52.736 [info] <0.381.0> GET /ocr/index/ [zdft] 200 382ms
+2013-05-02 08:24:09.809 [info] <0.354.0> Loading routes from "/home/jackie/Erlang/projects/zdft/priv/zdft.routes" ....
+2013-05-02 08:24:12.819 [info] <0.394.0> POST /ocr/parse [zdft] 200 3010ms
+2013-05-02 08:25:41.201 [info] <0.354.0> Loading routes from "/home/jackie/Erlang/projects/zdft/priv/zdft.routes" ....
+2013-05-02 08:25:41.280 [info] <0.404.0> GET /ocr/index/ [zdft] 200 78ms
+2013-05-02 08:25:47.729 [info] <0.354.0> Loading routes from "/home/jackie/Erlang/projects/zdft/priv/zdft.routes" ....
+2013-05-02 08:26:42.548 [info] <0.354.0> Loading routes from "/home/jackie/Erlang/projects/zdft/priv/zdft.routes" ....
+2013-05-02 08:26:42.777 [info] <0.420.0> GET /ocr/index/ [zdft] 200 159ms
+2013-05-02 08:26:47.861 [info] <0.416.0> POST /ocr/parse [zdft] 200 60133ms
+2013-05-02 08:26:47.861 [error] emulator Error in process <0.416.0> on node 'zdft@localhost' with exit value: {{case_clause,closed},[{cowboy_protocol,execute,4,[{file,"src/cowboy_protocol.erl"},{line,514}]}]}
+
+
+2013-05-02 08:26:47.878 [error] <0.148.0> Supervisor {<0.148.0>,ranch_conns_sup} had child ranch_conns_sup started with {ranch_conns_sup,start_protocol,undefined} at <0.416.0> exit with reason no case clause matching closed in cowboy_protocol:execute/4 line 514 in context child_terminated
+2013-05-02 08:27:40.912 [info] <0.354.0> Loading routes from "/home/jackie/Erlang/projects/zdft/priv/zdft.routes" ....
+2013-05-02 08:27:41.059 [info] <0.432.0> GET /ocr/index/ [zdft] 200 146ms
+2013-05-02 08:28:11.917 [info] <0.354.0> Loading routes from "/home/jackie/Erlang/projects/zdft/priv/zdft.routes" ....
+2013-05-02 08:29:11.957 [info] <0.444.0> POST /ocr/parse [zdft] 200 60039ms
+2013-05-02 08:30:10.618 [info] <0.354.0> Loading routes from "/home/jackie/Erlang/projects/zdft/priv/zdft.routes" ....
+2013-05-02 08:30:15.278 [info] <0.354.0> Loading routes from "/home/jackie/Erlang/projects/zdft/priv/zdft.routes" ....
+2013-05-02 08:30:15.329 [info] <0.458.0> GET /ocr/index/ [zdft] 200 44ms
+2013-05-02 08:30:18.850 [info] <0.354.0> Loading routes from "/home/jackie/Erlang/projects/zdft/priv/zdft.routes" ....
+2013-05-02 08:31:07.390 [info] <0.354.0> Loading routes from "/home/jackie/Erlang/projects/zdft/priv/zdft.routes" ....
+2013-05-02 08:31:07.445 [info] <0.472.0> GET /ocr/index/ [zdft] 200 47ms
+2013-05-02 08:31:10.648 [info] <0.448.0> POST /ocr/parse [zdft] 200 60029ms
+2013-05-02 08:31:10.648 [error] emulator Error in process <0.448.0> on node 'zdft@localhost' with exit value: {{case_clause,closed},[{cowboy_protocol,execute,4,[{file,"src/cowboy_protocol.erl"},{line,514}]}]}
+
+
+2013-05-02 08:31:10.648 [error] <0.148.0> Supervisor {<0.148.0>,ranch_conns_sup} had child ranch_conns_sup started with {ranch_conns_sup,start_protocol,undefined} at <0.448.0> exit with reason no case clause matching closed in cowboy_protocol:execute/4 line 514 in context child_terminated
+2013-05-02 08:31:16.719 [info] <0.354.0> Loading routes from "/home/jackie/Erlang/projects/zdft/priv/zdft.routes" ....
+2013-05-02 08:31:18.892 [info] <0.458.0> POST /ocr/parse [zdft] 200 60041ms
+2013-05-02 08:31:18.892 [error] emulator Error in process <0.458.0> on node 'zdft@localhost' with exit value: {{case_clause,closed},[{cowboy_protocol,execute,4,[{file,"src/cowboy_protocol.erl"},{line,514}]}]}
+
+
+2013-05-02 08:31:18.893 [error] <0.148.0> Supervisor {<0.148.0>,ranch_conns_sup} had child ranch_conns_sup started with {ranch_conns_sup,start_protocol,undefined} at <0.458.0> exit with reason no case clause matching closed in cowboy_protocol:execute/4 line 514 in context child_terminated
+2013-05-02 08:32:16.760 [info] <0.484.0> POST /ocr/parse [zdft] 200 60041ms
+2013-05-02 08:33:18.507 [info] <0.354.0> Loading routes from "/home/jackie/Erlang/projects/zdft/priv/zdft.routes" ....
+2013-05-02 08:33:18.558 [info] <0.488.0> GET /ocr/index/ [zdft] 200 44ms
+2013-05-02 08:33:21.847 [info] <0.354.0> Loading routes from "/home/jackie/Erlang/projects/zdft/priv/zdft.routes" ....
+2013-05-02 08:34:21.898 [info] <0.488.0> POST /ocr/parse [zdft] 200 60050ms
+2013-05-02 08:34:31.603 [info] <0.354.0> Loading routes from "/home/jackie/Erlang/projects/zdft/priv/zdft.routes" ....
+2013-05-02 08:34:31.655 [info] <0.504.0> GET /ocr/index/ [zdft] 200 45ms
+2013-05-02 08:34:34.813 [info] <0.354.0> Loading routes from "/home/jackie/Erlang/projects/zdft/priv/zdft.routes" ....
+2013-05-02 08:35:34.852 [info] <0.504.0> POST /ocr/parse [zdft] 200 60038ms
+2013-05-02 08:35:34.852 [error] emulator Error in process <0.504.0> on node 'zdft@localhost' with exit value: {{case_clause,closed},[{cowboy_protocol,execute,4,[{file,"src/cowboy_protocol.erl"},{line,514}]}]}
+
+
+2013-05-02 08:35:34.852 [error] <0.148.0> Supervisor {<0.148.0>,ranch_conns_sup} had child ranch_conns_sup started with {ranch_conns_sup,start_protocol,undefined} at <0.504.0> exit with reason no case clause matching closed in cowboy_protocol:execute/4 line 514 in context child_terminated
+2013-05-02 08:37:22.618 [info] <0.354.0> Loading routes from "/home/jackie/Erlang/projects/zdft/priv/zdft.routes" ....
+2013-05-02 08:37:22.662 [info] <0.518.0> GET /ocr/index/ [zdft] 200 40ms
+2013-05-02 08:37:26.178 [info] <0.354.0> Loading routes from "/home/jackie/Erlang/projects/zdft/priv/zdft.routes" ....
+2013-05-02 08:38:26.223 [info] <0.518.0> POST /ocr/parse [zdft] 200 60044ms
+2013-05-02 08:38:26.223 [error] emulator Error in process <0.518.0> on node 'zdft@localhost' with exit value: {{case_clause,closed},[{cowboy_protocol,execute,4,[{file,"src/cowboy_protocol.erl"},{line,514}]}]}
+
+
+2013-05-02 08:38:26.224 [error] <0.148.0> Supervisor {<0.148.0>,ranch_conns_sup} had child ranch_conns_sup started with {ranch_conns_sup,start_protocol,undefined} at <0.518.0> exit with reason no case clause matching closed in cowboy_protocol:execute/4 line 514 in context child_terminated
+2013-05-02 08:44:52.396 [info] <0.354.0> Loading routes from "/home/jackie/Erlang/projects/zdft/priv/zdft.routes" ....
+2013-05-02 08:44:52.444 [info] <0.532.0> GET /ocr/index/ [zdft] 200 41ms
+2013-05-02 08:44:57.014 [info] <0.354.0> Loading routes from "/home/jackie/Erlang/projects/zdft/priv/zdft.routes" ....
+2013-05-02 08:45:57.319 [info] <0.532.0> POST /ocr/parse [zdft] 200 60304ms
+2013-05-02 08:45:57.319 [error] emulator Error in process <0.532.0> on node 'zdft@localhost' with exit value: {{case_clause,closed},[{cowboy_protocol,execute,4,[{file,"src/cowboy_protocol.erl"},{line,514}]}]}
+
+
+2013-05-02 08:45:57.320 [error] <0.148.0> Supervisor {<0.148.0>,ranch_conns_sup} had child ranch_conns_sup started with {ranch_conns_sup,start_protocol,undefined} at <0.532.0> exit with reason no case clause matching closed in cowboy_protocol:execute/4 line 514 in context child_terminated
+2013-05-02 08:46:02.217 [info] <0.354.0> Loading routes from "/home/jackie/Erlang/projects/zdft/priv/zdft.routes" ....
+2013-05-02 08:46:02.270 [info] <0.546.0> GET /ocr/index/ [zdft] 200 47ms
+2013-05-02 08:46:06.086 [info] <0.354.0> Loading routes from "/home/jackie/Erlang/projects/zdft/priv/zdft.routes" ....
+2013-05-02 08:46:06.136 [info] <0.546.0> GET /ocr/index/ [zdft] 200 43ms
+2013-05-02 08:46:09.326 [info] <0.354.0> Loading routes from "/home/jackie/Erlang/projects/zdft/priv/zdft.routes" ....
+2013-05-02 08:46:49.945 [info] <0.354.0> Loading routes from "/home/jackie/Erlang/projects/zdft/priv/zdft.routes" ....
+2013-05-02 08:46:50.000 [info] <0.566.0> GET /ocr/index/ [zdft] 200 49ms
+2013-05-02 08:46:54.011 [info] <0.354.0> Loading routes from "/home/jackie/Erlang/projects/zdft/priv/zdft.routes" ....
+2013-05-02 08:47:09.365 [info] <0.546.0> POST /ocr/parse [zdft] 200 60038ms
+2013-05-02 08:47:09.365 [error] emulator Error in process <0.546.0> on node 'zdft@localhost' with exit value: {{case_clause,closed},[{cowboy_protocol,execute,4,[{file,"src/cowboy_protocol.erl"},{line,514}]}]}
+
+
+2013-05-02 08:47:09.365 [error] <0.148.0> Supervisor {<0.148.0>,ranch_conns_sup} had child ranch_conns_sup started with {ranch_conns_sup,start_protocol,undefined} at <0.546.0> exit with reason no case clause matching closed in cowboy_protocol:execute/4 line 514 in context child_terminated
+2013-05-02 08:47:44.644 [info] <0.354.0> Loading routes from "/home/jackie/Erlang/projects/zdft/priv/zdft.routes" ....
+2013-05-02 08:47:44.687 [info] <0.580.0> GET /ocr/index/ [zdft] 200 38ms
+2013-05-02 08:47:54.072 [info] <0.566.0> POST /ocr/parse [zdft] 200 60054ms
+2013-05-02 08:47:55.081 [info] <0.354.0> Loading routes from "/home/jackie/Erlang/projects/zdft/priv/zdft.routes" ....
+2013-05-02 08:48:55.137 [info] <0.588.0> POST /ocr/parse [zdft] 200 60055ms
+2013-05-02 08:48:55.137 [error] emulator Error in process <0.588.0> on node 'zdft@localhost' with exit value: {{case_clause,closed},[{cowboy_protocol,execute,4,[{file,"src/cowboy_protocol.erl"},{line,514}]}]}
+
+
+2013-05-02 08:48:55.138 [error] <0.148.0> Supervisor {<0.148.0>,ranch_conns_sup} had child ranch_conns_sup started with {ranch_conns_sup,start_protocol,undefined} at <0.588.0> exit with reason no case clause matching closed in cowboy_protocol:execute/4 line 514 in context child_terminated
+2013-05-02 08:52:55.068 [info] <0.354.0> Loading routes from "/home/jackie/Erlang/projects/zdft/priv/zdft.routes" ....
+2013-05-02 08:52:55.346 [info] <0.592.0> GET /ocr/index/ [zdft] 200 273ms
+2013-05-02 08:58:45.607 [info] <0.354.0> Loading routes from "/home/jackie/Erlang/projects/zdft/priv/zdft.routes" ....
+2013-05-02 08:58:45.669 [info] <0.607.0> GET /ocr/index/ [zdft] 200 55ms
+2013-05-02 08:59:53.433 [info] <0.354.0> Loading routes from "/home/jackie/Erlang/projects/zdft/priv/zdft.routes" ....
+2013-05-02 08:59:53.484 [info] <0.617.0> GET /ocr/index/ [zdft] 200 44ms
+2013-05-02 08:59:56.410 [info] <0.354.0> Loading routes from "/home/jackie/Erlang/projects/zdft/priv/zdft.routes" ....
+2013-05-02 08:59:56.470 [info] <0.617.0> GET /ocr/index/ [zdft] 200 54ms
+2013-05-02 09:00:00.860 [info] <0.354.0> Loading routes from "/home/jackie/Erlang/projects/zdft/priv/zdft.routes" ....
+2013-05-02 09:00:11.790 [info] <0.354.0> Loading routes from "/home/jackie/Erlang/projects/zdft/priv/zdft.routes" ....
+2013-05-02 09:00:11.839 [info] <0.637.0> GET /ocr/index/ [zdft] 200 42ms
+2013-05-02 09:01:00.895 [info] <0.617.0> POST /ocr/parse [zdft] 200 60034ms
+2013-05-02 09:01:00.895 [error] emulator Error in process <0.617.0> on node 'zdft@localhost' with exit value: {{case_clause,closed},[{cowboy_protocol,execute,4,[{file,"src/cowboy_protocol.erl"},{line,514}]}]}
+
+
+2013-05-02 09:01:00.896 [error] <0.148.0> Supervisor {<0.148.0>,ranch_conns_sup} had child ranch_conns_sup started with {ranch_conns_sup,start_protocol,undefined} at <0.617.0> exit with reason no case clause matching closed in cowboy_protocol:execute/4 line 514 in context child_terminated
+2013-05-02 09:02:00.700 [info] <0.354.0> Loading routes from "/home/jackie/Erlang/projects/zdft/priv/zdft.routes" ....
+2013-05-02 09:02:00.757 [info] <0.649.0> GET /ocr/index/ [zdft] 200 51ms
+2013-05-02 09:02:06.208 [info] <0.354.0> Loading routes from "/home/jackie/Erlang/projects/zdft/priv/zdft.routes" ....
+2013-05-02 09:02:47.739 [info] <0.354.0> Loading routes from "/home/jackie/Erlang/projects/zdft/priv/zdft.routes" ....
+2013-05-02 09:02:47.795 [info] <0.665.0> GET /ocr/index/ [zdft] 200 50ms
+2013-05-02 09:02:51.462 [info] <0.354.0> Loading routes from "/home/jackie/Erlang/projects/zdft/priv/zdft.routes" ....
+2013-05-02 09:03:06.237 [info] <0.661.0> POST /ocr/parse [zdft] 200 60029ms
+2013-05-02 09:03:06.238 [error] emulator Error in process <0.661.0> on node 'zdft@localhost' with exit value: {{case_clause,closed},[{cowboy_protocol,execute,4,[{file,"src/cowboy_protocol.erl"},{line,514}]}]}
+
+
+2013-05-02 09:03:06.238 [error] <0.148.0> Supervisor {<0.148.0>,ranch_conns_sup} had child ranch_conns_sup started with {ranch_conns_sup,start_protocol,undefined} at <0.661.0> exit with reason no case clause matching closed in cowboy_protocol:execute/4 line 514 in context child_terminated
+2013-05-02 09:03:13.128 [info] <0.354.0> Loading routes from "/home/jackie/Erlang/projects/zdft/priv/zdft.routes" ....
+2013-05-02 09:03:13.176 [info] <0.679.0> GET /ocr/index/ [zdft] 200 42ms
+2013-05-02 09:03:16.701 [info] <0.354.0> Loading routes from "/home/jackie/Erlang/projects/zdft/priv/zdft.routes" ....
+2013-05-02 09:03:34.783 [info] <0.354.0> Loading routes from "/home/jackie/Erlang/projects/zdft/priv/zdft.routes" ....
+2013-05-02 09:03:34.838 [info] <0.693.0> GET /ocr/index/ [zdft] 200 49ms
+2013-05-02 09:03:38.790 [info] <0.354.0> Loading routes from "/home/jackie/Erlang/projects/zdft/priv/zdft.routes" ....
+2013-05-02 09:03:51.502 [info] <0.665.0> POST /ocr/parse [zdft] 200 60040ms
+2013-05-02 09:03:51.502 [error] emulator Error in process <0.665.0> on node 'zdft@localhost' with exit value: {{case_clause,closed},[{cowboy_protocol,execute,4,[{file,"src/cowboy_protocol.erl"},{line,514}]}]}
+
+
+2013-05-02 09:03:51.503 [error] <0.148.0> Supervisor {<0.148.0>,ranch_conns_sup} had child ranch_conns_sup started with {ranch_conns_sup,start_protocol,undefined} at <0.665.0> exit with reason no case clause matching closed in cowboy_protocol:execute/4 line 514 in context child_terminated
+2013-05-03 05:01:21.359 [info] <0.679.0> POST /ocr/parse [zdft] 200 71884657ms
+2013-05-03 05:01:21.359 [error] emulator Error in process <0.679.0> on node 'zdft@localhost' with exit value: {{case_clause,closed},[{cowboy_protocol,execute,4,[{file,"src/cowboy_protocol.erl"},{line,514}]}]}
+
+
+2013-05-03 05:01:21.360 [error] <0.148.0> Supervisor {<0.148.0>,ranch_conns_sup} had child ranch_conns_sup started with {ranch_conns_sup,start_protocol,undefined} at <0.679.0> exit with reason no case clause matching closed in cowboy_protocol:execute/4 line 514 in context child_terminated
+2013-05-03 05:01:43.295 [info] <0.693.0> POST /ocr/parse [zdft] 200 71884409ms
+2013-05-03 05:01:43.295 [error] emulator Error in process <0.693.0> on node 'zdft@localhost' with exit value: {{case_clause,closed},[{cowboy_protocol,execute,4,[{file,"src/cowboy_protocol.erl"},{line,514}]}]}
+
+
+2013-05-03 05:01:43.295 [error] <0.148.0> Supervisor {<0.148.0>,ranch_conns_sup} had child ranch_conns_sup started with {ranch_conns_sup,start_protocol,undefined} at <0.693.0> exit with reason no case clause matching closed in cowboy_protocol:execute/4 line 514 in context child_terminated
+2013-05-03 05:12:33.416 [info] <0.354.0> Loading routes from "/home/jackie/Erlang/projects/zdft/priv/zdft.routes" ....
+2013-05-03 05:12:35.729 [info] <0.707.0> GET /ocr/index/ [zdft] 200 2313ms
+2013-05-03 05:12:40.523 [info] <0.354.0> Loading routes from "/home/jackie/Erlang/projects/zdft/priv/zdft.routes" ....
+2013-05-03 05:13:31.844 [info] <0.354.0> Loading routes from "/home/jackie/Erlang/projects/zdft/priv/zdft.routes" ....
+2013-05-03 05:13:31.903 [info] <0.721.0> GET /ocr/index/ [zdft] 200 53ms
+2013-05-03 05:13:36.470 [info] <0.354.0> Loading routes from "/home/jackie/Erlang/projects/zdft/priv/zdft.routes" ....
+2013-05-03 05:13:39.972 [info] <0.707.0> POST /ocr/parse [zdft] 200 59449ms
+2013-05-03 05:13:39.972 [error] emulator Error in process <0.707.0> on node 'zdft@localhost' with exit value: {{case_clause,closed},[{cowboy_protocol,execute,4,[{file,"src/cowboy_protocol.erl"},{line,514}]}]}
+
+
+2013-05-03 05:13:39.972 [error] <0.148.0> Supervisor {<0.148.0>,ranch_conns_sup} had child ranch_conns_sup started with {ranch_conns_sup,start_protocol,undefined} at <0.707.0> exit with reason no case clause matching closed in cowboy_protocol:execute/4 line 514 in context child_terminated
+2013-05-03 05:14:24.419 [info] <0.354.0> Loading routes from "/home/jackie/Erlang/projects/zdft/priv/zdft.routes" ....
+2013-05-03 05:14:24.480 [info] <0.735.0> GET /ocr/index/ [zdft] 200 53ms
+2013-05-03 05:14:28.499 [info] <0.354.0> Loading routes from "/home/jackie/Erlang/projects/zdft/priv/zdft.routes" ....
+2013-05-03 05:14:36.113 [info] <0.721.0> POST /ocr/parse [zdft] 200 59642ms
+2013-05-03 05:14:36.113 [error] emulator Error in process <0.721.0> on node 'zdft@localhost' with exit value: {{case_clause,closed},[{cowboy_protocol,execute,4,[{file,"src/cowboy_protocol.erl"},{line,514}]}]}
+
+
+2013-05-03 05:14:36.114 [error] <0.148.0> Supervisor {<0.148.0>,ranch_conns_sup} had child ranch_conns_sup started with {ranch_conns_sup,start_protocol,undefined} at <0.721.0> exit with reason no case clause matching closed in cowboy_protocol:execute/4 line 514 in context child_terminated
+2013-05-03 05:15:21.114 [info] <0.354.0> Loading routes from "/home/jackie/Erlang/projects/zdft/priv/zdft.routes" ....
+2013-05-03 05:15:21.201 [info] <0.749.0> GET /ocr/index/ [zdft] 200 79ms
+2013-05-03 05:15:25.307 [info] <0.354.0> Loading routes from "/home/jackie/Erlang/projects/zdft/priv/zdft.routes" ....
+2013-05-03 05:15:27.938 [info] <0.735.0> POST /ocr/parse [zdft] 200 59439ms
+2013-05-03 05:15:27.939 [error] emulator Error in process <0.735.0> on node 'zdft@localhost' with exit value: {{case_clause,closed},[{cowboy_protocol,execute,4,[{file,"src/cowboy_protocol.erl"},{line,514}]}]}
+
+
+2013-05-03 05:15:27.939 [error] <0.148.0> Supervisor {<0.148.0>,ranch_conns_sup} had child ranch_conns_sup started with {ranch_conns_sup,start_protocol,undefined} at <0.735.0> exit with reason no case clause matching closed in cowboy_protocol:execute/4 line 514 in context child_terminated
+2013-05-03 05:16:24.754 [info] <0.752.0> POST /ocr/parse [zdft] 200 59446ms
+2013-05-03 05:16:24.754 [error] emulator Error in process <0.752.0> on node 'zdft@localhost' with exit value: {{case_clause,closed},[{cowboy_protocol,execute,4,[{file,"src/cowboy_protocol.erl"},{line,514}]}]}
+
+
+2013-05-03 05:16:24.755 [error] <0.148.0> Supervisor {<0.148.0>,ranch_conns_sup} had child ranch_conns_sup started with {ranch_conns_sup,start_protocol,undefined} at <0.752.0> exit with reason no case clause matching closed in cowboy_protocol:execute/4 line 514 in context child_terminated
+2013-05-03 05:41:48.159 [info] <0.354.0> Loading routes from "/home/jackie/Erlang/projects/zdft/priv/zdft.routes" ....
+2013-05-03 05:41:49.555 [info] <0.763.0> GET /ocr/index/ [zdft] 200 1359ms
+2013-05-03 05:45:44.758 [info] <0.354.0> Loading routes from "/home/jackie/Erlang/projects/zdft/priv/zdft.routes" ....
+2013-05-03 05:45:44.956 [info] <0.776.0> GET /ocr/index/ [zdft] 200 195ms
+2013-05-03 05:45:51.760 [info] <0.354.0> Loading routes from "/home/jackie/Erlang/projects/zdft/priv/zdft.routes" ....
+2013-05-03 05:46:51.205 [info] <0.788.0> POST /ocr/parse [zdft] 200 59444ms
+2013-05-03 05:46:51.205 [error] emulator Error in process <0.788.0> on node 'zdft@localhost' with exit value: {{case_clause,closed},[{cowboy_protocol,execute,4,[{file,"src/cowboy_protocol.erl"},{line,514}]}]}
+
+
+2013-05-03 05:46:51.214 [error] <0.148.0> Supervisor {<0.148.0>,ranch_conns_sup} had child ranch_conns_sup started with {ranch_conns_sup,start_protocol,undefined} at <0.788.0> exit with reason no case clause matching closed in cowboy_protocol:execute/4 line 514 in context child_terminated
+2013-05-03 06:03:56.531 [info] <0.354.0> Loading routes from "/home/jackie/Erlang/projects/zdft/priv/zdft.routes" ....
+2013-05-03 06:03:58.453 [info] <0.792.0> GET /ocr/index/ [zdft] 200 1872ms
+2013-05-03 06:04:13.804 [info] <0.354.0> Loading routes from "/home/jackie/Erlang/projects/zdft/priv/zdft.routes" ....
+2013-05-03 06:05:13.248 [info] <0.807.0> POST /ocr/parse [zdft] 200 59443ms
+2013-05-03 06:05:13.248 [error] emulator Error in process <0.807.0> on node 'zdft@localhost' with exit value: {{case_clause,closed},[{cowboy_protocol,execute,4,[{file,"src/cowboy_protocol.erl"},{line,514}]}]}
+
+
+2013-05-03 06:05:13.265 [error] <0.148.0> Supervisor {<0.148.0>,ranch_conns_sup} had child ranch_conns_sup started with {ranch_conns_sup,start_protocol,undefined} at <0.807.0> exit with reason no case clause matching closed in cowboy_protocol:execute/4 line 514 in context child_terminated
+2013-05-03 06:05:20.690 [info] <0.354.0> Loading routes from "/home/jackie/Erlang/projects/zdft/priv/zdft.routes" ....
+2013-05-03 06:05:20.793 [info] <0.811.0> GET /ocr/index/ [zdft] 200 95ms
+2013-05-03 06:05:25.072 [info] <0.354.0> Loading routes from "/home/jackie/Erlang/projects/zdft/priv/zdft.routes" ....
+2013-05-03 06:06:24.562 [info] <0.811.0> POST /ocr/parse [zdft] 200 59490ms
+2013-05-03 06:06:24.562 [error] emulator Error in process <0.811.0> on node 'zdft@localhost' with exit value: {{case_clause,closed},[{cowboy_protocol,execute,4,[{file,"src/cowboy_protocol.erl"},{line,514}]}]}
+
+
+2013-05-03 06:06:24.563 [error] <0.148.0> Supervisor {<0.148.0>,ranch_conns_sup} had child ranch_conns_sup started with {ranch_conns_sup,start_protocol,undefined} at <0.811.0> exit with reason no case clause matching closed in cowboy_protocol:execute/4 line 514 in context child_terminated
+2013-05-03 06:07:18.149 [info] <0.354.0> Loading routes from "/home/jackie/Erlang/projects/zdft/priv/zdft.routes" ....
+2013-05-03 06:07:18.190 [info] <0.825.0> GET /ocr/index/ [zdft] 200 33ms
+2013-05-03 06:07:22.377 [info] <0.354.0> Loading routes from "/home/jackie/Erlang/projects/zdft/priv/zdft.routes" ....
+2013-05-03 06:07:51.890 [info] <0.354.0> Loading routes from "/home/jackie/Erlang/projects/zdft/priv/zdft.routes" ....
+2013-05-03 06:07:51.947 [info] <0.839.0> GET /ocr/index/ [zdft] 200 52ms
+2013-05-03 06:07:55.887 [info] <0.354.0> Loading routes from "/home/jackie/Erlang/projects/zdft/priv/zdft.routes" ....
+2013-05-03 06:08:21.826 [info] <0.825.0> POST /ocr/parse [zdft] 200 59448ms
+2013-05-03 06:08:21.826 [error] emulator Error in process <0.825.0> on node 'zdft@localhost' with exit value: {{case_clause,closed},[{cowboy_protocol,execute,4,[{file,"src/cowboy_protocol.erl"},{line,514}]}]}
+
+
+2013-05-03 06:08:21.826 [error] <0.148.0> Supervisor {<0.148.0>,ranch_conns_sup} had child ranch_conns_sup started with {ranch_conns_sup,start_protocol,undefined} at <0.825.0> exit with reason no case clause matching closed in cowboy_protocol:execute/4 line 514 in context child_terminated
+2013-05-03 06:08:55.333 [info] <0.839.0> POST /ocr/parse [zdft] 200 59445ms
+2013-05-03 06:08:55.333 [error] emulator Error in process <0.839.0> on node 'zdft@localhost' with exit value: {{case_clause,closed},[{cowboy_protocol,execute,4,[{file,"src/cowboy_protocol.erl"},{line,514}]}]}
+
+
+2013-05-03 06:08:55.333 [error] <0.148.0> Supervisor {<0.148.0>,ranch_conns_sup} had child ranch_conns_sup started with {ranch_conns_sup,start_protocol,undefined} at <0.839.0> exit with reason no case clause matching closed in cowboy_protocol:execute/4 line 514 in context child_terminated
+2013-05-03 06:09:22.424 [info] <0.354.0> Loading routes from "/home/jackie/Erlang/projects/zdft/priv/zdft.routes" ....
+2013-05-03 06:09:22.481 [info] <0.853.0> GET /ocr/index/ [zdft] 200 55ms
+2013-05-03 06:09:26.887 [info] <0.354.0> Loading routes from "/home/jackie/Erlang/projects/zdft/priv/zdft.routes" ....
+2013-05-03 06:10:10.200 [info] <0.354.0> Loading routes from "/home/jackie/Erlang/projects/zdft/priv/zdft.routes" ....
+2013-05-03 06:10:10.291 [info] <0.867.0> GET /ocr/index/ [zdft] 200 46ms
+2013-05-03 06:10:26.324 [info] <0.853.0> POST /ocr/parse [zdft] 200 59436ms
+2013-05-03 06:10:26.324 [error] emulator Error in process <0.853.0> on node 'zdft@localhost' with exit value: {{case_clause,closed},[{cowboy_protocol,execute,4,[{file,"src/cowboy_protocol.erl"},{line,514}]}]}
+
+
+2013-05-03 06:10:26.325 [error] <0.148.0> Supervisor {<0.148.0>,ranch_conns_sup} had child ranch_conns_sup started with {ranch_conns_sup,start_protocol,undefined} at <0.853.0> exit with reason no case clause matching closed in cowboy_protocol:execute/4 line 514 in context child_terminated
+2013-05-03 06:10:41.580 [info] <0.354.0> Loading routes from "/home/jackie/Erlang/projects/zdft/priv/zdft.routes" ....
+2013-05-03 06:11:41.036 [info] <0.879.0> POST /ocr/parse [zdft] 200 59455ms
+2013-05-03 06:12:37.670 [info] <0.354.0> Loading routes from "/home/jackie/Erlang/projects/zdft/priv/zdft.routes" ....
+2013-05-03 06:12:37.732 [info] <0.883.0> GET /ocr/index/ [zdft] 200 54ms
+2013-05-03 06:12:39.206 [info] <0.354.0> Loading routes from "/home/jackie/Erlang/projects/zdft/priv/zdft.routes" ....
+2013-05-03 06:12:39.259 [info] <0.883.0> GET /ocr/index/ [zdft] 200 47ms
+2013-05-03 06:12:42.786 [info] <0.354.0> Loading routes from "/home/jackie/Erlang/projects/zdft/priv/zdft.routes" ....
+2013-05-03 06:13:42.233 [info] <0.883.0> POST /ocr/parse [zdft] 200 59447ms
+2013-05-03 06:13:42.233 [error] emulator Error in process <0.883.0> on node 'zdft@localhost' with exit value: {{case_clause,closed},[{cowboy_protocol,execute,4,[{file,"src/cowboy_protocol.erl"},{line,514}]}]}
+
+
+2013-05-03 06:13:42.233 [error] <0.148.0> Supervisor {<0.148.0>,ranch_conns_sup} had child ranch_conns_sup started with {ranch_conns_sup,start_protocol,undefined} at <0.883.0> exit with reason no case clause matching closed in cowboy_protocol:execute/4 line 514 in context child_terminated
+2013-05-03 06:19:08.098 [info] <0.354.0> Loading routes from "/home/jackie/Erlang/projects/zdft/priv/zdft.routes" ....
+2013-05-03 06:19:08.150 [info] <0.909.0> GET /ocr/index/ [zdft] 200 49ms
+2013-05-03 06:19:12.168 [info] <0.354.0> Loading routes from "/home/jackie/Erlang/projects/zdft/priv/zdft.routes" ....
+2013-05-03 06:20:11.616 [info] <0.909.0> POST /ocr/parse [zdft] 200 59447ms
+2013-05-03 06:20:11.616 [error] emulator Error in process <0.909.0> on node 'zdft@localhost' with exit value: {{case_clause,closed},[{cowboy_protocol,execute,4,[{file,"src/cowboy_protocol.erl"},{line,514}]}]}
+
+
+2013-05-03 06:20:11.616 [error] <0.148.0> Supervisor {<0.148.0>,ranch_conns_sup} had child ranch_conns_sup started with {ranch_conns_sup,start_protocol,undefined} at <0.909.0> exit with reason no case clause matching closed in cowboy_protocol:execute/4 line 514 in context child_terminated
+2013-05-03 06:20:18.755 [info] <0.354.0> Loading routes from "/home/jackie/Erlang/projects/zdft/priv/zdft.routes" ....
+2013-05-03 06:20:18.802 [info] <0.921.0> GET /ocr/index/ [zdft] 200 42ms
+2013-05-03 06:20:23.038 [info] <0.354.0> Loading routes from "/home/jackie/Erlang/projects/zdft/priv/zdft.routes" ....
+2013-05-03 06:21:22.483 [info] <0.921.0> POST /ocr/parse [zdft] 200 59445ms
+2013-05-03 06:21:22.483 [error] emulator Error in process <0.921.0> on node 'zdft@localhost' with exit value: {{case_clause,closed},[{cowboy_protocol,execute,4,[{file,"src/cowboy_protocol.erl"},{line,514}]}]}
+
+
+2013-05-03 06:21:22.483 [error] <0.148.0> Supervisor {<0.148.0>,ranch_conns_sup} had child ranch_conns_sup started with {ranch_conns_sup,start_protocol,undefined} at <0.921.0> exit with reason no case clause matching closed in cowboy_protocol:execute/4 line 514 in context child_terminated
+2013-05-03 06:36:20.985 [info] <0.354.0> Loading routes from "/home/jackie/Erlang/projects/zdft/priv/zdft.routes" ....
+2013-05-03 06:36:21.031 [info] <0.935.0> GET /ocr/index/ [zdft] 200 39ms
+2013-05-03 06:36:30.461 [info] <0.354.0> Loading routes from "/home/jackie/Erlang/projects/zdft/priv/zdft.routes" ....
+2013-05-03 06:37:22.721 [info] <0.354.0> Loading routes from "/home/jackie/Erlang/projects/zdft/priv/zdft.routes" ....
+2013-05-03 06:37:22.783 [info] <0.951.0> GET /ocr/index/ [zdft] 200 56ms
+2013-05-03 06:37:29.904 [info] <0.947.0> POST /ocr/parse [zdft] 200 59442ms
+2013-05-03 06:37:29.904 [error] emulator Error in process <0.947.0> on node 'zdft@localhost' with exit value: {{case_clause,closed},[{cowboy_protocol,execute,4,[{file,"src/cowboy_protocol.erl"},{line,514}]}]}
+
+
+2013-05-03 06:37:29.904 [error] <0.148.0> Supervisor {<0.148.0>,ranch_conns_sup} had child ranch_conns_sup started with {ranch_conns_sup,start_protocol,undefined} at <0.947.0> exit with reason no case clause matching closed in cowboy_protocol:execute/4 line 514 in context child_terminated
+2013-05-03 06:37:46.459 [info] <0.354.0> Loading routes from "/home/jackie/Erlang/projects/zdft/priv/zdft.routes" ....
+2013-05-03 06:37:46.510 [info] <0.963.0> GET /ocr/index/ [zdft] 200 45ms
+2013-05-03 06:38:05.257 [info] <0.354.0> Loading routes from "/home/jackie/Erlang/projects/zdft/priv/zdft.routes" ....
+2013-05-03 06:39:04.694 [info] <0.975.0> POST /ocr/parse [zdft] 200 59437ms
+2013-05-03 06:40:53.694 [info] <0.354.0> Loading routes from "/home/jackie/Erlang/projects/zdft/priv/zdft.routes" ....
+2013-05-03 06:40:54.439 [info] <0.987.0> GET /ocr/index/ [zdft] 200 744ms
+2013-05-03 06:41:01.013 [info] <0.354.0> Loading routes from "/home/jackie/Erlang/projects/zdft/priv/zdft.routes" ....
+2013-05-03 06:41:11.446 [error] <0.352.0> ** Boss Service Handler zdft_ocr_websocket terminating in handle_incoming/4
    for the reason error:badarg
-** Stacktrace: [{zdft_ocr_websocket,handle_info,2,[{file,"/home/jackie/Erlang/projects/zdft/src/websocket/zdft_ocr_websocket.erl"},{line,76}]},{boss_service_worker,handle_info,2,[{file,"src/boss/boss_service_worker.erl"},{line,230}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,607}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,239}]}]
-
-
-2013-04-30 21:59:14.437 [error] <0.352.0> gen_server zdft_ocr_websocket terminated with reason: bad return value: ok
-2013-04-30 21:59:14.437 [error] <0.352.0> CRASH REPORT Process <0.352.0> with 0 neighbours exited with reason: bad return value: ok in gen_server:terminate/6 line 747
-2013-04-30 21:59:14.438 [error] <0.135.0> Supervisor {global,boss_service_sup} had child zdft_ocr_websocket started with boss_service_worker:start_link(zdft_ocr_websocket, <<"/websocket/ocr">>) at <0.352.0> exit with reason bad return value: ok in context child_terminated
-2013-04-30 22:00:13.809 [info] <0.424.0> POST /ocr/parse [zdft] 200 59445ms
-2013-04-30 22:00:27.092 [info] <0.354.0> Loading routes from "/home/jackie/Erlang/projects/zdft/priv/zdft.routes" ....
-2013-04-30 22:00:27.112 [error] <0.431.0> ** Handler zdft_ocr_websocket terminating in handle_info/2
-   for the reason error:badarg
-** Stacktrace: [{zdft_ocr_websocket,handle_info,2,[{file,"/home/jackie/Erlang/projects/zdft/src/websocket/zdft_ocr_websocket.erl"},{line,76}]},{boss_service_worker,handle_info,2,[{file,"src/boss/boss_service_worker.erl"},{line,230}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,607}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,239}]}]
-
-
-2013-04-30 22:00:27.112 [error] <0.431.0> gen_server zdft_ocr_websocket terminated with reason: bad return value: ok
-2013-04-30 22:00:27.113 [error] <0.431.0> CRASH REPORT Process <0.431.0> with 0 neighbours exited with reason: bad return value: ok in gen_server:terminate/6 line 747
-2013-04-30 22:00:27.113 [error] <0.135.0> Supervisor {global,boss_service_sup} had child zdft_ocr_websocket started with boss_service_worker:start_link(zdft_ocr_websocket, <<"/websocket/ocr">>) at <0.431.0> exit with reason bad return value: ok in context child_terminated
-2013-04-30 22:01:26.531 [info] <0.434.0> POST /ocr/parse [zdft] 200 59432ms
-2013-04-30 22:08:52.025 [info] <0.354.0> Loading routes from "/home/jackie/Erlang/projects/zdft/priv/zdft.routes" ....
-2013-04-30 22:08:52.070 [error] <0.439.0> ** Handler zdft_ocr_websocket terminating in handle_info/2
-   for the reason error:badarg
-** Stacktrace: [{zdft_ocr_websocket,handle_info,2,[{file,"/home/jackie/Erlang/projects/zdft/src/websocket/zdft_ocr_websocket.erl"},{line,77}]},{boss_service_worker,handle_info,2,[{file,"src/boss/boss_service_worker.erl"},{line,230}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,607}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,239}]}]
-
-
-2013-04-30 22:08:52.070 [error] <0.439.0> gen_server zdft_ocr_websocket terminated with reason: bad return value: ok
-2013-04-30 22:08:52.070 [error] <0.439.0> CRASH REPORT Process <0.439.0> with 0 neighbours exited with reason: bad return value: ok in gen_server:terminate/6 line 747
-2013-04-30 22:08:52.071 [error] <0.135.0> Supervisor {global,boss_service_sup} had child zdft_ocr_websocket started with boss_service_worker:start_link(zdft_ocr_websocket, <<"/websocket/ocr">>) at <0.439.0> exit with reason bad return value: ok in context child_terminated
-2013-04-30 22:09:14.279 [info] <0.7.0> Application lager started on node zdft@localhost
-2013-04-30 22:09:14.288 [info] <0.66.0> Starting Boss in development mode....
-
-2013-04-30 22:09:14.321 [info] <0.66.0> Starting master services on zdft@localhost
-
-2013-04-30 22:09:14.341 [info] <0.7.0> Application tinymq started on node zdft@localhost
-2013-04-30 22:09:14.394 [info] <0.66.0> SSL:[]
-
-2013-04-30 22:09:14.397 [info] <0.66.0> Starting cowboy... on zdft@localhost
-
-2013-04-30 22:09:14.401 [info] <0.7.0> Application ranch started on node zdft@localhost
-2013-04-30 22:09:14.407 [info] <0.7.0> Application cowboy started on node zdft@localhost
-2013-04-30 22:09:14.407 [info] <0.66.0> Starting http listener... on 8001 
-
-2013-04-30 22:09:14.578 [notice] <0.69.0>@lager_app:119 Deprecated lager_file_backend config detected, please consider updating it
-2013-04-30 22:09:14.580 [error] <0.77.0>@lager_handler_watcher:98 Lager fatally failed to install handler lager_console_backend into lager_event, NOT retrying: bad_log_level
-2013-04-30 22:09:23.507 [info] <0.354.0> Loading routes from "/home/jackie/Erlang/projects/zdft/priv/zdft.routes" ....
-2013-04-30 22:09:23.537 [error] <0.360.0> {function_clause,[{zdft_ocr_controller,parse,['GET',[],{zdft_ocr_controller,{simple_bridge_request_wrapper,mochiweb_request_bridge,{mochicow_request,#Port<0.11329>,'GET',"/ocr/parse",{1,1},{8,{"host",{"host","localhost:8001"},{"connection",{"connection","keep-alive"},{"accept",{"accept","text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8"},nil,{"accept-encoding",{"accept-encoding","gzip,deflate,sdch"},{"accept-charset",{"accept-charset","ISO-8859-1,utf-8;q=0.7,*;q=0.3"},nil,nil},{"accept-language",{"accept-language","en-US,en;q=0.8"},nil,nil}}},{"cookie",{"cookie","_boss_session=f25bffa5ec5f6e1be2cea6e4760bdb37720b4d7a"},nil,nil}},{"user-agent",{"user-agent","Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.31 (KHTML, like Gecko) Chrome/26.0.1410.63 Safari/537.31"},nil,nil}}},<<>>},false,[],[],none}}],[{file,"/home/jackie/Erlang/projects/zdft/src/controller/zdft_ocr_controller.erl"},{line,12}]},{boss_web_controller,execute_action,5,[{file,"src/boss/boss_web_controller.erl"},{line,828}]},{boss_web_controller,process_dynamic_request,5,[{file,"src/boss/boss_web_controller.erl"},{line,535}]},{boss_web_controller,process_request,5,[{file,"src/boss/boss_web_controller.erl"},{line,524}]},{timer,tc,3,[{file,"timer.erl"},{line,194}]},{boss_web_controller,build_dynamic_response,4,[{file,"src/boss/boss_web_controller.erl"},{line,454}]},{mochicow_upgrade,upgrade,4,[{file,"src/mochicow_upgrade.erl"},{line,72}]},{cowboy_protocol,execute,4,[{file,"src/cowboy_protocol.erl"},{line,514}]}]}
-2013-04-30 22:09:23.542 [error] <0.360.0> GET /ocr/parse [zdft] 500 34ms
-2013-04-30 22:10:36.430 [info] <0.354.0> Loading routes from "/home/jackie/Erlang/projects/zdft/priv/zdft.routes" ....
-2013-04-30 22:10:36.558 [info] <0.365.0> GET /ocr/index/ [zdft] 200 122ms
-2013-04-30 22:10:49.199 [info] <0.354.0> Loading routes from "/home/jackie/Erlang/projects/zdft/priv/zdft.routes" ....
-2013-04-30 22:10:49.254 [error] <0.352.0> ** Handler zdft_ocr_websocket terminating in handle_info/2
-   for the reason error:badarg
-** Stacktrace: [{zdft_ocr_websocket,handle_info,2,[{file,"/home/jackie/Erlang/projects/zdft/src/websocket/zdft_ocr_websocket.erl"},{line,77}]},{boss_service_worker,handle_info,2,[{file,"src/boss/boss_service_worker.erl"},{line,230}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,607}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,239}]}]
-
-
-2013-04-30 22:10:49.254 [error] <0.352.0> gen_server zdft_ocr_websocket terminated with reason: bad return value: ok
-2013-04-30 22:10:49.254 [error] <0.352.0> CRASH REPORT Process <0.352.0> with 0 neighbours exited with reason: bad return value: ok in gen_server:terminate/6 line 747
-2013-04-30 22:10:49.255 [error] <0.135.0> Supervisor {global,boss_service_sup} had child zdft_ocr_websocket started with boss_service_worker:start_link(zdft_ocr_websocket, <<"/websocket/ocr">>) at <0.352.0> exit with reason bad return value: ok in context child_terminated
-2013-04-30 22:11:49.243 [info] <0.373.0> POST /ocr/parse [zdft] 200 60039ms
-2013-04-30 22:14:26.013 [info] <0.354.0> Loading routes from "/home/jackie/Erlang/projects/zdft/priv/zdft.routes" ....
-2013-04-30 22:14:26.058 [error] <0.378.0> ** Handler zdft_ocr_websocket terminating in handle_info/2
-   for the reason error:badarg
-** Stacktrace: [{zdft_ocr_websocket,handle_info,2,[{file,"/home/jackie/Erlang/projects/zdft/src/websocket/zdft_ocr_websocket.erl"},{line,78}]},{boss_service_worker,handle_info,2,[{file,"src/boss/boss_service_worker.erl"},{line,230}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,607}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,239}]}]
-
-
-2013-04-30 22:14:26.058 [error] <0.378.0> gen_server zdft_ocr_websocket terminated with reason: bad return value: ok
-2013-04-30 22:14:26.059 [error] <0.378.0> CRASH REPORT Process <0.378.0> with 0 neighbours exited with reason: bad return value: ok in gen_server:terminate/6 line 747
-2013-04-30 22:14:26.059 [error] <0.135.0> Supervisor {global,boss_service_sup} had child zdft_ocr_websocket started with boss_service_worker:start_link(zdft_ocr_websocket, <<"/websocket/ocr">>) at <0.378.0> exit with reason bad return value: ok in context child_terminated
-2013-04-30 22:15:26.069 [info] <0.383.0> POST /ocr/parse [zdft] 200 60045ms
-2013-04-30 22:17:52.224 [info] <0.354.0> Loading routes from "/home/jackie/Erlang/projects/zdft/priv/zdft.routes" ....
-2013-04-30 22:17:52.293 [error] <0.390.0> ** Handler zdft_ocr_websocket terminating in handle_info/2
-   for the reason error:badarg
-** Stacktrace: [{zdft_ocr_websocket,handle_info,2,[{file,"/home/jackie/Erlang/projects/zdft/src/websocket/zdft_ocr_websocket.erl"},{line,78}]},{boss_service_worker,handle_info,2,[{file,"src/boss/boss_service_worker.erl"},{line,230}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,607}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,239}]}]
-
-
-2013-04-30 22:17:52.293 [error] <0.390.0> gen_server zdft_ocr_websocket terminated with reason: bad return value: ok
-2013-04-30 22:17:52.293 [error] <0.390.0> CRASH REPORT Process <0.390.0> with 0 neighbours exited with reason: bad return value: ok in gen_server:terminate/6 line 747
-2013-04-30 22:17:52.294 [error] <0.135.0> Supervisor {global,boss_service_sup} had child zdft_ocr_websocket started with boss_service_worker:start_link(zdft_ocr_websocket, <<"/websocket/ocr">>) at <0.390.0> exit with reason bad return value: ok in context child_terminated
-2013-04-30 22:18:41.132 [info] <0.354.0> Loading routes from "/home/jackie/Erlang/projects/zdft/priv/zdft.routes" ....
-2013-04-30 22:18:41.195 [error] <0.399.0> ** Handler zdft_ocr_websocket terminating in handle_info/2
-   for the reason error:badarg
-** Stacktrace: [{zdft_ocr_websocket,handle_info,2,[{file,"/home/jackie/Erlang/projects/zdft/src/websocket/zdft_ocr_websocket.erl"},{line,79}]},{boss_service_worker,handle_info,2,[{file,"src/boss/boss_service_worker.erl"},{line,230}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,607}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,239}]}]
-
-
-2013-04-30 22:18:41.195 [error] <0.399.0> gen_server zdft_ocr_websocket terminated with reason: bad return value: ok
-2013-04-30 22:18:41.196 [error] <0.399.0> CRASH REPORT Process <0.399.0> with 0 neighbours exited with reason: bad return value: ok in gen_server:terminate/6 line 747
-2013-04-30 22:18:41.196 [error] <0.135.0> Supervisor {global,boss_service_sup} had child zdft_ocr_websocket started with boss_service_worker:start_link(zdft_ocr_websocket, <<"/websocket/ocr">>) at <0.399.0> exit with reason bad return value: ok in context child_terminated
-2013-04-30 22:18:52.294 [info] <0.391.0> POST /ocr/parse [zdft] 200 60069ms
-2013-04-30 22:18:52.294 [error] emulator Error in process <0.391.0> on node 'zdft@localhost' with exit value: {{case_clause,closed},[{cowboy_protocol,execute,4,[{file,"src/cowboy_protocol.erl"},{line,514}]}]}
-
-
-2013-04-30 22:18:52.295 [error] <0.148.0> Supervisor {<0.148.0>,ranch_conns_sup} had child ranch_conns_sup started with {ranch_conns_sup,start_protocol,undefined} at <0.391.0> exit with reason no case clause matching closed in cowboy_protocol:execute/4 line 514 in context child_terminated
-2013-04-30 22:19:41.196 [info] <0.402.0> POST /ocr/parse [zdft] 200 60061ms
-2013-04-30 22:28:00.639 [info] <0.354.0> Loading routes from "/home/jackie/Erlang/projects/zdft/priv/zdft.routes" ....
-2013-04-30 22:28:02.635 [info] <0.427.0> POST /ocr/parse [zdft] 200 1994ms
-2013-04-30 22:42:58.645 [error] <0.408.0> ** Boss Service Handler zdft_ocr_websocket terminating in join/0
-   for the reason error:{badmatch,{state,{dict,0,16,16,8,80,48,{[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]},{{[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]}}},{dict,0,16,16,8,80,48,{[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]},{{[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]}}}}}
 ServiceUrl: "/websocket/ocr"
-WebSocketId: <0.441.0>
-SessionId  : <<"e279f5526fd327d5977c116c30766982f0f57842">>
-State    : {state,{dict,0,16,16,8,80,48,{[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]},{{[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]}}},{dict,0,16,16,8,80,48,{[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]},{{[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]}}}}
-** Stacktrace: [{zdft_ocr_websocket,handle_join,4,[{file,"/home/jackie/Erlang/projects/zdft/src/websocket/zdft_ocr_websocket.erl"},{line,36}]},{boss_service_worker,handle_call,3,[{file,"src/boss/boss_service_worker.erl"},{line,98}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,588}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,239}]}]
+WebSocketId: <0.995.0>
+SessionId  : <<"8ae0c9ff05c0153a8e10d07a454212201a35a021">>
+Message    : <<"{\"code\":\"123\"}">>
+State    : {state,{dict,1,16,16,8,80,48,{[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]},{{[],[],[],[],[],[],[],[],[],[],[],[],[],[],[[<0.995.0>|<<"8ae0c9ff05c0153a8e10d07a454212201a35a021">>]],[]}}}}
+** Stacktrace: [{erlang,list_to_pid,[undefined],[]},{zdft_ocr_websocket,handle_incoming,5,[{file,"/home/jackie/Erlang/projects/zdft/src/websocket/zdft_ocr_websocket.erl"},{line,59}]},{boss_service_worker,handle_cast,2,[{file,"src/boss/boss_service_worker.erl"},{line,175}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,607}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,239}]}]
 
 
-2013-04-30 22:42:58.647 [error] <0.408.0> gen_server zdft_ocr_websocket terminated with reason: bad return value: ok
-2013-04-30 22:42:58.647 [error] <0.408.0> CRASH REPORT Process <0.408.0> with 0 neighbours exited with reason: bad return value: ok in gen_server:terminate/6 line 747
-2013-04-30 22:42:58.650 [error] <0.135.0> Supervisor {global,boss_service_sup} had child zdft_ocr_websocket started with boss_service_worker:start_link(zdft_ocr_websocket, <<"/websocket/ocr">>) at <0.408.0> exit with reason bad return value: ok in context child_terminated
-2013-04-30 22:43:00.378 [info] <0.354.0> Loading routes from "/home/jackie/Erlang/projects/zdft/priv/zdft.routes" ....
-2013-04-30 22:44:00.441 [info] <0.439.0> POST /ocr/parse [zdft] 200 60062ms
-2013-04-30 22:44:05.251 [info] <0.354.0> Loading routes from "/home/jackie/Erlang/projects/zdft/priv/zdft.routes" ....
-2013-04-30 22:44:05.334 [error] <0.439.0> {function_clause,[{zdft_ocr_controller,parse,['GET',[],{zdft_ocr_controller,{simple_bridge_request_wrapper,mochiweb_request_bridge,{mochicow_request,#Port<0.12624>,'GET',"/ocr/parse",{1,1},{8,{"host",{"host","localhost:8001"},{"connection",{"connection","keep-alive"},{"accept",{"accept","text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8"},nil,{"accept-encoding",{"accept-encoding","gzip,deflate,sdch"},{"accept-charset",{"accept-charset","ISO-8859-1,utf-8;q=0.7,*;q=0.3"},nil,nil},{"accept-language",{"accept-language","en-US,en;q=0.8"},nil,nil}}},{"cookie",{"cookie","_boss_session=e279f5526fd327d5977c116c30766982f0f57842"},nil,nil}},{"user-agent",{"user-agent","Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.31 (KHTML, like Gecko) Chrome/26.0.1410.63 Safari/537.31"},nil,nil}}},<<>>},false,[],[],none}}],[{file,"/home/jackie/Erlang/projects/zdft/src/controller/zdft_ocr_controller.erl"},{line,12}]},{boss_web_controller,execute_action,5,[{file,"src/boss/boss_web_controller.erl"},{line,828}]},{boss_web_controller,process_dynamic_request,5,[{file,"src/boss/boss_web_controller.erl"},{line,535}]},{boss_web_controller,process_request,5,[{file,"src/boss/boss_web_controller.erl"},{line,524}]},{timer,tc,3,[{file,"timer.erl"},{line,194}]},{boss_web_controller,build_dynamic_response,4,[{file,"src/boss/boss_web_controller.erl"},{line,454}]},{mochicow_upgrade,upgrade,4,[{file,"src/mochicow_upgrade.erl"},{line,72}]},{cowboy_protocol,execute,4,[{file,"src/cowboy_protocol.erl"},{line,514}]}]}
-2013-04-30 22:44:05.345 [error] <0.439.0> GET /ocr/parse [zdft] 500 90ms
-2013-04-30 22:44:16.394 [info] <0.354.0> Loading routes from "/home/jackie/Erlang/projects/zdft/priv/zdft.routes" ....
-2013-04-30 22:45:16.456 [info] <0.453.0> POST /ocr/parse [zdft] 200 60060ms
-2013-04-30 22:45:29.680 [info] <0.354.0> Loading routes from "/home/jackie/Erlang/projects/zdft/priv/zdft.routes" ....
-2013-04-30 22:45:30.746 [info] <0.458.0> POST /ocr/parse [zdft] 200 1064ms
+2013-05-03 06:41:11.451 [error] <0.352.0> gen_server zdft_ocr_websocket terminated with reason: bad return value: ok
+2013-05-03 06:41:11.451 [error] <0.352.0> CRASH REPORT Process <0.352.0> with 0 neighbours exited with reason: bad return value: ok in gen_server:terminate/6 line 747
+2013-05-03 06:41:11.451 [error] <0.135.0> Supervisor {global,boss_service_sup} had child zdft_ocr_websocket started with boss_service_worker:start_link(zdft_ocr_websocket, <<"/websocket/ocr">>) at <0.352.0> exit with reason bad return value: ok in context child_terminated
+2013-05-03 06:41:11.478 [info] <0.1002.0>@zdft_ocr_websocket:init:{28,8} FORMAT ERROR: "init~p" [zdft_ocr_websocket,28]
+2013-05-03 06:42:00.452 [info] <0.997.0> POST /ocr/parse [zdft] 200 59439ms
+2013-05-03 06:42:00.452 [error] emulator Error in process <0.997.0> on node 'zdft@localhost' with exit value: {{case_clause,closed},[{cowboy_protocol,execute,4,[{file,"src/cowboy_protocol.erl"},{line,514}]}]}
+
+
+2013-05-03 06:42:00.453 [error] <0.148.0> Supervisor {<0.148.0>,ranch_conns_sup} had child ranch_conns_sup started with {ranch_conns_sup,start_protocol,undefined} at <0.997.0> exit with reason no case clause matching closed in cowboy_protocol:execute/4 line 514 in context child_terminated
+2013-05-03 06:43:44.844 [info] <0.354.0> Loading routes from "/home/jackie/Erlang/projects/zdft/priv/zdft.routes" ....
+2013-05-03 06:43:44.895 [info] <0.1003.0> GET /ocr/index/ [zdft] 200 47ms
+2013-05-03 06:43:48.818 [info] <0.354.0> Loading routes from "/home/jackie/Erlang/projects/zdft/priv/zdft.routes" ....
+2013-05-03 06:44:03.372 [error] <0.1002.0> ** Boss Service Handler zdft_ocr_websocket terminating in handle_incoming/4
+   for the reason error:badarg
+ServiceUrl: "/websocket/ocr"
+WebSocketId: <0.1013.0>
+SessionId  : <<"8ae0c9ff05c0153a8e10d07a454212201a35a021">>
+Message    : <<"{\"pid\":\"60,48,46,49,48,48,51,46,48,62\",\"code\":\"576fg\"}">>
+State    : {state,{dict,1,16,16,8,80,48,{[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]},{{[[<0.1013.0>|<<"8ae0c9ff05c0153a8e10d07a454212201a35a021">>]],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]}}}}
+** Stacktrace: [{erlang,list_to_pid,[<<"60,48,46,49,48,48,51,46,48,62">>],[]},{zdft_ocr_websocket,handle_incoming,5,[{file,"/home/jackie/Erlang/projects/zdft/src/websocket/zdft_ocr_websocket.erl"},{line,59}]},{boss_service_worker,handle_cast,2,[{file,"src/boss/boss_service_worker.erl"},{line,175}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,607}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,239}]}]
+
+
+2013-05-03 06:44:03.372 [error] <0.1002.0> gen_server zdft_ocr_websocket terminated with reason: bad return value: ok
+2013-05-03 06:44:03.372 [error] <0.1002.0> CRASH REPORT Process <0.1002.0> with 0 neighbours exited with reason: bad return value: ok in gen_server:terminate/6 line 747
+2013-05-03 06:44:03.373 [error] <0.135.0> Supervisor {global,boss_service_sup} had child zdft_ocr_websocket started with boss_service_worker:start_link(zdft_ocr_websocket, <<"/websocket/ocr">>) at <0.1002.0> exit with reason bad return value: ok in context child_terminated
+2013-05-03 06:44:03.554 [info] <0.1018.0>@zdft_ocr_websocket:init:{28,8} FORMAT ERROR: "init~p" [zdft_ocr_websocket,28]
+2013-05-03 06:44:48.271 [info] <0.1003.0> POST /ocr/parse [zdft] 200 59452ms
+2013-05-03 06:46:21.660 [info] <0.354.0> Loading routes from "/home/jackie/Erlang/projects/zdft/priv/zdft.routes" ....
+2013-05-03 06:46:21.702 [info] <0.1027.0> GET /ocr/index/ [zdft] 200 34ms
+2013-05-03 06:46:27.084 [info] <0.354.0> Loading routes from "/home/jackie/Erlang/projects/zdft/priv/zdft.routes" ....
+2013-05-03 06:46:53.842 [error] <0.1018.0> ** Boss Service Handler zdft_ocr_websocket terminating in handle_incoming/4
+   for the reason error:badarg
+ServiceUrl: "/websocket/ocr"
+WebSocketId: <0.1033.0>
+SessionId  : <<"8ae0c9ff05c0153a8e10d07a454212201a35a021">>
+Message    : <<"{\"pid\":\"60,48,46,49,48,51,53,46,48,62\",\"code\":\"576fg\"}">>
+State    : {state,{dict,1,16,16,8,80,48,{[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]},{{[],[],[],[],[],[],[],[],[],[],[],[],[],[[<0.1033.0>|<<"8ae0c9ff05c0153a8e10d07a454212201a35a021">>]],[],[]}}}}
+** Stacktrace: [{erlang,list_to_pid,[<<"60,48,46,49,48,51,53,46,48,62">>],[]},{zdft_ocr_websocket,handle_incoming,5,[{file,"/home/jackie/Erlang/projects/zdft/src/websocket/zdft_ocr_websocket.erl"},{line,59}]},{boss_service_worker,handle_cast,2,[{file,"src/boss/boss_service_worker.erl"},{line,175}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,607}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,239}]}]
+
+
+2013-05-03 06:46:53.842 [error] <0.1018.0> gen_server zdft_ocr_websocket terminated with reason: bad return value: ok
+2013-05-03 06:46:53.842 [error] <0.1018.0> CRASH REPORT Process <0.1018.0> with 0 neighbours exited with reason: bad return value: ok in gen_server:terminate/6 line 747
+2013-05-03 06:46:53.842 [error] <0.135.0> Supervisor {global,boss_service_sup} had child zdft_ocr_websocket started with boss_service_worker:start_link(zdft_ocr_websocket, <<"/websocket/ocr">>) at <0.1018.0> exit with reason bad return value: ok in context child_terminated
+2013-05-03 06:46:53.844 [info] <0.1040.0>@zdft_ocr_websocket:init:{28,8} FORMAT ERROR: "init~p" [zdft_ocr_websocket,28]
+2013-05-03 06:47:26.526 [info] <0.1035.0> POST /ocr/parse [zdft] 200 59441ms
+2013-05-03 06:48:27.187 [info] <0.354.0> Loading routes from "/home/jackie/Erlang/projects/zdft/priv/zdft.routes" ....
+2013-05-03 06:48:37.066 [error] <0.1040.0> ** Boss Service Handler zdft_ocr_websocket terminating in handle_incoming/4
+   for the reason error:badarg
+ServiceUrl: "/websocket/ocr"
+WebSocketId: <0.1047.0>
+SessionId  : <<"8ae0c9ff05c0153a8e10d07a454212201a35a021">>
+Message    : <<"{\"pid\":\"60,48,46,49,48,52,57,46,48,62\",\"code\":\"1234\"}">>
+State    : {state,{dict,1,16,16,8,80,48,{[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]},{{[],[],[],[],[],[],[],[],[],[],[],[[<0.1047.0>|<<"8ae0c9ff05c0153a8e10d07a454212201a35a021">>]],[],[],[],[]}}}}
+** Stacktrace: [{erlang,list_to_pid,[<<"60,48,46,49,48,52,57,46,48,62">>],[]},{zdft_ocr_websocket,handle_incoming,5,[{file,"/home/jackie/Erlang/projects/zdft/src/websocket/zdft_ocr_websocket.erl"},{line,59}]},{boss_service_worker,handle_cast,2,[{file,"src/boss/boss_service_worker.erl"},{line,175}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,607}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,239}]}]
+
+
+2013-05-03 06:48:37.066 [error] <0.1040.0> gen_server zdft_ocr_websocket terminated with reason: bad return value: ok
+2013-05-03 06:48:37.066 [error] <0.1040.0> CRASH REPORT Process <0.1040.0> with 0 neighbours exited with reason: bad return value: ok in gen_server:terminate/6 line 747
+2013-05-03 06:48:37.066 [error] <0.135.0> Supervisor {global,boss_service_sup} had child zdft_ocr_websocket started with boss_service_worker:start_link(zdft_ocr_websocket, <<"/websocket/ocr">>) at <0.1040.0> exit with reason bad return value: ok in context child_terminated
+2013-05-03 06:48:37.068 [info] <0.1054.0>@zdft_ocr_websocket:init:{28,8} FORMAT ERROR: "init~p" [zdft_ocr_websocket,28]
+2013-05-03 06:49:26.634 [info] <0.1049.0> POST /ocr/parse [zdft] 200 59446ms
+2013-05-03 06:52:37.064 [info] <0.354.0> Loading routes from "/home/jackie/Erlang/projects/zdft/priv/zdft.routes" ....
+2013-05-03 06:53:05.040 [error] <0.1054.0> ** Boss Service Handler zdft_ocr_websocket terminating in handle_incoming/4
+   for the reason error:badarg
+ServiceUrl: "/websocket/ocr"
+WebSocketId: <0.1059.0>
+SessionId  : <<"8ae0c9ff05c0153a8e10d07a454212201a35a021">>
+Message    : <<"{\"pid\":\"60,48,46,49,48,53,53,46,48,62\",\"code\":\"123\"}">>
+State    : {state,{dict,1,16,16,8,80,48,{[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]},{{[],[],[],[],[],[],[],[[<0.1059.0>|<<"8ae0c9ff05c0153a8e10d07a454212201a35a021">>]],[],[],[],[],[],[],[],[]}}}}
+** Stacktrace: [{erlang,list_to_pid,[<<"60,48,46,49,48,53,53,46,48,62">>],[]},{zdft_ocr_websocket,handle_incoming,5,[{file,"/home/jackie/Erlang/projects/zdft/src/websocket/zdft_ocr_websocket.erl"},{line,59}]},{boss_service_worker,handle_cast,2,[{file,"src/boss/boss_service_worker.erl"},{line,175}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,607}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,239}]}]
+
+
+2013-05-03 06:53:05.040 [error] <0.1054.0> gen_server zdft_ocr_websocket terminated with reason: bad return value: ok
+2013-05-03 06:53:05.040 [error] <0.1054.0> CRASH REPORT Process <0.1054.0> with 0 neighbours exited with reason: bad return value: ok in gen_server:terminate/6 line 747
+2013-05-03 06:53:05.040 [error] <0.135.0> Supervisor {global,boss_service_sup} had child zdft_ocr_websocket started with boss_service_worker:start_link(zdft_ocr_websocket, <<"/websocket/ocr">>) at <0.1054.0> exit with reason bad return value: ok in context child_terminated
+2013-05-03 06:53:05.045 [info] <0.1064.0>@zdft_ocr_websocket:init:{28,8} FORMAT ERROR: "init~p" [zdft_ocr_websocket,28]
+2013-05-03 06:53:36.524 [info] <0.1055.0> POST /ocr/parse [zdft] 200 59459ms
+2013-05-03 06:54:26.092 [info] <0.354.0> Loading routes from "/home/jackie/Erlang/projects/zdft/priv/zdft.routes" ....
+2013-05-03 06:55:25.559 [info] <0.1065.0> POST /ocr/parse [zdft] 200 59467ms
+2013-05-03 07:04:28.052 [info] <0.354.0> Loading routes from "/home/jackie/Erlang/projects/zdft/priv/zdft.routes" ....
+2013-05-03 07:04:28.174 [info] <0.1071.0> GET /ocr/index/ [zdft] 200 120ms
+2013-05-03 07:04:32.537 [info] <0.354.0> Loading routes from "/home/jackie/Erlang/projects/zdft/priv/zdft.routes" ....
+2013-05-03 07:04:38.721 [info] <0.1079.0> POST /ocr/parse [zdft] 200 6184ms
+2013-05-03 07:08:17.555 [info] <0.354.0> Loading routes from "/home/jackie/Erlang/projects/zdft/priv/zdft.routes" ....
+2013-05-03 07:08:17.610 [info] <0.1085.0> GET /ocr/index/ [zdft] 200 47ms
+2013-05-03 07:08:21.680 [info] <0.354.0> Loading routes from "/home/jackie/Erlang/projects/zdft/priv/zdft.routes" ....
+2013-05-03 07:08:29.536 [error] <0.1064.0> ** Boss Service Handler zdft_ocr_websocket terminating in handle_incoming/4
+   for the reason error:badarg
+ServiceUrl: "/websocket/ocr"
+WebSocketId: <0.1095.0>
+SessionId  : <<"8ae0c9ff05c0153a8e10d07a454212201a35a021">>
+Message    : <<"{\"pid\":[\"60\",\"48\",\"46\",\"49\",\"48\",\"56\",\"53\",\"46\",\"48\",\"62\"],\"code\":\"123\"}">>
+State    : {state,{dict,1,16,16,8,80,48,{[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]},{{[],[],[],[],[],[],[],[],[],[],[],[[<0.1095.0>|<<"8ae0c9ff05c0153a8e10d07a454212201a35a021">>]],[],[],[],[]}}}}
+** Stacktrace: [{erlang,list_to_pid,[[<<"60">>,<<"48">>,<<"46">>,<<"49">>,<<"48">>,<<"56">>,<<"53">>,<<"46">>,<<"48">>,<<"62">>]],[]},{zdft_ocr_websocket,handle_incoming,5,[{file,"/home/jackie/Erlang/projects/zdft/src/websocket/zdft_ocr_websocket.erl"},{line,59}]},{boss_service_worker,handle_cast,2,[{file,"src/boss/boss_service_worker.erl"},{line,175}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,607}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,239}]}]
+
+
+2013-05-03 07:08:29.537 [error] <0.1064.0> gen_server zdft_ocr_websocket terminated with reason: bad return value: ok
+2013-05-03 07:08:29.537 [error] <0.1064.0> CRASH REPORT Process <0.1064.0> with 0 neighbours exited with reason: bad return value: ok in gen_server:terminate/6 line 747
+2013-05-03 07:08:29.538 [error] <0.135.0> Supervisor {global,boss_service_sup} had child zdft_ocr_websocket started with boss_service_worker:start_link(zdft_ocr_websocket, <<"/websocket/ocr">>) at <0.1064.0> exit with reason bad return value: ok in context child_terminated
+2013-05-03 07:08:29.538 [info] <0.1100.0>@zdft_ocr_websocket:init:{28,8} FORMAT ERROR: "init~p" [zdft_ocr_websocket,28]
+2013-05-03 07:09:21.131 [info] <0.1085.0> POST /ocr/parse [zdft] 200 59450ms
+2013-05-03 07:09:21.131 [error] emulator Error in process <0.1085.0> on node 'zdft@localhost' with exit value: {{case_clause,closed},[{cowboy_protocol,execute,4,[{file,"src/cowboy_protocol.erl"},{line,514}]}]}
+
+
+2013-05-03 07:09:21.131 [error] <0.148.0> Supervisor {<0.148.0>,ranch_conns_sup} had child ranch_conns_sup started with {ranch_conns_sup,start_protocol,undefined} at <0.1085.0> exit with reason no case clause matching closed in cowboy_protocol:execute/4 line 514 in context child_terminated
+2013-05-03 07:12:52.522 [info] <0.354.0> Loading routes from "/home/jackie/Erlang/projects/zdft/priv/zdft.routes" ....
+2013-05-03 07:12:52.584 [info] <0.1101.0> GET /ocr/index/ [zdft] 200 54ms
+2013-05-03 07:12:56.444 [info] <0.354.0> Loading routes from "/home/jackie/Erlang/projects/zdft/priv/zdft.routes" ....
+2013-05-03 07:13:55.901 [info] <0.1101.0> POST /ocr/parse [zdft] 200 59456ms
+2013-05-03 07:13:55.901 [error] emulator Error in process <0.1101.0> on node 'zdft@localhost' with exit value: {{case_clause,closed},[{cowboy_protocol,execute,4,[{file,"src/cowboy_protocol.erl"},{line,514}]}]}
+
+
+2013-05-03 07:13:55.901 [error] <0.148.0> Supervisor {<0.148.0>,ranch_conns_sup} had child ranch_conns_sup started with {ranch_conns_sup,start_protocol,undefined} at <0.1101.0> exit with reason no case clause matching closed in cowboy_protocol:execute/4 line 514 in context child_terminated
+2013-05-03 07:14:36.207 [info] <0.354.0> Loading routes from "/home/jackie/Erlang/projects/zdft/priv/zdft.routes" ....
+2013-05-03 07:14:36.270 [info] <0.1115.0> GET /ocr/index/ [zdft] 200 58ms
+2013-05-03 07:14:39.635 [info] <0.354.0> Loading routes from "/home/jackie/Erlang/projects/zdft/priv/zdft.routes" ....
+2013-05-03 07:14:48.221 [info] <0.1115.0> POST /ocr/parse [zdft] 200 8585ms
+2013-05-03 07:16:35.942 [info] <0.354.0> Loading routes from "/home/jackie/Erlang/projects/zdft/priv/zdft.routes" ....
+2013-05-03 07:16:44.764 [info] <0.1129.0> POST /ocr/parse [zdft] 200 8821ms
+2013-05-03 07:18:25.744 [info] <0.354.0> Loading routes from "/home/jackie/Erlang/projects/zdft/priv/zdft.routes" ....
+2013-05-03 07:18:25.816 [info] <0.1145.0> GET /ocr/index/ [zdft] 200 64ms
+2013-05-03 07:18:29.565 [info] <0.354.0> Loading routes from "/home/jackie/Erlang/projects/zdft/priv/zdft.routes" ....
+2013-05-03 07:18:35.295 [info] <0.1152.0> POST /ocr/parse [zdft] 200 5722ms
+2013-05-03 07:19:26.396 [info] <0.354.0> Loading routes from "/home/jackie/Erlang/projects/zdft/priv/zdft.routes" ....
+2013-05-03 07:19:43.472 [info] <0.1164.0> POST /ocr/parse [zdft] 200 17075ms
+2013-05-03 07:19:58.036 [info] <0.354.0> Loading routes from "/home/jackie/Erlang/projects/zdft/priv/zdft.routes" ....
+2013-05-03 07:20:07.796 [info] <0.354.0> Loading routes from "/home/jackie/Erlang/projects/zdft/priv/zdft.routes" ....
+2013-05-03 07:20:12.347 [info] <0.354.0> Loading routes from "/home/jackie/Erlang/projects/zdft/priv/zdft.routes" ....
+2013-05-03 07:20:12.400 [info] <0.1178.0> GET /ocr/index/ [zdft] 200 47ms
+2013-05-03 07:20:16.365 [info] <0.354.0> Loading routes from "/home/jackie/Erlang/projects/zdft/priv/zdft.routes" ....
+2013-05-03 07:20:51.366 [info] <0.354.0> Loading routes from "/home/jackie/Erlang/projects/zdft/priv/zdft.routes" ....
+2013-05-03 07:20:51.414 [info] <0.1188.0> GET /ocr/index/ [zdft] 200 42ms
+2013-05-03 07:20:57.489 [info] <0.1170.0> POST /ocr/parse [zdft] 200 59452ms
+2013-05-03 07:20:57.489 [error] emulator Error in process <0.1170.0> on node 'zdft@localhost' with exit value: {{case_clause,closed},[{cowboy_protocol,execute,4,[{file,"src/cowboy_protocol.erl"},{line,514}]}]}
+
+
+2013-05-03 07:20:57.489 [error] <0.148.0> Supervisor {<0.148.0>,ranch_conns_sup} had child ranch_conns_sup started with {ranch_conns_sup,start_protocol,undefined} at <0.1170.0> exit with reason no case clause matching closed in cowboy_protocol:execute/4 line 514 in context child_terminated
+2013-05-03 07:20:57.625 [info] <0.354.0> Loading routes from "/home/jackie/Erlang/projects/zdft/priv/zdft.routes" ....
+2013-05-03 07:21:07.242 [info] <0.1174.0> POST /ocr/parse [zdft] 200 59445ms
+2013-05-03 07:21:07.242 [error] emulator Error in process <0.1174.0> on node 'zdft@localhost' with exit value: {{case_clause,closed},[{cowboy_protocol,execute,4,[{file,"src/cowboy_protocol.erl"},{line,514}]}]}
+
+
+2013-05-03 07:21:07.242 [error] <0.148.0> Supervisor {<0.148.0>,ranch_conns_sup} had child ranch_conns_sup started with {ranch_conns_sup,start_protocol,undefined} at <0.1174.0> exit with reason no case clause matching closed in cowboy_protocol:execute/4 line 514 in context child_terminated
+2013-05-03 07:21:15.814 [info] <0.1178.0> POST /ocr/parse [zdft] 200 59448ms
+2013-05-03 07:21:15.814 [error] emulator Error in process <0.1178.0> on node 'zdft@localhost' with exit value: {{case_clause,closed},[{cowboy_protocol,execute,4,[{file,"src/cowboy_protocol.erl"},{line,514}]}]}
+
+
+2013-05-03 07:21:15.814 [error] <0.148.0> Supervisor {<0.148.0>,ranch_conns_sup} had child ranch_conns_sup started with {ranch_conns_sup,start_protocol,undefined} at <0.1178.0> exit with reason no case clause matching closed in cowboy_protocol:execute/4 line 514 in context child_terminated
+2013-05-03 07:21:57.068 [info] <0.1200.0> POST /ocr/parse [zdft] 200 59442ms
+2013-05-03 07:21:57.068 [error] emulator Error in process <0.1200.0> on node 'zdft@localhost' with exit value: {{case_clause,closed},[{cowboy_protocol,execute,4,[{file,"src/cowboy_protocol.erl"},{line,514}]}]}
+
+
+2013-05-03 07:21:57.068 [error] <0.148.0> Supervisor {<0.148.0>,ranch_conns_sup} had child ranch_conns_sup started with {ranch_conns_sup,start_protocol,undefined} at <0.1200.0> exit with reason no case clause matching closed in cowboy_protocol:execute/4 line 514 in context child_terminated
+2013-05-03 07:22:17.645 [info] <0.354.0> Loading routes from "/home/jackie/Erlang/projects/zdft/priv/zdft.routes" ....
+2013-05-03 07:22:17.692 [info] <0.1204.0> GET /ocr/index/ [zdft] 200 42ms
+2013-05-03 07:22:30.706 [info] <0.354.0> Loading routes from "/home/jackie/Erlang/projects/zdft/priv/zdft.routes" ....
+2013-05-03 07:22:48.932 [info] <0.354.0> Loading routes from "/home/jackie/Erlang/projects/zdft/priv/zdft.routes" ....
+2013-05-03 07:22:48.980 [info] <0.1220.0> GET /ocr/index/ [zdft] 200 43ms
+2013-05-03 07:22:54.048 [info] <0.354.0> Loading routes from "/home/jackie/Erlang/projects/zdft/priv/zdft.routes" ....
+2013-05-03 07:23:30.152 [info] <0.1216.0> POST /ocr/parse [zdft] 200 59444ms
+2013-05-03 07:23:30.152 [error] emulator Error in process <0.1216.0> on node 'zdft@localhost' with exit value: {{case_clause,closed},[{cowboy_protocol,execute,4,[{file,"src/cowboy_protocol.erl"},{line,514}]}]}
+
+
+2013-05-03 07:23:30.152 [error] <0.148.0> Supervisor {<0.148.0>,ranch_conns_sup} had child ranch_conns_sup started with {ranch_conns_sup,start_protocol,undefined} at <0.1216.0> exit with reason no case clause matching closed in cowboy_protocol:execute/4 line 514 in context child_terminated
+2013-05-03 07:23:53.498 [info] <0.1232.0> POST /ocr/parse [zdft] 200 59449ms
+2013-05-03 07:23:53.498 [error] emulator Error in process <0.1232.0> on node 'zdft@localhost' with exit value: {{case_clause,closed},[{cowboy_protocol,execute,4,[{file,"src/cowboy_protocol.erl"},{line,514}]}]}
+
+
+2013-05-03 07:23:53.498 [error] <0.148.0> Supervisor {<0.148.0>,ranch_conns_sup} had child ranch_conns_sup started with {ranch_conns_sup,start_protocol,undefined} at <0.1232.0> exit with reason no case clause matching closed in cowboy_protocol:execute/4 line 514 in context child_terminated
+2013-05-03 07:24:02.508 [info] <0.354.0> Loading routes from "/home/jackie/Erlang/projects/zdft/priv/zdft.routes" ....
+2013-05-03 07:24:02.557 [info] <0.1236.0> GET /ocr/index/ [zdft] 200 43ms
+2013-05-03 07:24:11.311 [info] <0.354.0> Loading routes from "/home/jackie/Erlang/projects/zdft/priv/zdft.routes" ....
+2013-05-03 07:24:26.050 [info] <0.354.0> Loading routes from "/home/jackie/Erlang/projects/zdft/priv/zdft.routes" ....
+2013-05-03 07:24:26.100 [info] <0.1250.0> GET /ocr/index/ [zdft] 200 43ms
+2013-05-03 07:24:30.647 [info] <0.354.0> Loading routes from "/home/jackie/Erlang/projects/zdft/priv/zdft.routes" ....
+2013-05-03 07:24:36.908 [info] <0.354.0> Loading routes from "/home/jackie/Erlang/projects/zdft/priv/zdft.routes" ....
+2013-05-03 07:24:36.968 [info] <0.1264.0> GET /ocr/index/ [zdft] 200 54ms
+2013-05-03 07:24:53.380 [info] <0.354.0> Loading routes from "/home/jackie/Erlang/projects/zdft/priv/zdft.routes" ....
+2013-05-03 07:24:53.438 [info] <0.1276.0> GET /ocr/index/ [zdft] 200 52ms
+2013-05-03 07:24:57.328 [info] <0.354.0> Loading routes from "/home/jackie/Erlang/projects/zdft/priv/zdft.routes" ....
+2013-05-03 07:25:02.772 [info] <0.354.0> Loading routes from "/home/jackie/Erlang/projects/zdft/priv/zdft.routes" ....
+2013-05-03 07:25:02.829 [info] <0.1290.0> GET /ocr/index/ [zdft] 200 51ms
+2013-05-03 07:25:08.770 [info] <0.354.0> Loading routes from "/home/jackie/Erlang/projects/zdft/priv/zdft.routes" ....
+2013-05-03 07:25:10.754 [info] <0.1236.0> POST /ocr/parse [zdft] 200 59442ms
+2013-05-03 07:25:10.754 [error] emulator Error in process <0.1236.0> on node 'zdft@localhost' with exit value: {{case_clause,closed},[{cowboy_protocol,execute,4,[{file,"src/cowboy_protocol.erl"},{line,514}]}]}
+
+
+2013-05-03 07:25:10.755 [error] <0.148.0> Supervisor {<0.148.0>,ranch_conns_sup} had child ranch_conns_sup started with {ranch_conns_sup,start_protocol,undefined} at <0.1236.0> exit with reason no case clause matching closed in cowboy_protocol:execute/4 line 514 in context child_terminated
+2013-05-03 07:25:30.094 [info] <0.1250.0> POST /ocr/parse [zdft] 200 59445ms
+2013-05-03 07:25:30.094 [error] emulator Error in process <0.1250.0> on node 'zdft@localhost' with exit value: {{case_clause,closed},[{cowboy_protocol,execute,4,[{file,"src/cowboy_protocol.erl"},{line,514}]}]}
+
+
+2013-05-03 07:25:30.094 [error] <0.148.0> Supervisor {<0.148.0>,ranch_conns_sup} had child ranch_conns_sup started with {ranch_conns_sup,start_protocol,undefined} at <0.1250.0> exit with reason no case clause matching closed in cowboy_protocol:execute/4 line 514 in context child_terminated
+2013-05-03 07:25:56.769 [info] <0.1276.0> POST /ocr/parse [zdft] 200 59441ms
+2013-05-03 07:25:56.769 [error] emulator Error in process <0.1276.0> on node 'zdft@localhost' with exit value: {{case_clause,closed},[{cowboy_protocol,execute,4,[{file,"src/cowboy_protocol.erl"},{line,514}]}]}
+
+
+2013-05-03 07:25:56.769 [error] <0.148.0> Supervisor {<0.148.0>,ranch_conns_sup} had child ranch_conns_sup started with {ranch_conns_sup,start_protocol,undefined} at <0.1276.0> exit with reason no case clause matching closed in cowboy_protocol:execute/4 line 514 in context child_terminated
+2013-05-03 07:26:08.207 [info] <0.1302.0> POST /ocr/parse [zdft] 200 59437ms
+2013-05-03 07:27:33.572 [info] <0.354.0> Loading routes from "/home/jackie/Erlang/projects/zdft/priv/zdft.routes" ....
+2013-05-03 07:27:38.570 [info] <0.354.0> Loading routes from "/home/jackie/Erlang/projects/zdft/priv/zdft.routes" ....
+2013-05-03 07:27:38.626 [info] <0.1318.0> GET /ocr/index/ [zdft] 200 50ms
+2013-05-03 07:27:44.718 [info] <0.354.0> Loading routes from "/home/jackie/Erlang/projects/zdft/priv/zdft.routes" ....
+2013-05-03 07:27:51.850 [info] <0.354.0> Loading routes from "/home/jackie/Erlang/projects/zdft/priv/zdft.routes" ....
+2013-05-03 07:27:51.912 [info] <0.1334.0> GET /ocr/index/ [zdft] 200 55ms
+2013-05-03 07:28:33.014 [info] <0.1314.0> POST /ocr/parse [zdft] 200 59441ms
+2013-05-03 07:28:33.015 [error] emulator Error in process <0.1314.0> on node 'zdft@localhost' with exit value: {{case_clause,closed},[{cowboy_protocol,execute,4,[{file,"src/cowboy_protocol.erl"},{line,514}]}]}
+
+
+2013-05-03 07:28:33.015 [error] <0.148.0> Supervisor {<0.148.0>,ranch_conns_sup} had child ranch_conns_sup started with {ranch_conns_sup,start_protocol,undefined} at <0.1314.0> exit with reason no case clause matching closed in cowboy_protocol:execute/4 line 514 in context child_terminated
+2013-05-03 07:28:36.337 [info] <0.354.0> Loading routes from "/home/jackie/Erlang/projects/zdft/priv/zdft.routes" ....
+2013-05-03 07:28:36.400 [info] <0.1346.0> GET /ocr/index/ [zdft] 200 56ms
+2013-05-03 07:28:37.185 [info] <0.354.0> Loading routes from "/home/jackie/Erlang/projects/zdft/priv/zdft.routes" ....
+2013-05-03 07:28:37.243 [info] <0.1346.0> GET /ocr/index/ [zdft] 200 51ms
+2013-05-03 07:28:40.923 [info] <0.354.0> Loading routes from "/home/jackie/Erlang/projects/zdft/priv/zdft.routes" ....
+2013-05-03 07:28:44.149 [info] <0.1330.0> POST /ocr/parse [zdft] 200 59430ms
+2013-05-03 07:28:44.149 [error] emulator Error in process <0.1330.0> on node 'zdft@localhost' with exit value: {{case_clause,closed},[{cowboy_protocol,execute,4,[{file,"src/cowboy_protocol.erl"},{line,514}]}]}
+
+
+2013-05-03 07:28:44.149 [error] <0.148.0> Supervisor {<0.148.0>,ranch_conns_sup} had child ranch_conns_sup started with {ranch_conns_sup,start_protocol,undefined} at <0.1330.0> exit with reason no case clause matching closed in cowboy_protocol:execute/4 line 514 in context child_terminated
+2013-05-03 07:28:48.769 [info] <0.354.0> Loading routes from "/home/jackie/Erlang/projects/zdft/priv/zdft.routes" ....
+2013-05-03 07:28:48.825 [info] <0.1366.0> GET /ocr/index/ [zdft] 200 49ms
+2013-05-03 07:29:06.666 [info] <0.354.0> Loading routes from "/home/jackie/Erlang/projects/zdft/priv/zdft.routes" ....
+2013-05-03 07:29:40.382 [info] <0.1349.0> POST /ocr/parse [zdft] 200 59457ms
+2013-05-03 07:29:40.382 [error] emulator Error in process <0.1349.0> on node 'zdft@localhost' with exit value: {{case_clause,closed},[{cowboy_protocol,execute,4,[{file,"src/cowboy_protocol.erl"},{line,514}]}]}
+
+
+2013-05-03 07:29:40.382 [error] <0.148.0> Supervisor {<0.148.0>,ranch_conns_sup} had child ranch_conns_sup started with {ranch_conns_sup,start_protocol,undefined} at <0.1349.0> exit with reason no case clause matching closed in cowboy_protocol:execute/4 line 514 in context child_terminated
+2013-05-03 07:29:50.554 [info] <0.354.0> Loading routes from "/home/jackie/Erlang/projects/zdft/priv/zdft.routes" ....
+2013-05-03 07:29:50.598 [info] <0.1382.0> GET /ocr/index/ [zdft] 200 35ms
+2013-05-03 07:29:55.746 [info] <0.354.0> Loading routes from "/home/jackie/Erlang/projects/zdft/priv/zdft.routes" ....
+2013-05-03 07:29:59.537 [info] <0.354.0> Loading routes from "/home/jackie/Erlang/projects/zdft/priv/zdft.routes" ....
+2013-05-03 07:29:59.598 [info] <0.1398.0> GET /ocr/index/ [zdft] 200 54ms
+2013-05-03 07:30:03.217 [info] <0.354.0> Loading routes from "/home/jackie/Erlang/projects/zdft/priv/zdft.routes" ....
+2013-05-03 07:30:05.473 [info] <0.354.0> Loading routes from "/home/jackie/Erlang/projects/zdft/priv/zdft.routes" ....
+2013-05-03 07:30:05.529 [info] <0.1412.0> GET /ocr/index/ [zdft] 200 49ms
+2013-05-03 07:30:06.126 [info] <0.1378.0> POST /ocr/parse [zdft] 200 59459ms
+2013-05-03 07:30:06.126 [error] emulator Error in process <0.1378.0> on node 'zdft@localhost' with exit value: {{case_clause,closed},[{cowboy_protocol,execute,4,[{file,"src/cowboy_protocol.erl"},{line,514}]}]}
+
+
+2013-05-03 07:30:06.126 [error] <0.148.0> Supervisor {<0.148.0>,ranch_conns_sup} had child ranch_conns_sup started with {ranch_conns_sup,start_protocol,undefined} at <0.1378.0> exit with reason no case clause matching closed in cowboy_protocol:execute/4 line 514 in context child_terminated
+2013-05-03 07:30:06.163 [info] <0.354.0> Loading routes from "/home/jackie/Erlang/projects/zdft/priv/zdft.routes" ....
+2013-05-03 07:30:06.222 [info] <0.1412.0> GET /ocr/index/ [zdft] 200 52ms
+2013-05-03 07:30:06.390 [info] <0.354.0> Loading routes from "/home/jackie/Erlang/projects/zdft/priv/zdft.routes" ....
+2013-05-03 07:30:06.452 [info] <0.1412.0> GET /ocr/index/ [zdft] 200 55ms
+2013-05-03 07:30:06.689 [info] <0.354.0> Loading routes from "/home/jackie/Erlang/projects/zdft/priv/zdft.routes" ....
+2013-05-03 07:30:06.791 [info] <0.1412.0> GET /ocr/index/ [zdft] 200 95ms
+2013-05-03 07:30:25.017 [info] <0.354.0> Loading routes from "/home/jackie/Erlang/projects/zdft/priv/zdft.routes" ....
+2013-05-03 07:30:25.067 [info] <0.1442.0> GET /ocr/index/ [zdft] 200 44ms
+2013-05-03 07:30:25.688 [info] <0.354.0> Loading routes from "/home/jackie/Erlang/projects/zdft/priv/zdft.routes" ....
+2013-05-03 07:30:25.749 [info] <0.1442.0> GET /ocr/index/ [zdft] 200 54ms
+2013-05-03 07:30:25.910 [info] <0.354.0> Loading routes from "/home/jackie/Erlang/projects/zdft/priv/zdft.routes" ....
+2013-05-03 07:30:25.978 [info] <0.1442.0> GET /ocr/index/ [zdft] 200 61ms
+2013-05-03 07:30:31.650 [info] <0.354.0> Loading routes from "/home/jackie/Erlang/projects/zdft/priv/zdft.routes" ....
+2013-05-03 07:30:33.849 [info] <0.354.0> Loading routes from "/home/jackie/Erlang/projects/zdft/priv/zdft.routes" ....
+2013-05-03 07:30:33.910 [info] <0.1470.0> GET /ocr/index/ [zdft] 200 55ms
+2013-05-03 07:30:34.067 [info] <0.354.0> Loading routes from "/home/jackie/Erlang/projects/zdft/priv/zdft.routes" ....
+2013-05-03 07:30:34.138 [info] <0.1470.0> GET /ocr/index/ [zdft] 200 65ms
+2013-05-03 07:30:55.203 [info] <0.1394.0> POST /ocr/parse [zdft] 200 59456ms
+2013-05-03 07:30:55.204 [error] emulator Error in process <0.1394.0> on node 'zdft@localhost' with exit value: {{case_clause,closed},[{cowboy_protocol,execute,4,[{file,"src/cowboy_protocol.erl"},{line,514}]}]}
+
+
+2013-05-03 07:30:55.204 [error] <0.148.0> Supervisor {<0.148.0>,ranch_conns_sup} had child ranch_conns_sup started with {ranch_conns_sup,start_protocol,undefined} at <0.1394.0> exit with reason no case clause matching closed in cowboy_protocol:execute/4 line 514 in context child_terminated
+2013-05-03 07:31:02.675 [info] <0.1398.0> POST /ocr/parse [zdft] 200 59457ms
+2013-05-03 07:31:02.675 [error] emulator Error in process <0.1398.0> on node 'zdft@localhost' with exit value: {{case_clause,closed},[{cowboy_protocol,execute,4,[{file,"src/cowboy_protocol.erl"},{line,514}]}]}
+
+
+2013-05-03 07:31:02.675 [error] <0.148.0> Supervisor {<0.148.0>,ranch_conns_sup} had child ranch_conns_sup started with {ranch_conns_sup,start_protocol,undefined} at <0.1398.0> exit with reason no case clause matching closed in cowboy_protocol:execute/4 line 514 in context child_terminated
+2013-05-03 07:31:31.119 [info] <0.1466.0> POST /ocr/parse [zdft] 200 59468ms
+2013-05-03 07:31:31.119 [error] emulator Error in process <0.1466.0> on node 'zdft@localhost' with exit value: {{case_clause,closed},[{cowboy_protocol,execute,4,[{file,"src/cowboy_protocol.erl"},{line,514}]}]}
+
+
+2013-05-03 07:31:31.119 [error] <0.148.0> Supervisor {<0.148.0>,ranch_conns_sup} had child ranch_conns_sup started with {ranch_conns_sup,start_protocol,undefined} at <0.1466.0> exit with reason no case clause matching closed in cowboy_protocol:execute/4 line 514 in context child_terminated

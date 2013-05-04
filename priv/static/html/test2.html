@@ -1,0 +1,288 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<link href="/static/css/style.css" rel="stylesheet" type="text/css" />
+<link href="/static/css/test2.css" rel="stylesheet" type="text/css" />
+<script src="/static/js/jquery.min.1.6.2.js" ></script>
+<script src="/static/js/jquery.masonry.min.js" ></script>
+<script type="text/javascript" src="/static/js/jquery.infinitescroll.js" ></script>
+<script type="text/javascript">
+     $(function(){
+         var speed = 1000;
+         $("#pincontainer").masonry({
+            singleMode: true,
+            columnWidth: 237,
+            itemSelector: '.pin',
+            animate: true,
+            animationOptions: {
+                duration: speed,
+                queue: false
+            }
+
+        });
+        $("#pincontainer").infinitescroll({
+            navSelector : '#page_nav', // selector for the paged navigation
+            nextSelector : '#page_nav a', // selector for the NEXT link (to page 2)
+            itemSelector : '.pin', // selector for all items you'll retrieve
+            loadingImg : 'loader.gif'/*tpa=http://www.css88.com/demo/jquery-masonery/img/loader.gif*/,
+            donetext : 'No more pages to load.',
+            debug: false,
+            errorCallback: function() {
+            // fade out the error message after 2 seconds
+            $('#infscr-loading').animate({opacity: .8},2000).fadeOut('normal');
+            }},
+            // call masonry as a callback.
+            function( newElements ) { $(this).masonry({ appendedContent: $(newElements) }); }
+        );
+
+		$('#boardIntroFilters a').click(function(){
+            var colorClass = '.' + $(this).attr('class');
+
+            if(colorClass=='.all') {
+                // show all hidden boxes
+                $("#pincontainer").children('.invis')
+                .toggleClass('invis').fadeIn(speed);
+            } else {
+                // hide visible boxes
+                $("#pincontainer").children().not(colorClass).not('.invis')
+                .toggleClass('invis').fadeOut(speed);
+                // show hidden boxes
+                $("#pincontainer").children(colorClass+'.invis')
+                .toggleClass('invis').fadeIn(speed);
+            }
+           $("#pincontainer").masonry();
+
+
+            return false;
+        });
+        $(".sd_Comment").click(function( event ){
+            //alert("qqq");
+            $(this).parents(".pin").find(".pinComments").append('fhafkjdsahfdsajfkdsahfsd <br /> alkdsafdka ');
+
+            $("#pincontainer").masonry();
+            event.preventDefault();
+        });
+         $(".sd_Comment1").click(function( event ){
+            //alert("qqq");
+            $(this).parents(".pin").find(".pinComments").append('fhafkjdsahfdsajfkdsahfsd <br /> alkdsafdka ');
+
+            
+            event.preventDefault();
+        });
+     });
+</script>
+</head>
+
+<body>
+<div class="columnContainer">
+  <div id="pincontainer">
+    <div class="pin pinBoard">
+      <div id="boardIntroFilters">
+        <ul>
+          <li><a class="selected" href="">All</a></li>
+          <li><a class="red" href="">red</a></li>
+          <li><a class="gay" href="">gay</a></li>
+          <li><a class="back" href="">back</a></li>
+  </ul>
+      </div>
+    </div>
+    
+    <div class="pin">
+    	<a class="image"><img src="/static/image/1.jpg" style="width:100%"></a>
+      <div class="hbc">
+      	<a class="">Comment</a>
+      	<a class="">Like</a>
+     	  <a class="">Repin</a>
+      </div>
+      <p class="description">something to remember.</p>
+      <p class="likesComments"><span class="repins">2 repins</span></p>
+       
+      
+    </div>
+    <div class="pin red"> <a class="image"><img src="/static/image/1.jpg"></a>
+      <div class="hbc">
+      	<a class="hb sd_Comment" >Comment</a>
+      	<a class="like  hb"><span></span> Like</a>
+      </div>
+      <a class="hb"><span></span>Repin</a>
+      <p class="description">the colors says...summer!!</p>
+      <p class="likesComments"><span class="likes">1 like</span></p>
+      <div class="pinOrigin"> <a class="userImage" title="melinka rodriguez" href="javascript:if(confirm('http://www.css88.com/melinka/  \n\nThis file was not retrieved by Teleport Pro, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?'))window.location='http://www.css88.com/melinka/'" tppabs="http://www.css88.com/melinka/"><img alt="Picture of melinka rodriguez" src="photo_normal.png" tppabs="http://a3.twimg.com/profile_images/1082912563/photo_normal.png"></a>
+        <p>Pinned by <a href="javascript:if(confirm('http://www.css88.com/melinka/  \n\nThis file was not retrieved by Teleport Pro, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?'))window.location='http://www.css88.com/melinka/'" tppabs="http://www.css88.com/melinka/">melinka rodriguez</a> onto <a class="pinOriginBoard" href="javascript:if(confirm('http://www.css88.com/melinka/wedding/  \n\nThis file was not retrieved by Teleport Pro, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?'))window.location='http://www.css88.com/melinka/wedding/'" tppabs="http://www.css88.com/melinka/wedding/">wedding</a></p>
+        <div class="pinComments">
+          <div class="pinComments_comments">
+            <div> <a href="javascript:if(confirm('http://www.css88.com/melinka/  \n\nThis file was not retrieved by Teleport Pro, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?'))window.location='http://www.css88.com/melinka/'" tppabs="http://www.css88.com/melinka/" class="userImage"><img src="photo_normal.png" tppabs="http://a3.twimg.com/profile_images/1082912563/photo_normal.png"></a>
+              <p><a href="javascript:if(confirm('http://www.css88.com/melinka/  \n\nThis file was not retrieved by Teleport Pro, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?'))window.location='http://www.css88.com/melinka/'" tppabs="http://www.css88.com/melinka/">melinka rodriguez</a> ...all in this wedding is amazing, her dress, his suit, her bouquet,...</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- .pinOrigin --> 
+      <!----> 
+    </div>  
+    
+    <div class="pin">
+        <div class="actions">
+            <div class="right">
+                <a href="" class="Button Button11 WhiteButton" title="95701560801137972"><strong><em></em>Comment</strong><span></span></a>
+            </div>
+            <div class="left">
+                <a href="" class="Button Button11 WhiteButton" title="95701560801137972"><strong><em></em>Repin</strong><span></span></a>                    
+                <a href="" class="Button Button11 WhiteButton" title="95701560801137972"><strong><em></em>Like</strong><span></span></a>                
+            </div>
+        </div>        
+        <a href="" class="PinImage ImgLink">
+            <img src="/static/image/1.jpg" alt="So I thought my pantry rocked..." style="" />
+        </a>
+        <p class="description">So I thought my pantry rocked... <a href="" title='Shelley Smith'</a> is making me wanna up my game now.</p>
+        <p class="stats colorless">
+        	<span class="LikesCount">21 likes&nbsp;&nbsp;</span>
+        	<span class="CommentsCount">5 comments&nbsp;&nbsp;</span>
+        	<span class="RepinsCount">109 repins&nbsp;&nbsp;</span>
+        </p>
+        <div class="convo attribution clearfix">
+                <a href="" title="Deneen Murphy" class="ImgLink">
+                    <img src="picture-type=square" alt="Picture of Deneen Murphy" />
+                </a>
+                <p>
+                    <a href="">Deneen Murphy</a>                    
+                    onto <a href="">Home Ideas I Love</a>
+                </p>
+        </div>
+        <div class="comments colormuted">
+               <div class="comment convo clearfix">
+                   <a href="" class="ImgLink">
+                      <img src="jessicatbrd-54.jpg" alt="Picture of jessicatbrd" />
+                   </a>
+                   <p><a href="">Jessica </a> I love this and have been thinking about using my left over paint to give my pantry a facelift.</p>
+               </div>
+               <div class="comment convo clearfix">
+                   <a href="" class="ImgLink">
+                      <img src="picture-type=square" alt="Picture of murphy6" />
+                   </a>
+                   <p><a href="">Deneen Murphy</a>I was just gonna leave it at the smiley to do the shortest comment ever - ha! </p>
+               </div>
+        </div>
+    </div>
+    
+    <div class="pin" data-id="95701560801137972" data-width="254" data-height="640">
+        <div class="actions">
+            <div class="right">
+                <a href="" class="Button Button11 WhiteButton" title="95701560801137972"><strong><em></em>Comment</strong><span></span></a>
+            </div>
+            <div class="left">
+                <a href="" class="Button Button11 WhiteButton" title="95701560801137972"><strong><em></em>Repin</strong><span></span></a>                    
+                <a href="" class="Button Button11 WhiteButton" title="95701560801137972"><strong><em></em>Like</strong><span></span></a>                
+            </div>
+        </div>        
+        <a href="" class="PinImage ImgLink">
+            <img src="/static/image/1.jpg" alt="So I thought my pantry rocked..." style="height: 484px;" />
+        </a>
+        <p class="description">So I thought my pantry rocked... <a href="" title='Shelley Smith'</a> is making me wanna up my game now.</p>
+        <p class="stats colorless">
+        	<span class="LikesCount">21 likes&nbsp;&nbsp;</span>
+        	<span class="CommentsCount">5 comments&nbsp;&nbsp;</span>
+        	<span class="RepinsCount">109 repins&nbsp;&nbsp;</span>
+        </p>
+        <div class="convo attribution clearfix">
+                <a href="" title="Deneen Murphy" class="ImgLink">
+                    <img src="picture-type=square" alt="Picture of Deneen Murphy" />
+                </a>
+                <p>
+                    <a href="">Deneen Murphy</a>                    
+                    onto <a href="">Home Ideas I Love</a>
+                </p>
+        </div>
+        <div class="chat">
+               <div class="chatbox">
+                   <a href="" class="ImgLink">
+                      <img src="jessicatbrd-54.jpg" alt="Picture of jessicatbrd" />
+                   </a>
+                   <p><a href="">Jessica </a> I love this and have been thinking about using my left over paint to give my pantry a facelift.</p>
+               </div>
+               <div class="chatbox">
+                   <a href="" class="ImgLink">
+                      <img src="picture-type=square" alt="Picture of murphy6" />
+                   </a>
+                   <p><a href="">Deneen Murphy</a>I was just gonna leave it at the smiley to do the shortest comment ever - ha! </p>
+               </div>
+        </div>
+    </div>
+    
+    
+    <div class="pin">
+        <div class="actions">
+            <div class="right">
+                <a href="" class="Button Button11 WhiteButton"><strong><em></em>Comment</strong><span></span></a>
+            </div>
+            <div class="left">
+                <a href="" class="Button Button11 WhiteButton"><strong><em></em>Repin</strong><span></span></a>                    
+                <a href="" class="Button Button11 WhiteButton"><strong><em></em>Like</strong><span></span></a>                
+            </div>
+        </div>        
+        <a href="" class="PinImage ImgLink">
+            <img src="/static/image/1.jpg" alt="Pic Missing"/>
+        </a>
+        <p class="description">My test pin<a href="" title='Shelley Smith'</a> is making me wanna up my game now.</p>
+        <p class="stats colorless">
+        	<span class="LikesCount">21 likes&nbsp;&nbsp;</span>
+        	<span class="CommentsCount">5 comments&nbsp;&nbsp;</span>
+        	<span class="RepinsCount">109 repins&nbsp;&nbsp;</span>
+        </p>
+        <div class="convo attribution clearfix">
+                <a href="" title="Deneen Murphy" class="ImgLink">
+                    <img src="pic square" alt="Deneen pic" />
+                </a>
+                <p>
+                    <a href="">Deneen Murphy</a>                    
+                    onto <a href="">Home Ideas I Love</a>
+                </p>
+        </div>
+        <div class="comments colormuted">
+               <div class="comment convo clearfix">
+                   <a href="" class="ImgLink">
+                      <img src="jessicatbrd-54.jpg" alt="jess pic" />
+                   </a>
+                   <p><a href="">Jessica </a> I love this and have been thinking about using my left over paint to give my pantry a facelift.</p>
+               </div>
+               <div class="comment convo clearfix">
+                   <a href="" class="ImgLink">
+                      <img src="picture-type=square" alt="murp pic" />
+                   </a>
+                   <p><a href="">Deneen Murphy</a>I was just gonna leave it at the smiley to do the shortest comment ever - ha! </p>
+               </div>
+        </div>
+    </div>  
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+  </div>
+  <!-- #pincontainer -->
+
+</div>
+</body>
+</html>
