@@ -65,7 +65,7 @@ handle_incoming(_ServiceName, WebSocketId,_SessionId, Message, State) ->
 %%--------------------------------------------------------------------
 
 
-handle_info({parse, {Pid, Base64Img}}, State) ->
+handle_info({parse, {Pid, Img}}, State) ->
     #state{users=Users} = State,
 	WebSockets = dict:fetch_keys(Users),
 	case WebSockets of
@@ -73,7 +73,7 @@ handle_info({parse, {Pid, Base64Img}}, State) ->
 			{noreply, State};
 		[WebSocketId|_Tail] ->
 			io:format("To save pid:~p", [Pid]),
-			Props = [{<<"img">>, Base64Img}, {<<"pid">>, pid_to_list(Pid)}],
+			Props = [{<<"img">>, list_to_binary(Img)}, {<<"pid">>, pid_to_list(Pid)}],
 			Json = jsx:encode(Props),
 			WebSocketId ! {text, Json},
 			{noreply, State}

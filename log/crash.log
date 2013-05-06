@@ -640,3 +640,352 @@ Error in process <0.1466.0> on node 'zdft@localhost' with exit value: {{case_cla
      Reason:     {{case_clause,closed},[{cowboy_protocol,execute,4,[{file,"src/cowboy_protocol.erl"},{line,514}]}]}
      Offender:   [{pid,<0.1466.0>},{name,ranch_conns_sup},{mfargs,{ranch_conns_sup,start_protocol,undefined}},{restart_type,temporary},{shutdown,brutal_kill},{child_type,worker}]
 
+2013-05-04 06:45:27 =ERROR REPORT====
+{function_clause,[{lists,reverse,[{function_clause,[{filename,join,[[{error,bad_name}]],[{file,"filename.erl"},{line,392}]},{aleppo,process_tree,3,[{file,"src/aleppo.erl"},{line,86}]},{aleppo,process_tree,2,[{file,"src/aleppo.erl"},{line,58}]},{boss_compiler,parse_text,4,[{file,"src/boss_compiler.erl"},{line,91}]},{boss_compiler,compile,2,[{file,"src/boss_compiler.erl"},{line,11}]},{boss_load,compile_and_accumulate_errors,5,[{file,"src/boss/boss_load.erl"},{line,144}]},{boss_load,load_dir,4,[{file,"src/boss/boss_load.erl"},{line,121}]},{boss_load,load_dirs1,6,[{file,"src/boss/boss_load.erl"},{line,106}]}]}],[{file,"lists.erl"},{line,145}]},{aleppo,process_tree,2,[{file,"src/aleppo.erl"},{line,62}]},{boss_compiler,parse_text,4,[{file,"src/boss_compiler.erl"},{line,91}]},{boss_compiler,compile,2,[{file,"src/boss_compiler.erl"},{line,11}]},{boss_load,compile_and_accumulate_errors,5,[{file,"src/boss/boss_load.erl"},{line,144}]},{boss_load,load_dir,4,[{file,"src/boss/boss_load.erl"},{line,121}]},{boss_load,load_dirs1,6,[{file,"src/boss/boss_load.erl"},{line,106}]},{boss_web_controller,load_and_execute,5,[{file,"src/boss/boss_web_controller.erl"},{line,718}]}]}2013-05-04 06:45:27 =ERROR REPORT====
+GET /ocr/index/ [zdft] 500 817ms2013-05-04 06:47:45 =ERROR REPORT====
+{function_clause,[{lists,reverse,[{function_clause,[{filename,join,[[{error,bad_name}]],[{file,"filename.erl"},{line,392}]},{aleppo,process_tree,3,[{file,"src/aleppo.erl"},{line,86}]},{aleppo,process_tree,2,[{file,"src/aleppo.erl"},{line,58}]},{boss_compiler,parse_text,4,[{file,"src/boss_compiler.erl"},{line,91}]},{boss_compiler,compile,2,[{file,"src/boss_compiler.erl"},{line,11}]},{boss_load,compile_and_accumulate_errors,5,[{file,"src/boss/boss_load.erl"},{line,144}]},{boss_load,load_dir,4,[{file,"src/boss/boss_load.erl"},{line,121}]},{boss_load,load_dirs1,6,[{file,"src/boss/boss_load.erl"},{line,106}]}]}],[{file,"lists.erl"},{line,145}]},{aleppo,process_tree,2,[{file,"src/aleppo.erl"},{line,62}]},{boss_compiler,parse_text,4,[{file,"src/boss_compiler.erl"},{line,91}]},{boss_compiler,compile,2,[{file,"src/boss_compiler.erl"},{line,11}]},{boss_load,compile_and_accumulate_errors,5,[{file,"src/boss/boss_load.erl"},{line,144}]},{boss_load,load_dir,4,[{file,"src/boss/boss_load.erl"},{line,121}]},{boss_load,load_dirs1,6,[{file,"src/boss/boss_load.erl"},{line,106}]},{boss_web_controller,load_and_execute,5,[{file,"src/boss/boss_web_controller.erl"},{line,718}]}]}2013-05-04 06:47:45 =ERROR REPORT====
+GET /ocr/index/ [zdft] 500 123ms2013-05-04 06:47:54 =ERROR REPORT====
+{function_clause,[{lists,reverse,[{function_clause,[{filename,join,[[{error,bad_name}]],[{file,"filename.erl"},{line,392}]},{aleppo,process_tree,3,[{file,"src/aleppo.erl"},{line,86}]},{aleppo,process_tree,2,[{file,"src/aleppo.erl"},{line,58}]},{boss_compiler,parse_text,4,[{file,"src/boss_compiler.erl"},{line,91}]},{boss_compiler,compile,2,[{file,"src/boss_compiler.erl"},{line,11}]},{boss_load,compile_and_accumulate_errors,5,[{file,"src/boss/boss_load.erl"},{line,144}]},{boss_load,load_dir,4,[{file,"src/boss/boss_load.erl"},{line,121}]},{boss_load,load_dirs1,6,[{file,"src/boss/boss_load.erl"},{line,106}]}]}],[{file,"lists.erl"},{line,145}]},{aleppo,process_tree,2,[{file,"src/aleppo.erl"},{line,62}]},{boss_compiler,parse_text,4,[{file,"src/boss_compiler.erl"},{line,91}]},{boss_compiler,compile,2,[{file,"src/boss_compiler.erl"},{line,11}]},{boss_load,compile_and_accumulate_errors,5,[{file,"src/boss/boss_load.erl"},{line,144}]},{boss_load,load_dir,4,[{file,"src/boss/boss_load.erl"},{line,121}]},{boss_load,load_dirs1,6,[{file,"src/boss/boss_load.erl"},{line,106}]},{boss_web_controller,load_and_execute,5,[{file,"src/boss/boss_web_controller.erl"},{line,718}]}]}2013-05-04 06:47:54 =ERROR REPORT====
+GET /ocr/index/ [zdft] 500 79ms2013-05-04 06:48:52 =ERROR REPORT====
+{function_clause,[{lists,reverse,[{function_clause,[{filename,join,[[{error,bad_name}]],[{file,"filename.erl"},{line,392}]},{aleppo,process_tree,3,[{file,"src/aleppo.erl"},{line,86}]},{aleppo,process_tree,2,[{file,"src/aleppo.erl"},{line,58}]},{boss_compiler,parse_text,4,[{file,"src/boss_compiler.erl"},{line,91}]},{boss_compiler,compile,2,[{file,"src/boss_compiler.erl"},{line,11}]},{boss_load,compile_and_accumulate_errors,5,[{file,"src/boss/boss_load.erl"},{line,144}]},{boss_load,load_dir,4,[{file,"src/boss/boss_load.erl"},{line,121}]},{boss_load,load_dirs1,6,[{file,"src/boss/boss_load.erl"},{line,106}]}]}],[{file,"lists.erl"},{line,145}]},{aleppo,process_tree,2,[{file,"src/aleppo.erl"},{line,62}]},{boss_compiler,parse_text,4,[{file,"src/boss_compiler.erl"},{line,91}]},{boss_compiler,compile,2,[{file,"src/boss_compiler.erl"},{line,11}]},{boss_load,compile_and_accumulate_errors,5,[{file,"src/boss/boss_load.erl"},{line,144}]},{boss_load,load_dir,4,[{file,"src/boss/boss_load.erl"},{line,121}]},{boss_load,load_dirs1,6,[{file,"src/boss/boss_load.erl"},{line,106}]},{boss_web_controller,load_and_execute,5,[{file,"src/boss/boss_web_controller.erl"},{line,718}]}]}2013-05-04 06:48:52 =ERROR REPORT====
+GET /ocr/index/ [zdft] 500 54ms2013-05-04 06:55:12 =ERROR REPORT====
+Error in process <0.1529.0> on node 'zdft@localhost' with exit value: {{case_clause,closed},[{cowboy_protocol,execute,4,[{file,"src/cowboy_protocol.erl"},{line,514}]}]}
+
+2013-05-04 06:55:12 =SUPERVISOR REPORT====
+     Supervisor: {<0.148.0>,ranch_conns_sup}
+     Context:    child_terminated
+     Reason:     {{case_clause,closed},[{cowboy_protocol,execute,4,[{file,"src/cowboy_protocol.erl"},{line,514}]}]}
+     Offender:   [{pid,<0.1529.0>},{name,ranch_conns_sup},{mfargs,{ranch_conns_sup,start_protocol,undefined}},{restart_type,temporary},{shutdown,brutal_kill},{child_type,worker}]
+
+2013-05-04 06:56:59 =SUPERVISOR REPORT====
+     Supervisor: {<0.148.0>,ranch_conns_sup}
+     Context:    child_terminated
+     Reason:     killed
+     Offender:   [{pid,<0.1543.0>},{name,ranch_conns_sup},{mfargs,{ranch_conns_sup,start_protocol,undefined}},{restart_type,temporary},{shutdown,brutal_kill},{child_type,worker}]
+
+2013-05-04 06:57:55 =ERROR REPORT====
+Error in process <0.1548.0> on node 'zdft@localhost' with exit value: {{case_clause,closed},[{cowboy_protocol,execute,4,[{file,"src/cowboy_protocol.erl"},{line,514}]}]}
+
+2013-05-04 06:57:55 =SUPERVISOR REPORT====
+     Supervisor: {<0.148.0>,ranch_conns_sup}
+     Context:    child_terminated
+     Reason:     {{case_clause,closed},[{cowboy_protocol,execute,4,[{file,"src/cowboy_protocol.erl"},{line,514}]}]}
+     Offender:   [{pid,<0.1548.0>},{name,ranch_conns_sup},{mfargs,{ranch_conns_sup,start_protocol,undefined}},{restart_type,temporary},{shutdown,brutal_kill},{child_type,worker}]
+
+2013-05-04 07:03:26 =ERROR REPORT====
+Error in process <0.1566.0> on node 'zdft@localhost' with exit value: {{case_clause,closed},[{cowboy_protocol,execute,4,[{file,"src/cowboy_protocol.erl"},{line,514}]}]}
+
+2013-05-04 07:03:26 =SUPERVISOR REPORT====
+     Supervisor: {<0.148.0>,ranch_conns_sup}
+     Context:    child_terminated
+     Reason:     {{case_clause,closed},[{cowboy_protocol,execute,4,[{file,"src/cowboy_protocol.erl"},{line,514}]}]}
+     Offender:   [{pid,<0.1566.0>},{name,ranch_conns_sup},{mfargs,{ranch_conns_sup,start_protocol,undefined}},{restart_type,temporary},{shutdown,brutal_kill},{child_type,worker}]
+
+2013-05-04 07:05:55 =ERROR REPORT====
+Error in process <0.1606.0> on node 'zdft@localhost' with exit value: {{case_clause,closed},[{cowboy_protocol,execute,4,[{file,"src/cowboy_protocol.erl"},{line,514}]}]}
+
+2013-05-04 07:05:55 =SUPERVISOR REPORT====
+     Supervisor: {<0.148.0>,ranch_conns_sup}
+     Context:    child_terminated
+     Reason:     {{case_clause,closed},[{cowboy_protocol,execute,4,[{file,"src/cowboy_protocol.erl"},{line,514}]}]}
+     Offender:   [{pid,<0.1606.0>},{name,ranch_conns_sup},{mfargs,{ranch_conns_sup,start_protocol,undefined}},{restart_type,temporary},{shutdown,brutal_kill},{child_type,worker}]
+
+2013-05-04 07:40:57 =ERROR REPORT====
+Error in process <0.1624.0> on node 'zdft@localhost' with exit value: {{case_clause,closed},[{cowboy_protocol,execute,4,[{file,"src/cowboy_protocol.erl"},{line,514}]}]}
+
+2013-05-04 07:40:57 =SUPERVISOR REPORT====
+     Supervisor: {<0.148.0>,ranch_conns_sup}
+     Context:    child_terminated
+     Reason:     {{case_clause,closed},[{cowboy_protocol,execute,4,[{file,"src/cowboy_protocol.erl"},{line,514}]}]}
+     Offender:   [{pid,<0.1624.0>},{name,ranch_conns_sup},{mfargs,{ranch_conns_sup,start_protocol,undefined}},{restart_type,temporary},{shutdown,brutal_kill},{child_type,worker}]
+
+2013-05-04 07:44:11 =ERROR REPORT====
+Error in process <0.1642.0> on node 'zdft@localhost' with exit value: {{case_clause,closed},[{cowboy_protocol,execute,4,[{file,"src/cowboy_protocol.erl"},{line,514}]}]}
+
+2013-05-04 07:44:11 =SUPERVISOR REPORT====
+     Supervisor: {<0.148.0>,ranch_conns_sup}
+     Context:    child_terminated
+     Reason:     {{case_clause,closed},[{cowboy_protocol,execute,4,[{file,"src/cowboy_protocol.erl"},{line,514}]}]}
+     Offender:   [{pid,<0.1642.0>},{name,ranch_conns_sup},{mfargs,{ranch_conns_sup,start_protocol,undefined}},{restart_type,temporary},{shutdown,brutal_kill},{child_type,worker}]
+
+2013-05-04 07:48:02 =SUPERVISOR REPORT====
+     Supervisor: {<0.148.0>,ranch_conns_sup}
+     Context:    child_terminated
+     Reason:     killed
+     Offender:   [{pid,<0.1647.0>},{name,ranch_conns_sup},{mfargs,{ranch_conns_sup,start_protocol,undefined}},{restart_type,temporary},{shutdown,brutal_kill},{child_type,worker}]
+
+2013-05-04 07:48:52 =SUPERVISOR REPORT====
+     Supervisor: {<0.148.0>,ranch_conns_sup}
+     Context:    child_terminated
+     Reason:     killed
+     Offender:   [{pid,<0.1663.0>},{name,ranch_conns_sup},{mfargs,{ranch_conns_sup,start_protocol,undefined}},{restart_type,temporary},{shutdown,brutal_kill},{child_type,worker}]
+
+2013-05-04 07:49:07 =SUPERVISOR REPORT====
+     Supervisor: {<0.148.0>,ranch_conns_sup}
+     Context:    child_terminated
+     Reason:     killed
+     Offender:   [{pid,<0.1692.0>},{name,ranch_conns_sup},{mfargs,{ranch_conns_sup,start_protocol,undefined}},{restart_type,temporary},{shutdown,brutal_kill},{child_type,worker}]
+
+2013-05-04 07:49:16 =SUPERVISOR REPORT====
+     Supervisor: {<0.148.0>,ranch_conns_sup}
+     Context:    child_terminated
+     Reason:     killed
+     Offender:   [{pid,<0.1697.0>},{name,ranch_conns_sup},{mfargs,{ranch_conns_sup,start_protocol,undefined}},{restart_type,temporary},{shutdown,brutal_kill},{child_type,worker}]
+
+2013-05-04 07:50:06 =ERROR REPORT====
+Error in process <0.1702.0> on node 'zdft@localhost' with exit value: {{case_clause,closed},[{cowboy_protocol,execute,4,[{file,"src/cowboy_protocol.erl"},{line,514}]}]}
+
+2013-05-04 07:50:06 =SUPERVISOR REPORT====
+     Supervisor: {<0.148.0>,ranch_conns_sup}
+     Context:    child_terminated
+     Reason:     {{case_clause,closed},[{cowboy_protocol,execute,4,[{file,"src/cowboy_protocol.erl"},{line,514}]}]}
+     Offender:   [{pid,<0.1702.0>},{name,ranch_conns_sup},{mfargs,{ranch_conns_sup,start_protocol,undefined}},{restart_type,temporary},{shutdown,brutal_kill},{child_type,worker}]
+
+2013-05-04 07:50:14 =SUPERVISOR REPORT====
+     Supervisor: {<0.148.0>,ranch_conns_sup}
+     Context:    child_terminated
+     Reason:     killed
+     Offender:   [{pid,<0.1707.0>},{name,ranch_conns_sup},{mfargs,{ranch_conns_sup,start_protocol,undefined}},{restart_type,temporary},{shutdown,brutal_kill},{child_type,worker}]
+
+2013-05-04 07:51:14 =ERROR REPORT====
+Error in process <0.1725.0> on node 'zdft@localhost' with exit value: {{case_clause,closed},[{cowboy_protocol,execute,4,[{file,"src/cowboy_protocol.erl"},{line,514}]}]}
+
+2013-05-04 07:51:14 =SUPERVISOR REPORT====
+     Supervisor: {<0.148.0>,ranch_conns_sup}
+     Context:    child_terminated
+     Reason:     {{case_clause,closed},[{cowboy_protocol,execute,4,[{file,"src/cowboy_protocol.erl"},{line,514}]}]}
+     Offender:   [{pid,<0.1725.0>},{name,ranch_conns_sup},{mfargs,{ranch_conns_sup,start_protocol,undefined}},{restart_type,temporary},{shutdown,brutal_kill},{child_type,worker}]
+
+2013-05-04 07:53:57 =SUPERVISOR REPORT====
+     Supervisor: {<0.148.0>,ranch_conns_sup}
+     Context:    child_terminated
+     Reason:     killed
+     Offender:   [{pid,<0.1758.0>},{name,ranch_conns_sup},{mfargs,{ranch_conns_sup,start_protocol,undefined}},{restart_type,temporary},{shutdown,brutal_kill},{child_type,worker}]
+
+2013-05-04 07:53:58 =SUPERVISOR REPORT====
+     Supervisor: {<0.148.0>,ranch_conns_sup}
+     Context:    child_terminated
+     Reason:     killed
+     Offender:   [{pid,<0.1781.0>},{name,ranch_conns_sup},{mfargs,{ranch_conns_sup,start_protocol,undefined}},{restart_type,temporary},{shutdown,brutal_kill},{child_type,worker}]
+
+2013-05-04 07:54:08 =SUPERVISOR REPORT====
+     Supervisor: {<0.148.0>,ranch_conns_sup}
+     Context:    child_terminated
+     Reason:     killed
+     Offender:   [{pid,<0.1788.0>},{name,ranch_conns_sup},{mfargs,{ranch_conns_sup,start_protocol,undefined}},{restart_type,temporary},{shutdown,brutal_kill},{child_type,worker}]
+
+2013-05-04 07:54:31 =SUPERVISOR REPORT====
+     Supervisor: {<0.148.0>,ranch_conns_sup}
+     Context:    child_terminated
+     Reason:     killed
+     Offender:   [{pid,<0.1830.0>},{name,ranch_conns_sup},{mfargs,{ranch_conns_sup,start_protocol,undefined}},{restart_type,temporary},{shutdown,brutal_kill},{child_type,worker}]
+
+2013-05-04 07:54:47 =SUPERVISOR REPORT====
+     Supervisor: {<0.148.0>,ranch_conns_sup}
+     Context:    child_terminated
+     Reason:     killed
+     Offender:   [{pid,<0.1880.0>},{name,ranch_conns_sup},{mfargs,{ranch_conns_sup,start_protocol,undefined}},{restart_type,temporary},{shutdown,brutal_kill},{child_type,worker}]
+
+2013-05-04 07:54:51 =SUPERVISOR REPORT====
+     Supervisor: {<0.148.0>,ranch_conns_sup}
+     Context:    child_terminated
+     Reason:     killed
+     Offender:   [{pid,<0.1898.0>},{name,ranch_conns_sup},{mfargs,{ranch_conns_sup,start_protocol,undefined}},{restart_type,temporary},{shutdown,brutal_kill},{child_type,worker}]
+
+2013-05-05 04:02:32 =ERROR REPORT====
+GET / [zdft] 404 22ms2013-05-05 04:02:53 =SUPERVISOR REPORT====
+     Supervisor: {<0.148.0>,ranch_conns_sup}
+     Context:    child_terminated
+     Reason:     killed
+     Offender:   [{pid,<0.381.0>},{name,ranch_conns_sup},{mfargs,{ranch_conns_sup,start_protocol,undefined}},{restart_type,temporary},{shutdown,brutal_kill},{child_type,worker}]
+
+2013-05-05 04:03:07 =SUPERVISOR REPORT====
+     Supervisor: {<0.148.0>,ranch_conns_sup}
+     Context:    child_terminated
+     Reason:     killed
+     Offender:   [{pid,<0.389.0>},{name,ranch_conns_sup},{mfargs,{ranch_conns_sup,start_protocol,undefined}},{restart_type,temporary},{shutdown,brutal_kill},{child_type,worker}]
+
+2013-05-05 04:04:07 =ERROR REPORT====
+Error in process <0.415.0> on node 'zdft@localhost' with exit value: {{case_clause,closed},[{cowboy_protocol,execute,4,[{file,"src/cowboy_protocol.erl"},{line,514}]}]}
+
+2013-05-05 04:04:07 =SUPERVISOR REPORT====
+     Supervisor: {<0.148.0>,ranch_conns_sup}
+     Context:    child_terminated
+     Reason:     {{case_clause,closed},[{cowboy_protocol,execute,4,[{file,"src/cowboy_protocol.erl"},{line,514}]}]}
+     Offender:   [{pid,<0.415.0>},{name,ranch_conns_sup},{mfargs,{ranch_conns_sup,start_protocol,undefined}},{restart_type,temporary},{shutdown,brutal_kill},{child_type,worker}]
+
+2013-05-05 04:36:41 =ERROR REPORT====
+{{badmatch,[]},[{zdft_ocr_controller,parse,3,[{file,"/home/jackie/Erlang/projects/zdft/src/controller/zdft_ocr_controller.erl"},{line,13}]},{boss_web_controller,execute_action,5,[{file,"src/boss/boss_web_controller.erl"},{line,828}]},{boss_web_controller,process_dynamic_request,5,[{file,"src/boss/boss_web_controller.erl"},{line,535}]},{boss_web_controller,process_request,5,[{file,"src/boss/boss_web_controller.erl"},{line,524}]},{timer,tc,3,[{file,"timer.erl"},{line,194}]},{boss_web_controller,build_dynamic_response,4,[{file,"src/boss/boss_web_controller.erl"},{line,454}]},{mochicow_upgrade,upgrade,4,[{file,"src/mochicow_upgrade.erl"},{line,72}]},{cowboy_protocol,execute,4,[{file,"src/cowboy_protocol.erl"},{line,514}]}]}2013-05-05 04:36:41 =ERROR REPORT====
+POST /ocr/parse [zdft] 500 51ms2013-05-05 04:39:15 =ERROR REPORT====
+Error in process <0.394.0> on node 'zdft@localhost' with exit value: {{case_clause,closed},[{cowboy_protocol,execute,4,[{file,"src/cowboy_protocol.erl"},{line,514}]}]}
+
+2013-05-05 04:39:15 =SUPERVISOR REPORT====
+     Supervisor: {<0.148.0>,ranch_conns_sup}
+     Context:    child_terminated
+     Reason:     {{case_clause,closed},[{cowboy_protocol,execute,4,[{file,"src/cowboy_protocol.erl"},{line,514}]}]}
+     Offender:   [{pid,<0.394.0>},{name,ranch_conns_sup},{mfargs,{ranch_conns_sup,start_protocol,undefined}},{restart_type,temporary},{shutdown,brutal_kill},{child_type,worker}]
+
+2013-05-05 04:58:35 =ERROR REPORT====
+Error in process <0.435.0> on node 'zdft@localhost' with exit value: {{case_clause,closed},[{cowboy_protocol,execute,4,[{file,"src/cowboy_protocol.erl"},{line,514}]}]}
+
+2013-05-05 04:58:35 =SUPERVISOR REPORT====
+     Supervisor: {<0.148.0>,ranch_conns_sup}
+     Context:    child_terminated
+     Reason:     {{case_clause,closed},[{cowboy_protocol,execute,4,[{file,"src/cowboy_protocol.erl"},{line,514}]}]}
+     Offender:   [{pid,<0.435.0>},{name,ranch_conns_sup},{mfargs,{ranch_conns_sup,start_protocol,undefined}},{restart_type,temporary},{shutdown,brutal_kill},{child_type,worker}]
+
+2013-05-05 05:01:50 =ERROR REPORT====
+GET /image/163-244-68-131-29-152-207-71-203-238-230-152-31-253-113-85 [zdft] 404 85ms2013-05-05 05:02:05 =ERROR REPORT====
+GET /image/163-244-68-131-29-152-207-71-203-238-230-152-31-253-113-85 [zdft] 404 0ms2013-05-05 05:02:48 =SUPERVISOR REPORT====
+     Supervisor: {<0.148.0>,ranch_conns_sup}
+     Context:    child_terminated
+     Reason:     killed
+     Offender:   [{pid,<0.468.0>},{name,ranch_conns_sup},{mfargs,{ranch_conns_sup,start_protocol,undefined}},{restart_type,temporary},{shutdown,brutal_kill},{child_type,worker}]
+
+2013-05-05 05:02:48 =ERROR REPORT====
+GET /image/188-78-246-49-232-140-86-51-154-65-87-66-40-153-46-55 [zdft] 404 0ms2013-05-05 05:02:50 =ERROR REPORT====
+GET /image/188-78-246-49-232-140-86-51-154-65-87-66-40-153-46-55 [zdft] 404 0ms2013-05-05 05:02:51 =ERROR REPORT====
+GET /image/188-78-246-49-232-140-86-51-154-65-87-66-40-153-46-55 [zdft] 404 0ms2013-05-05 05:02:51 =ERROR REPORT====
+GET /image/188-78-246-49-232-140-86-51-154-65-87-66-40-153-46-55 [zdft] 404 0ms2013-05-05 05:02:52 =ERROR REPORT====
+GET /image/188-78-246-49-232-140-86-51-154-65-87-66-40-153-46-55 [zdft] 404 2ms2013-05-05 05:02:56 =ERROR REPORT====
+GET /image/188-78-246-49-232-140-86-51-154-65-87-66-40-153-46-55 [zdft] 404 1ms2013-05-05 05:17:26 =ERROR REPORT====
+GET /image/188-78-246-49-232-140-86-51-154-65-87-66-40-153-46-55 [zdft] 404 0ms2013-05-05 05:17:30 =ERROR REPORT====
+GET /image/188-78-246-49-232-140-86-51-154-65-87-66-40-153-46-55 [zdft] 404 0ms2013-05-05 05:17:34 =ERROR REPORT====
+GET /image/188-78-246-49-232-140-86-51-154-65-87-66-40-153-46-55 [zdft] 404 1ms2013-05-05 05:17:36 =ERROR REPORT====
+GET /image/188-78-246-49-232-140-86-51-154-65-87-66-40-153-46-55 [zdft] 404 1ms2013-05-05 05:17:51 =ERROR REPORT====
+GET /image/188-78-246-49-232-140-86-51-154-65-87-66-40-153-46-55 [zdft] 404 1ms2013-05-05 05:23:02 =ERROR REPORT====
+GET /priv/static/image/188-78-246-49-232-140-86-51-154-65-87-66-40-153-46-55 [zdft] 404 2ms2013-05-05 05:23:10 =ERROR REPORT====
+Error in process <0.621.0> on node 'zdft@localhost' with exit value: {{case_clause,closed},[{cowboy_protocol,execute,4,[{file,"src/cowboy_protocol.erl"},{line,514}]}]}
+
+2013-05-05 05:23:10 =SUPERVISOR REPORT====
+     Supervisor: {<0.148.0>,ranch_conns_sup}
+     Context:    child_terminated
+     Reason:     {{case_clause,closed},[{cowboy_protocol,execute,4,[{file,"src/cowboy_protocol.erl"},{line,514}]}]}
+     Offender:   [{pid,<0.621.0>},{name,ranch_conns_sup},{mfargs,{ranch_conns_sup,start_protocol,undefined}},{restart_type,temporary},{shutdown,brutal_kill},{child_type,worker}]
+
+2013-05-05 05:36:12 =ERROR REPORT====
+{{badmatch,"./priv/static/image/156-140-188-77-83-8-98-26-14-123-183-18-242-205-103-18"},[{zdft_ocr_controller,parse,3,[{file,"/home/jackie/Erlang/projects/zdft/src/controller/zdft_ocr_controller.erl"},{line,18}]},{boss_web_controller,execute_action,5,[{file,"src/boss/boss_web_controller.erl"},{line,828}]},{boss_web_controller,process_dynamic_request,5,[{file,"src/boss/boss_web_controller.erl"},{line,535}]},{boss_web_controller,process_request,5,[{file,"src/boss/boss_web_controller.erl"},{line,524}]},{timer,tc,3,[{file,"timer.erl"},{line,194}]},{boss_web_controller,build_dynamic_response,4,[{file,"src/boss/boss_web_controller.erl"},{line,454}]},{mochicow_upgrade,upgrade,4,[{file,"src/mochicow_upgrade.erl"},{line,72}]},{cowboy_protocol,execute,4,[{file,"src/cowboy_protocol.erl"},{line,514}]}]}2013-05-05 05:36:12 =ERROR REPORT====
+POST /ocr/parse [zdft] 500 142ms2013-05-05 05:52:27 =ERROR REPORT====
+GET /47,115,116,97,116,105,99,47,105,109,97,103,101,47,50,53,52,45,49,51,54,45,50,50,50,45,49,49,49,45,50,49,52,45,49,53,54,45,49,50,52,45,49,55,49,45,50,52,49,45,56,54,45,49,50,56,45,50,54,45,49,53,51,45,49,54,49,45,50,48,50,45,49,48,57 [zdft] 404 0ms2013-05-05 05:53:14 =ERROR REPORT====
+Error in process <0.719.0> on node 'zdft@localhost' with exit value: {{case_clause,closed},[{cowboy_protocol,execute,4,[{file,"src/cowboy_protocol.erl"},{line,514}]}]}
+
+2013-05-05 05:53:14 =SUPERVISOR REPORT====
+     Supervisor: {<0.148.0>,ranch_conns_sup}
+     Context:    child_terminated
+     Reason:     {{case_clause,closed},[{cowboy_protocol,execute,4,[{file,"src/cowboy_protocol.erl"},{line,514}]}]}
+     Offender:   [{pid,<0.719.0>},{name,ranch_conns_sup},{mfargs,{ranch_conns_sup,start_protocol,undefined}},{restart_type,temporary},{shutdown,brutal_kill},{child_type,worker}]
+
+2013-05-05 05:54:45 =SUPERVISOR REPORT====
+     Supervisor: {<0.148.0>,ranch_conns_sup}
+     Context:    child_terminated
+     Reason:     killed
+     Offender:   [{pid,<0.729.0>},{name,ranch_conns_sup},{mfargs,{ranch_conns_sup,start_protocol,undefined}},{restart_type,temporary},{shutdown,brutal_kill},{child_type,worker}]
+
+2013-05-05 05:54:45 =ERROR REPORT====
+** Handler zdft_ocr_websocket terminating in handle_info/2
+   for the reason error:badarg
+** Stacktrace: [{zdft_ocr_websocket,handle_info,2,[{file,"/home/jackie/Erlang/projects/zdft/src/websocket/zdft_ocr_websocket.erl"},{line,77}]},{boss_service_worker,handle_info,2,[{file,"src/boss/boss_service_worker.erl"},{line,230}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,607}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,239}]}]
+
+2013-05-05 05:54:45 =ERROR REPORT====
+** Generic server zdft_ocr_websocket terminating 
+** Last message in was {parse,{<0.743.0>,"/static/image/217-102-93-237-144-1-71-110-98-62-202-185-173-245-134-137"}}
+** When Server state == {state,zdft_ocr_websocket,{state,{dict,1,16,16,8,80,48,{[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]},{{[],[],[[<0.752.0>|<<"702473534d0b3663f91ed266880558f23db36053">>]],[],[],[],[],[],[],[],[],[],[],[],[],[]}}}}}
+** Reason for termination == 
+** {bad_return_value,ok}
+2013-05-05 05:54:45 =CRASH REPORT====
+  crasher:
+    initial call: boss_service_worker:init/1
+    pid: <0.352.0>
+    registered_name: []
+    exception exit: {{bad_return_value,ok},[{gen_server,terminate,6,[{file,"gen_server.erl"},{line,747}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,239}]}]}
+    ancestors: [<0.135.0>,boss_web,boss_sup,<0.64.0>]
+    messages: []
+    links: [<0.135.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 987
+    stack_size: 27
+    reductions: 106781
+  neighbours:
+2013-05-05 05:54:45 =SUPERVISOR REPORT====
+     Supervisor: {global,boss_service_sup}
+     Context:    child_terminated
+     Reason:     {bad_return_value,ok}
+     Offender:   [{pid,<0.352.0>},{name,zdft_ocr_websocket},{mfargs,{boss_service_worker,start_link,[zdft_ocr_websocket,<<"/websocket/ocr">>]}},{restart_type,permanent},{shutdown,5000},{child_type,worker}]
+
+2013-05-05 06:40:04 =ERROR REPORT====
+Error in process <0.814.0> on node 'zdft@localhost' with exit value: {{case_clause,closed},[{cowboy_protocol,execute,4,[{file,"src/cowboy_protocol.erl"},{line,514}]}]}
+
+2013-05-05 06:40:04 =SUPERVISOR REPORT====
+     Supervisor: {<0.148.0>,ranch_conns_sup}
+     Context:    child_terminated
+     Reason:     {{case_clause,closed},[{cowboy_protocol,execute,4,[{file,"src/cowboy_protocol.erl"},{line,514}]}]}
+     Offender:   [{pid,<0.814.0>},{name,ranch_conns_sup},{mfargs,{ranch_conns_sup,start_protocol,undefined}},{restart_type,temporary},{shutdown,brutal_kill},{child_type,worker}]
+
+2013-05-05 07:06:27 =ERROR REPORT====
+Error in process <0.853.0> on node 'zdft@localhost' with exit value: {{case_clause,closed},[{cowboy_protocol,execute,4,[{file,"src/cowboy_protocol.erl"},{line,514}]}]}
+
+2013-05-05 07:06:28 =SUPERVISOR REPORT====
+     Supervisor: {<0.148.0>,ranch_conns_sup}
+     Context:    child_terminated
+     Reason:     {{case_clause,closed},[{cowboy_protocol,execute,4,[{file,"src/cowboy_protocol.erl"},{line,514}]}]}
+     Offender:   [{pid,<0.853.0>},{name,ranch_conns_sup},{mfargs,{ranch_conns_sup,start_protocol,undefined}},{restart_type,temporary},{shutdown,brutal_kill},{child_type,worker}]
+
+2013-05-05 07:55:39 =ERROR REPORT====
+Error in process <0.880.0> on node 'zdft@localhost' with exit value: {{case_clause,closed},[{cowboy_protocol,execute,4,[{file,"src/cowboy_protocol.erl"},{line,514}]}]}
+
+2013-05-05 07:55:39 =SUPERVISOR REPORT====
+     Supervisor: {<0.148.0>,ranch_conns_sup}
+     Context:    child_terminated
+     Reason:     {{case_clause,closed},[{cowboy_protocol,execute,4,[{file,"src/cowboy_protocol.erl"},{line,514}]}]}
+     Offender:   [{pid,<0.880.0>},{name,ranch_conns_sup},{mfargs,{ranch_conns_sup,start_protocol,undefined}},{restart_type,temporary},{shutdown,brutal_kill},{child_type,worker}]
+
+2013-05-05 07:59:11 =SUPERVISOR REPORT====
+     Supervisor: {<0.148.0>,ranch_conns_sup}
+     Context:    child_terminated
+     Reason:     killed
+     Offender:   [{pid,<0.898.0>},{name,ranch_conns_sup},{mfargs,{ranch_conns_sup,start_protocol,undefined}},{restart_type,temporary},{shutdown,brutal_kill},{child_type,worker}]
+
+2013-05-05 08:46:32 =ERROR REPORT====
+Error in process <0.944.0> on node 'zdft@localhost' with exit value: {{case_clause,closed},[{cowboy_protocol,execute,4,[{file,"src/cowboy_protocol.erl"},{line,514}]}]}
+
+2013-05-05 08:46:32 =SUPERVISOR REPORT====
+     Supervisor: {<0.148.0>,ranch_conns_sup}
+     Context:    child_terminated
+     Reason:     {{case_clause,closed},[{cowboy_protocol,execute,4,[{file,"src/cowboy_protocol.erl"},{line,514}]}]}
+     Offender:   [{pid,<0.944.0>},{name,ranch_conns_sup},{mfargs,{ranch_conns_sup,start_protocol,undefined}},{restart_type,temporary},{shutdown,brutal_kill},{child_type,worker}]
+
+2013-05-05 08:48:48 =ERROR REPORT====
+Error in process <0.961.0> on node 'zdft@localhost' with exit value: {{case_clause,closed},[{cowboy_protocol,execute,4,[{file,"src/cowboy_protocol.erl"},{line,514}]}]}
+
+2013-05-05 08:48:48 =SUPERVISOR REPORT====
+     Supervisor: {<0.148.0>,ranch_conns_sup}
+     Context:    child_terminated
+     Reason:     {{case_clause,closed},[{cowboy_protocol,execute,4,[{file,"src/cowboy_protocol.erl"},{line,514}]}]}
+     Offender:   [{pid,<0.961.0>},{name,ranch_conns_sup},{mfargs,{ranch_conns_sup,start_protocol,undefined}},{restart_type,temporary},{shutdown,brutal_kill},{child_type,worker}]
+
+2013-05-06 06:51:44 =SUPERVISOR REPORT====
+     Supervisor: {<0.148.0>,ranch_conns_sup}
+     Context:    child_terminated
+     Reason:     killed
+     Offender:   [{pid,<0.1039.0>},{name,ranch_conns_sup},{mfargs,{ranch_conns_sup,start_protocol,undefined}},{restart_type,temporary},{shutdown,brutal_kill},{child_type,worker}]
+
+2013-05-06 06:56:00 =ERROR REPORT====
+Error in process <0.1076.0> on node 'zdft@localhost' with exit value: {{case_clause,closed},[{cowboy_protocol,execute,4,[{file,"src/cowboy_protocol.erl"},{line,514}]}]}
+
+2013-05-06 06:56:00 =SUPERVISOR REPORT====
+     Supervisor: {<0.148.0>,ranch_conns_sup}
+     Context:    child_terminated
+     Reason:     {{case_clause,closed},[{cowboy_protocol,execute,4,[{file,"src/cowboy_protocol.erl"},{line,514}]}]}
+     Offender:   [{pid,<0.1076.0>},{name,ranch_conns_sup},{mfargs,{ranch_conns_sup,start_protocol,undefined}},{restart_type,temporary},{shutdown,brutal_kill},{child_type,worker}]
+
+2013-05-06 06:57:03 =ERROR REPORT====
+Error in process <0.1092.0> on node 'zdft@localhost' with exit value: {{case_clause,closed},[{cowboy_protocol,execute,4,[{file,"src/cowboy_protocol.erl"},{line,514}]}]}
+
+2013-05-06 06:57:03 =SUPERVISOR REPORT====
+     Supervisor: {<0.148.0>,ranch_conns_sup}
+     Context:    child_terminated
+     Reason:     {{case_clause,closed},[{cowboy_protocol,execute,4,[{file,"src/cowboy_protocol.erl"},{line,514}]}]}
+     Offender:   [{pid,<0.1092.0>},{name,ranch_conns_sup},{mfargs,{ranch_conns_sup,start_protocol,undefined}},{restart_type,temporary},{shutdown,brutal_kill},{child_type,worker}]
+
