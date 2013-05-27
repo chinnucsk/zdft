@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv= "Content-Type" content="text/html; charset=utf-8" />
+    <title> index</title >
+    <meta name= "author" content= "user" />
+    <!-- Date: 2013-05-06 -->
+    <script type= "text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" ></script>
+    <script type= "text/javascript" src="/static/index.js" ></script>
+    <!--
+    <script type="text/javascript">
+        function WebSocketTest()
+        {
+        if ("WebSocket" in window)
+        {
+        alert("WebSocket is supported by your Browser!");
+        // Let us open a web socket
+        var ws = new WebSocket("ws://localhost:8001/websocket/ocr");
+        ws.onopen = function()
+        {
+        // Web Socket is connected, send data using send()
+
+        };
+        ws.onmessage = function (evt)
+        {
+        var received_msg = evt.data;
+        var json = JSON.parse(received_msg);
+        var pid = json.pid;
+        var base64img = json.img;
+        alert("pid is: " + pid);
+        //alert("img is:" + img);
+
+        var code = "123";
+        var json2 = {pid:pid, code:"123"};
+        var string = JSON.stringify(json2);
+        ws.send(string);
+        alert("Message is sent:" + string);
+
+        };
+        ws.onclose = function()
+        {
+        // websocket is closed.
+        alert("Connection is closed...");
+        };
+        }
+        else
+        {
+        // The browser doesn't support WebSocket
+        alert("WebSocket NOT supported by your Browser!");
+        }
+        }
+    </script>
+    -->
+</head>
+<body>
+
+<div id="sse">
+    <a href="javascript:WebSocketTest()">Run WebSocket</a>
+</div>
+
+
+</body>
+
+
+
+</html>

@@ -25,7 +25,7 @@
 %%--------------------------------------------------------------------
 init() ->
   io:format("~p ~p(~p) starting...~n", [?MODULE, ?LINE, self()]),
-  lager:info("init~p", [?MODULE, ?LINE]),
+  lager:debug("init ~p ~p", [?MODULE, ?LINE]),
   %timer:send_interval(1000, ping),
   {ok, #state{users=dict:new()}}.
 
@@ -33,7 +33,7 @@ init() ->
 %% to handle a connection to your service
 %%--------------------------------------------------------------------
 handle_join(_ServiceName, WebSocketId, SessionId, State) ->
-	io:fwrite("a client joined"),
+	lager:debug("a client joined ~p", [WebSocketId]),
     #state{users=Users} = State,
     {reply, ok, State#state{users=dict:store(WebSocketId,SessionId,Users)}}.
 %%--------------------------------------------------------------------
@@ -44,6 +44,7 @@ handle_join(_ServiceName, WebSocketId, SessionId, State) ->
 %%--------------------------------------------------------------------
 handle_close(ServiceName, WebSocketId, _SessionId, State) ->
     #state{users=Users} = State,
+    lager:debug("websocket close ~p ~p ~p", [?MODULE, ?LINE, WebSocketId]),
     {reply, ok, State#state{users=dict:erase(WebSocketId,Users)}}.
 %%--------------------------------------------------------------------
 
@@ -58,22 +59,22 @@ handle_incoming(_ServiceName, WebSocketId,_SessionId, Message, State) ->
 	Pid_dec = proplists:get_value(<<"pid">>, Json),
 	Pid = list_to_pid(Pid_dec),
 	Code = proplists:get_value(<<"code">>, Json),
-	io:format("Sending response:~p back to ~p", [Code, Pid]),
+	lager:debug("Sending response:~p back to ~p", [Code, Pid]),
 	Pid ! {ok, Code},				 
     {noreply, State}.
 	
 %%--------------------------------------------------------------------
 
 
-handle_info({parse, {Pid, Img}}, State) ->
+handle_info({parse, {Pid, Img_path}}, State) ->
     #state{users=Users} = State,
 	WebSockets = dict:fetch_keys(Users),
 	case WebSockets of
 		[] ->
 			{noreply, State};
 		[WebSocketId|_Tail] ->
-			io:format("To save pid:~p", [Pid]),
-			Props = [{<<"img">>, list_to_binary(Img)}, {<<"pid">>, pid_to_list(Pid)}],
+			lager:debug("To save pid:~p", [Pid]),
+			Props = [{<<"img">>, list_to_binary(Img_path)}, {<<"pid">>, pid_to_list(Pid)}],
 			Json = jsx:encode(Props),
 			WebSocketId ! {text, Json},
 			{noreply, State}
@@ -90,8 +91,9 @@ handle_info(_Info, State) ->
   {noreply, State}.
 
 
-terminate(_Reason, _State) ->
+terminate(Reason, _State) ->
    %call boss_service:unregister(?SERVER),
+  lager:debug("websocket close ~p~p~p", [?MODULE, ?LINE, Reason]),
   ok.
 
 %% Internal functions
